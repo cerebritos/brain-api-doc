@@ -10,7 +10,11 @@ Headers:
 
 `POST` Content:
 ```json
-
+{
+   "email":"demo@mail.com",
+   "password":"Password0fa4664e99c2",
+   "passwordDoubleCheck":"Password0fa4664e99c2",
+}
 ```
 ## Response Success
 
@@ -19,7 +23,10 @@ Headers:
 HTTP Code: `200`
 
 ```json
-
+{
+	"message":"success LoggedIn",
+	"context":[],
+}
 ```
 
 ## Response Errors
@@ -29,7 +36,10 @@ HTTP Code: `200`
 HTTP Code: `402`
 
 ```json
-
+{
+	"message":"bad credentials",
+	"context":[],
+}
 ```
 
 ### Banned LoggedIn
@@ -37,7 +47,10 @@ HTTP Code: `402`
 HTTP Code: `402`
 
 ```json
-
+{
+	"message":"banned LoggedIn",
+	"context":[],
+}
 ```
 
 ### Token expired
@@ -45,5 +58,8 @@ HTTP Code: `402`
 HTTP Code: `402`
 
 ```json
-
+{
+	"message":"token expired",
+	"context":[],
+}
 ```

@@ -11,29 +11,604 @@
             "title": "Welcome to Doc Brain Api 1.0"
         }, 
         {
-            "location": "/singup/registration-creative/", 
-            "text": "Registro de Creativos\n\n\nUna guia para registro de creativos.\n\n\nRegistro\n\n\nRequest\n\n\n[\n  {\n    \n_id\n: \n59b766455822f0f207a6e1b0\n,\n    \nindex\n: 0,\n    \nguid\n: \ncf6273bd-f65c-49f9-bf59-b129bccf7546\n,\n    \nisActive\n: true,\n    \nbalance\n: \n$1,412.03\n,\n    \npicture\n: \nhttp://placehold.it/32x32\n,\n    \nage\n: 35,\n    \neyeColor\n: \ngreen\n,\n    \nname\n: \nHubbard Sosa\n,\n    \ngender\n: \nmale\n,\n    \ncompany\n: \nFROLIX\n,\n    \nemail\n: \nhubbardsosa@frolix.com\n,\n    \nphone\n: \n+1 (947) 537-3023\n,\n    \naddress\n: \n917 Tompkins Avenue, Grazierville, Alaska, 3895\n,\n    \nabout\n: \nOccaecat excepteur culpa Lorem enim deserunt consectetur ullamco labore velit labore. Exercitation consequat sunt culpa pariatur dolor nostrud labore voluptate officia laborum elit. Dolor ea laboris consectetur mollit nostrud incididunt ut sunt duis. Cillum aute quis nisi voluptate dolore consequat ipsum laborum nulla commodo. Est est excepteur et reprehenderit consequat do pariatur et qui. Duis anim occaecat nulla incididunt est laboris enim officia fugiat qui occaecat sint Lorem occaecat. Esse aute anim adipisicing exercitation nostrud est deserunt.\\r\\n\n,\n    \nregistered\n: \n2015-08-02T02:09:53 +05:00\n,\n    \nlatitude\n: -67.124037,\n    \nlongitude\n: 113.473661,\n    \ntags\n: [\n      \net\n,\n      \nadipisicing\n,\n      \nvoluptate\n,\n      \nesse\n,\n      \nelit\n,\n      \naliqua\n,\n      \nest\n\n    ],\n    \nfriends\n: [\n      {\n        \nid\n: 0,\n        \nname\n: \nGlover Gaines\n\n      },\n      {\n        \nid\n: 1,\n        \nname\n: \nWright Kirk\n\n      },\n      {\n        \nid\n: 2,\n        \nname\n: \nAudra Paul\n\n      }\n    ],\n    \ngreeting\n: \nHello, Hubbard Sosa! You have 9 unread messages.\n,\n    \nfavoriteFruit\n: \napple\n\n  },\n  {\n    \n_id\n: \n59b76645882a39465e8533d4\n,\n    \nindex\n: 1,\n    \nguid\n: \n40923730-16d6-4c95-9614-88dfc2ec5563\n,\n    \nisActive\n: false,\n    \nbalance\n: \n$2,109.99\n,\n    \npicture\n: \nhttp://placehold.it/32x32\n,\n    \nage\n: 22,\n    \neyeColor\n: \ngreen\n,\n    \nname\n: \nEileen Baxter\n,\n    \ngender\n: \nfemale\n,\n    \ncompany\n: \nDEEPENDS\n,\n    \nemail\n: \neileenbaxter@deepends.com\n,\n    \nphone\n: \n+1 (954) 423-2689\n,\n    \naddress\n: \n558 Gates Avenue, Coalmont, Maryland, 2143\n,\n    \nabout\n: \nAute est occaecat do quis Lorem cupidatat do. Quis aliqua irure excepteur laboris enim. Nisi voluptate do ex veniam. Laborum aliquip sunt veniam non tempor non. Sunt mollit eu amet labore sunt nisi. Et culpa id consequat tempor incididunt culpa nisi do.\\r\\n\n,\n    \nregistered\n: \n2014-02-11T10:14:23 +06:00\n,\n    \nlatitude\n: 80.234385,\n    \nlongitude\n: 47.861373,\n    \ntags\n: [\n      \naute\n,\n      \nex\n,\n      \nsit\n,\n      \nexercitation\n,\n      \nipsum\n,\n      \nenim\n,\n      \nenim\n\n    ],\n    \nfriends\n: [\n      {\n        \nid\n: 0,\n        \nname\n: \nBeverley Frye\n\n      },\n      {\n        \nid\n: 1,\n        \nname\n: \nPorter Noel\n\n      },\n      {\n        \nid\n: 2,\n        \nname\n: \nYoung Norris\n\n      }\n    ],\n    \ngreeting\n: \nHello, Eileen Baxter! You have 10 unread messages.\n,\n    \nfavoriteFruit\n: \nbanana\n\n  },\n  {\n    \n_id\n: \n59b766452441a635d70d4cc3\n,\n    \nindex\n: 2,\n    \nguid\n: \n5f65d18d-a9ba-430e-b384-0fa4664e99c2\n,\n    \nisActive\n: false,\n    \nbalance\n: \n$1,744.07\n,\n    \npicture\n: \nhttp://placehold.it/32x32\n,\n    \nage\n: 23,\n    \neyeColor\n: \nblue\n,\n    \nname\n: \nTillman Mercer\n,\n    \ngender\n: \nmale\n,\n    \ncompany\n: \nPHOTOBIN\n,\n    \nemail\n: \ntillmanmercer@photobin.com\n,\n    \nphone\n: \n+1 (842) 425-2254\n,\n    \naddress\n: \n555 Louisa Street, Snyderville, Georgia, 8496\n,\n    \nabout\n: \nLorem tempor officia do esse irure. Deserunt et cupidatat deserunt laboris laborum eu irure mollit Lorem nulla eu et eiusmod sunt. Ipsum excepteur excepteur laboris incididunt minim. Lorem aliquip quis in esse qui voluptate occaecat culpa eu proident proident exercitation. Adipisicing ullamco culpa fugiat quis in amet. Occaecat consequat enim dolore culpa incididunt occaecat id adipisicing nostrud aliquip adipisicing cillum aliquip.\\r\\n\n,\n    \nregistered\n: \n2017-01-31T08:59:19 +06:00\n,\n    \nlatitude\n: 88.411723,\n    \nlongitude\n: -70.578953,\n    \ntags\n: [\n      \nexercitation\n,\n      \ndolore\n,\n      \net\n,\n      \nea\n,\n      \nsint\n,\n      \nut\n,\n      \ndo\n\n    ],\n    \nfriends\n: [\n      {\n        \nid\n: 0,\n        \nname\n: \nMcknight Frost\n\n      },\n      {\n        \nid\n: 1,\n        \nname\n: \nJodi Oneill\n\n      },\n      {\n        \nid\n: 2,\n        \nname\n: \nWynn Burch\n\n      }\n    ],\n    \ngreeting\n: \nHello, Tillman Mercer! You have 6 unread messages.\n,\n    \nfavoriteFruit\n: \napple\n\n  },\n  {\n    \n_id\n: \n59b76645c8114f14e092a4db\n,\n    \nindex\n: 3,\n    \nguid\n: \ncfe699fe-5136-430b-ad78-29e5d8c95ded\n,\n    \nisActive\n: false,\n    \nbalance\n: \n$3,459.12\n,\n    \npicture\n: \nhttp://placehold.it/32x32\n,\n    \nage\n: 20,\n    \neyeColor\n: \nbrown\n,\n    \nname\n: \nChelsea Holt\n,\n    \ngender\n: \nfemale\n,\n    \ncompany\n: \nGORGANIC\n,\n    \nemail\n: \nchelseaholt@gorganic.com\n,\n    \nphone\n: \n+1 (975) 593-2669\n,\n    \naddress\n: \n463 Coleman Street, Newcastle, Arizona, 1684\n,\n    \nabout\n: \nMollit magna ea labore mollit sint qui nostrud anim duis. Ea est et enim sint officia. Pariatur occaecat aliquip ad velit. Amet cupidatat velit officia nulla dolore. Adipisicing mollit ullamco fugiat Lorem duis minim. Incididunt labore quis aliquip veniam.\\r\\n\n,\n    \nregistered\n: \n2016-08-03T08:29:39 +05:00\n,\n    \nlatitude\n: 67.066274,\n    \nlongitude\n: -78.934842,\n    \ntags\n: [\n      \nex\n,\n      \ncillum\n,\n      \nsunt\n,\n      \ncupidatat\n,\n      \nculpa\n,\n      \nnostrud\n,\n      \nsint\n\n    ],\n    \nfriends\n: [\n      {\n        \nid\n: 0,\n        \nname\n: \nBlanca Cline\n\n      },\n      {\n        \nid\n: 1,\n        \nname\n: \nChristine Compton\n\n      },\n      {\n        \nid\n: 2,\n        \nname\n: \nSue Murphy\n\n      }\n    ],\n    \ngreeting\n: \nHello, Chelsea Holt! You have 9 unread messages.\n,\n    \nfavoriteFruit\n: \napple\n\n  },\n  {\n    \n_id\n: \n59b766457389819903326ae4\n,\n    \nindex\n: 4,\n    \nguid\n: \nda96c93f-57d3-4ea9-98b6-e29c02d4af9f\n,\n    \nisActive\n: false,\n    \nbalance\n: \n$3,605.26\n,\n    \npicture\n: \nhttp://placehold.it/32x32\n,\n    \nage\n: 30,\n    \neyeColor\n: \nblue\n,\n    \nname\n: \nYolanda Mcfarland\n,\n    \ngender\n: \nfemale\n,\n    \ncompany\n: \nDIGIPRINT\n,\n    \nemail\n: \nyolandamcfarland@digiprint.com\n,\n    \nphone\n: \n+1 (800) 447-2660\n,\n    \naddress\n: \n306 Boerum Place, Gasquet, Illinois, 1688\n,\n    \nabout\n: \nConsectetur dolore non anim in excepteur aliquip occaecat exercitation minim adipisicing. Reprehenderit sit eu ullamco consectetur consectetur Lorem aute nostrud ex nulla aliquip tempor laborum. Id pariatur ut veniam consequat enim excepteur qui. Sint et nisi mollit ad ut esse sunt quis proident consectetur officia. Ea adipisicing laborum occaecat Lorem reprehenderit ex cillum commodo dolor labore eiusmod nulla sit ipsum. Esse sit officia tempor ut amet. Officia ut veniam consequat et officia.\\r\\n\n,\n    \nregistered\n: \n2017-07-18T11:13:41 +05:00\n,\n    \nlatitude\n: 79.407789,\n    \nlongitude\n: 116.313515,\n    \ntags\n: [\n      \nincididunt\n,\n      \naute\n,\n      \nconsectetur\n,\n      \nmollit\n,\n      \nincididunt\n,\n      \nvoluptate\n,\n      \nsunt\n\n    ],\n    \nfriends\n: [\n      {\n        \nid\n: 0,\n        \nname\n: \nBarber Byrd\n\n      },\n      {\n        \nid\n: 1,\n        \nname\n: \nJustice Travis\n\n      },\n      {\n        \nid\n: 2,\n        \nname\n: \nVega Mayer\n\n      }\n    ],\n    \ngreeting\n: \nHello, Yolanda Mcfarland! You have 3 unread messages.\n,\n    \nfavoriteFruit\n: \nstrawberry\n\n  },\n  {\n    \n_id\n: \n59b766451e1e27af6fbde83a\n,\n    \nindex\n: 5,\n    \nguid\n: \ncee1a730-6115-4303-acae-b8b34a61e783\n,\n    \nisActive\n: true,\n    \nbalance\n: \n$2,025.11\n,\n    \npicture\n: \nhttp://placehold.it/32x32\n,\n    \nage\n: 31,\n    \neyeColor\n: \ngreen\n,\n    \nname\n: \nDebora Fleming\n,\n    \ngender\n: \nfemale\n,\n    \ncompany\n: \nENERSAVE\n,\n    \nemail\n: \ndeborafleming@enersave.com\n,\n    \nphone\n: \n+1 (980) 435-3399\n,\n    \naddress\n: \n339 Ovington Avenue, Orovada, Massachusetts, 3281\n,\n    \nabout\n: \nEsse tempor elit ad veniam. Ea aliquip elit nisi adipisicing adipisicing dolor. Qui adipisicing nostrud veniam ex est. Amet excepteur culpa quis ut.\\r\\n\n,\n    \nregistered\n: \n2014-04-27T11:40:32 +05:00\n,\n    \nlatitude\n: 29.545284,\n    \nlongitude\n: 93.478955,\n    \ntags\n: [\n      \nadipisicing\n,\n      \noccaecat\n,\n      \nqui\n,\n      \nirure\n,\n      \ncillum\n,\n      \naliqua\n,\n      \nnon\n\n    ],\n    \nfriends\n: [\n      {\n        \nid\n: 0,\n        \nname\n: \nLouise Meadows\n\n      },\n      {\n        \nid\n: 1,\n        \nname\n: \nAddie Lang\n\n      },\n      {\n        \nid\n: 2,\n        \nname\n: \nKaryn Harmon\n\n      }\n    ],\n    \ngreeting\n: \nHello, Debora Fleming! You have 3 unread messages.\n,\n    \nfavoriteFruit\n: \nbanana\n\n  }\n]\n\n\n\n\nResponse\n\n\n[\n  {\n    \n_id\n: \n59b766455822f0f207a6e1b0\n,\n    \nindex\n: 0,\n    \nguid\n: \ncf6273bd-f65c-49f9-bf59-b129bccf7546\n,\n    \nisActive\n: true,\n    \nbalance\n: \n$1,412.03\n,\n    \npicture\n: \nhttp://placehold.it/32x32\n,\n    \nage\n: 35,\n    \neyeColor\n: \ngreen\n,\n    \nname\n: \nHubbard Sosa\n,\n    \ngender\n: \nmale\n,\n    \ncompany\n: \nFROLIX\n,\n    \nemail\n: \nhubbardsosa@frolix.com\n,\n    \nphone\n: \n+1 (947) 537-3023\n,\n    \naddress\n: \n917 Tompkins Avenue, Grazierville, Alaska, 3895\n,\n    \nabout\n: \nOccaecat excepteur culpa Lorem enim deserunt consectetur ullamco labore velit labore. Exercitation consequat sunt culpa pariatur dolor nostrud labore voluptate officia laborum elit. Dolor ea laboris consectetur mollit nostrud incididunt ut sunt duis. Cillum aute quis nisi voluptate dolore consequat ipsum laborum nulla commodo. Est est excepteur et reprehenderit consequat do pariatur et qui. Duis anim occaecat nulla incididunt est laboris enim officia fugiat qui occaecat sint Lorem occaecat. Esse aute anim adipisicing exercitation nostrud est deserunt.\\r\\n\n,\n    \nregistered\n: \n2015-08-02T02:09:53 +05:00\n,\n    \nlatitude\n: -67.124037,\n    \nlongitude\n: 113.473661,\n    \ntags\n: [\n      \net\n,\n      \nadipisicing\n,\n      \nvoluptate\n,\n      \nesse\n,\n      \nelit\n,\n      \naliqua\n,\n      \nest\n\n    ],\n    \nfriends\n: [\n      {\n        \nid\n: 0,\n        \nname\n: \nGlover Gaines\n\n      },\n      {\n        \nid\n: 1,\n        \nname\n: \nWright Kirk\n\n      },\n      {\n        \nid\n: 2,\n        \nname\n: \nAudra Paul\n\n      }\n    ],\n    \ngreeting\n: \nHello, Hubbard Sosa! You have 9 unread messages.\n,\n    \nfavoriteFruit\n: \napple\n\n  },\n  {\n    \n_id\n: \n59b76645882a39465e8533d4\n,\n    \nindex\n: 1,\n    \nguid\n: \n40923730-16d6-4c95-9614-88dfc2ec5563\n,\n    \nisActive\n: false,\n    \nbalance\n: \n$2,109.99\n,\n    \npicture\n: \nhttp://placehold.it/32x32\n,\n    \nage\n: 22,\n    \neyeColor\n: \ngreen\n,\n    \nname\n: \nEileen Baxter\n,\n    \ngender\n: \nfemale\n,\n    \ncompany\n: \nDEEPENDS\n,\n    \nemail\n: \neileenbaxter@deepends.com\n,\n    \nphone\n: \n+1 (954) 423-2689\n,\n    \naddress\n: \n558 Gates Avenue, Coalmont, Maryland, 2143\n,\n    \nabout\n: \nAute est occaecat do quis Lorem cupidatat do. Quis aliqua irure excepteur laboris enim. Nisi voluptate do ex veniam. Laborum aliquip sunt veniam non tempor non. Sunt mollit eu amet labore sunt nisi. Et culpa id consequat tempor incididunt culpa nisi do.\\r\\n\n,\n    \nregistered\n: \n2014-02-11T10:14:23 +06:00\n,\n    \nlatitude\n: 80.234385,\n    \nlongitude\n: 47.861373,\n    \ntags\n: [\n      \naute\n,\n      \nex\n,\n      \nsit\n,\n      \nexercitation\n,\n      \nipsum\n,\n      \nenim\n,\n      \nenim\n\n    ],\n    \nfriends\n: [\n      {\n        \nid\n: 0,\n        \nname\n: \nBeverley Frye\n\n      },\n      {\n        \nid\n: 1,\n        \nname\n: \nPorter Noel\n\n      },\n      {\n        \nid\n: 2,\n        \nname\n: \nYoung Norris\n\n      }\n    ],\n    \ngreeting\n: \nHello, Eileen Baxter! You have 10 unread messages.\n,\n    \nfavoriteFruit\n: \nbanana\n\n  },\n  {\n    \n_id\n: \n59b766452441a635d70d4cc3\n,\n    \nindex\n: 2,\n    \nguid\n: \n5f65d18d-a9ba-430e-b384-0fa4664e99c2\n,\n    \nisActive\n: false,\n    \nbalance\n: \n$1,744.07\n,\n    \npicture\n: \nhttp://placehold.it/32x32\n,\n    \nage\n: 23,\n    \neyeColor\n: \nblue\n,\n    \nname\n: \nTillman Mercer\n,\n    \ngender\n: \nmale\n,\n    \ncompany\n: \nPHOTOBIN\n,\n    \nemail\n: \ntillmanmercer@photobin.com\n,\n    \nphone\n: \n+1 (842) 425-2254\n,\n    \naddress\n: \n555 Louisa Street, Snyderville, Georgia, 8496\n,\n    \nabout\n: \nLorem tempor officia do esse irure. Deserunt et cupidatat deserunt laboris laborum eu irure mollit Lorem nulla eu et eiusmod sunt. Ipsum excepteur excepteur laboris incididunt minim. Lorem aliquip quis in esse qui voluptate occaecat culpa eu proident proident exercitation. Adipisicing ullamco culpa fugiat quis in amet. Occaecat consequat enim dolore culpa incididunt occaecat id adipisicing nostrud aliquip adipisicing cillum aliquip.\\r\\n\n,\n    \nregistered\n: \n2017-01-31T08:59:19 +06:00\n,\n    \nlatitude\n: 88.411723,\n    \nlongitude\n: -70.578953,\n    \ntags\n: [\n      \nexercitation\n,\n      \ndolore\n,\n      \net\n,\n      \nea\n,\n      \nsint\n,\n      \nut\n,\n      \ndo\n\n    ],\n    \nfriends\n: [\n      {\n        \nid\n: 0,\n        \nname\n: \nMcknight Frost\n\n      },\n      {\n        \nid\n: 1,\n        \nname\n: \nJodi Oneill\n\n      },\n      {\n        \nid\n: 2,\n        \nname\n: \nWynn Burch\n\n      }\n    ],\n    \ngreeting\n: \nHello, Tillman Mercer! You have 6 unread messages.\n,\n    \nfavoriteFruit\n: \napple\n\n  },\n  {\n    \n_id\n: \n59b76645c8114f14e092a4db\n,\n    \nindex\n: 3,\n    \nguid\n: \ncfe699fe-5136-430b-ad78-29e5d8c95ded\n,\n    \nisActive\n: false,\n    \nbalance\n: \n$3,459.12\n,\n    \npicture\n: \nhttp://placehold.it/32x32\n,\n    \nage\n: 20,\n    \neyeColor\n: \nbrown\n,\n    \nname\n: \nChelsea Holt\n,\n    \ngender\n: \nfemale\n,\n    \ncompany\n: \nGORGANIC\n,\n    \nemail\n: \nchelseaholt@gorganic.com\n,\n    \nphone\n: \n+1 (975) 593-2669\n,\n    \naddress\n: \n463 Coleman Street, Newcastle, Arizona, 1684\n,\n    \nabout\n: \nMollit magna ea labore mollit sint qui nostrud anim duis. Ea est et enim sint officia. Pariatur occaecat aliquip ad velit. Amet cupidatat velit officia nulla dolore. Adipisicing mollit ullamco fugiat Lorem duis minim. Incididunt labore quis aliquip veniam.\\r\\n\n,\n    \nregistered\n: \n2016-08-03T08:29:39 +05:00\n,\n    \nlatitude\n: 67.066274,\n    \nlongitude\n: -78.934842,\n    \ntags\n: [\n      \nex\n,\n      \ncillum\n,\n      \nsunt\n,\n      \ncupidatat\n,\n      \nculpa\n,\n      \nnostrud\n,\n      \nsint\n\n    ],\n    \nfriends\n: [\n      {\n        \nid\n: 0,\n        \nname\n: \nBlanca Cline\n\n      },\n      {\n        \nid\n: 1,\n        \nname\n: \nChristine Compton\n\n      },\n      {\n        \nid\n: 2,\n        \nname\n: \nSue Murphy\n\n      }\n    ],\n    \ngreeting\n: \nHello, Chelsea Holt! You have 9 unread messages.\n,\n    \nfavoriteFruit\n: \napple\n\n  },\n  {\n    \n_id\n: \n59b766457389819903326ae4\n,\n    \nindex\n: 4,\n    \nguid\n: \nda96c93f-57d3-4ea9-98b6-e29c02d4af9f\n,\n    \nisActive\n: false,\n    \nbalance\n: \n$3,605.26\n,\n    \npicture\n: \nhttp://placehold.it/32x32\n,\n    \nage\n: 30,\n    \neyeColor\n: \nblue\n,\n    \nname\n: \nYolanda Mcfarland\n,\n    \ngender\n: \nfemale\n,\n    \ncompany\n: \nDIGIPRINT\n,\n    \nemail\n: \nyolandamcfarland@digiprint.com\n,\n    \nphone\n: \n+1 (800) 447-2660\n,\n    \naddress\n: \n306 Boerum Place, Gasquet, Illinois, 1688\n,\n    \nabout\n: \nConsectetur dolore non anim in excepteur aliquip occaecat exercitation minim adipisicing. Reprehenderit sit eu ullamco consectetur consectetur Lorem aute nostrud ex nulla aliquip tempor laborum. Id pariatur ut veniam consequat enim excepteur qui. Sint et nisi mollit ad ut esse sunt quis proident consectetur officia. Ea adipisicing laborum occaecat Lorem reprehenderit ex cillum commodo dolor labore eiusmod nulla sit ipsum. Esse sit officia tempor ut amet. Officia ut veniam consequat et officia.\\r\\n\n,\n    \nregistered\n: \n2017-07-18T11:13:41 +05:00\n,\n    \nlatitude\n: 79.407789,\n    \nlongitude\n: 116.313515,\n    \ntags\n: [\n      \nincididunt\n,\n      \naute\n,\n      \nconsectetur\n,\n      \nmollit\n,\n      \nincididunt\n,\n      \nvoluptate\n,\n      \nsunt\n\n    ],\n    \nfriends\n: [\n      {\n        \nid\n: 0,\n        \nname\n: \nBarber Byrd\n\n      },\n      {\n        \nid\n: 1,\n        \nname\n: \nJustice Travis\n\n      },\n      {\n        \nid\n: 2,\n        \nname\n: \nVega Mayer\n\n      }\n    ],\n    \ngreeting\n: \nHello, Yolanda Mcfarland! You have 3 unread messages.\n,\n    \nfavoriteFruit\n: \nstrawberry\n\n  },\n  {\n    \n_id\n: \n59b766451e1e27af6fbde83a\n,\n    \nindex\n: 5,\n    \nguid\n: \ncee1a730-6115-4303-acae-b8b34a61e783\n,\n    \nisActive\n: true,\n    \nbalance\n: \n$2,025.11\n,\n    \npicture\n: \nhttp://placehold.it/32x32\n,\n    \nage\n: 31,\n    \neyeColor\n: \ngreen\n,\n    \nname\n: \nDebora Fleming\n,\n    \ngender\n: \nfemale\n,\n    \ncompany\n: \nENERSAVE\n,\n    \nemail\n: \ndeborafleming@enersave.com\n,\n    \nphone\n: \n+1 (980) 435-3399\n,\n    \naddress\n: \n339 Ovington Avenue, Orovada, Massachusetts, 3281\n,\n    \nabout\n: \nEsse tempor elit ad veniam. Ea aliquip elit nisi adipisicing adipisicing dolor. Qui adipisicing nostrud veniam ex est. Amet excepteur culpa quis ut.\\r\\n\n,\n    \nregistered\n: \n2014-04-27T11:40:32 +05:00\n,\n    \nlatitude\n: 29.545284,\n    \nlongitude\n: 93.478955,\n    \ntags\n: [\n      \nadipisicing\n,\n      \noccaecat\n,\n      \nqui\n,\n      \nirure\n,\n      \ncillum\n,\n      \naliqua\n,\n      \nnon\n\n    ],\n    \nfriends\n: [\n      {\n        \nid\n: 0,\n        \nname\n: \nLouise Meadows\n\n      },\n      {\n        \nid\n: 1,\n        \nname\n: \nAddie Lang\n\n      },\n      {\n        \nid\n: 2,\n        \nname\n: \nKaryn Harmon\n\n      }\n    ],\n    \ngreeting\n: \nHello, Debora Fleming! You have 3 unread messages.\n,\n    \nfavoriteFruit\n: \nbanana\n\n  }\n]", 
-            "title": "singUp Creative"
+            "location": "/signup/creative/", 
+            "text": "Sign-Up Creative\n\n\nRequest\n\n\nHeaders:\n\n\n    Authorization: Bearer \ntoken\n\n    Location: mx\n\n\n\n\nPOST\n Content:\n\n\n{\n   \nemail\n:\ndemo@mail.com\n,\n   \nemailDoubleCheck\n:\ndemo@mail.com\n,\n   \npassword\n:\nPassword0fa4664e99c2\n,\n   \nnewPassword\n:false,\n   \npasswordDoubleCheck\n:\nPassword0fa4664e99c2\n,\n   \nname\n:\ncerebritos inc.\n,\n   \nlastName\n:\nJonh smith jonnes\n,\n   \nbornDate\n:\n1989-01-31T08:59:19 +06:00\n,\n   \nnationalIdentificationNumber\n:\nFASDFAS123123R\n,\n   \nphoneNumber\n:\n01325534363754\n,\n   \nacceptTerms\n:true,\n   \ntaxIdentificationNumber\n:\nTAXDFAS123123R\n,\n   \naddresses\n:[\n      {\n        \nstreet\n: \nlorem impsu\n,\n        \nexternalNumber\n: \n12\n,\n        \ninternalNumber\n: \n1b\n,\n        \ncity\n: \nMexico\n,\n        \ncountry\n: \nMexico\n,\n        \nmunicipality\n: \nEcatepec\n,\n        \nneighborhood\n: \nMagdalena\n,\n        \nregion\n: \n32342\n,\n        \ndefaultAddress\n: true\n      }\n    ],\n   \nhourlyRate\n:3,\n   \nexperienceLevel\n:2\n}\n\n\n\n\nResponse Success\n\n\nRegistered\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[],\n}\n\n\n\n\nResponse Errors\n\n\nAlready registered\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\nalready registered\n,\n    \ncontext\n:[],\n}\n\n\n\n\nBanned registration\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\nbanned registration\n,\n    \ncontext\n:[],\n}\n\n\n\n\nIncorrect information / Missing fields\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nmissing fields\n,\n    \ncontext\n:[\n    {\n    \nphone\n:\nmost numbers\n,\n    \nemail\n:\nalready registred\n\n    }\n    ]\n}", 
+            "title": "Sign-Up Creative"
         }, 
         {
-            "location": "/singup/registration-creative/#registro-de-creativos", 
-            "text": "Una guia para registro de creativos.", 
-            "title": "Registro de Creativos"
-        }, 
-        {
-            "location": "/singup/registration-creative/#registro", 
+            "location": "/signup/creative/#sign-up-creative", 
             "text": "", 
-            "title": "Registro"
+            "title": "Sign-Up Creative"
         }, 
         {
-            "location": "/singup/registration-creative/#request", 
-            "text": "[\n  {\n     _id :  59b766455822f0f207a6e1b0 ,\n     index : 0,\n     guid :  cf6273bd-f65c-49f9-bf59-b129bccf7546 ,\n     isActive : true,\n     balance :  $1,412.03 ,\n     picture :  http://placehold.it/32x32 ,\n     age : 35,\n     eyeColor :  green ,\n     name :  Hubbard Sosa ,\n     gender :  male ,\n     company :  FROLIX ,\n     email :  hubbardsosa@frolix.com ,\n     phone :  +1 (947) 537-3023 ,\n     address :  917 Tompkins Avenue, Grazierville, Alaska, 3895 ,\n     about :  Occaecat excepteur culpa Lorem enim deserunt consectetur ullamco labore velit labore. Exercitation consequat sunt culpa pariatur dolor nostrud labore voluptate officia laborum elit. Dolor ea laboris consectetur mollit nostrud incididunt ut sunt duis. Cillum aute quis nisi voluptate dolore consequat ipsum laborum nulla commodo. Est est excepteur et reprehenderit consequat do pariatur et qui. Duis anim occaecat nulla incididunt est laboris enim officia fugiat qui occaecat sint Lorem occaecat. Esse aute anim adipisicing exercitation nostrud est deserunt.\\r\\n ,\n     registered :  2015-08-02T02:09:53 +05:00 ,\n     latitude : -67.124037,\n     longitude : 113.473661,\n     tags : [\n       et ,\n       adipisicing ,\n       voluptate ,\n       esse ,\n       elit ,\n       aliqua ,\n       est \n    ],\n     friends : [\n      {\n         id : 0,\n         name :  Glover Gaines \n      },\n      {\n         id : 1,\n         name :  Wright Kirk \n      },\n      {\n         id : 2,\n         name :  Audra Paul \n      }\n    ],\n     greeting :  Hello, Hubbard Sosa! You have 9 unread messages. ,\n     favoriteFruit :  apple \n  },\n  {\n     _id :  59b76645882a39465e8533d4 ,\n     index : 1,\n     guid :  40923730-16d6-4c95-9614-88dfc2ec5563 ,\n     isActive : false,\n     balance :  $2,109.99 ,\n     picture :  http://placehold.it/32x32 ,\n     age : 22,\n     eyeColor :  green ,\n     name :  Eileen Baxter ,\n     gender :  female ,\n     company :  DEEPENDS ,\n     email :  eileenbaxter@deepends.com ,\n     phone :  +1 (954) 423-2689 ,\n     address :  558 Gates Avenue, Coalmont, Maryland, 2143 ,\n     about :  Aute est occaecat do quis Lorem cupidatat do. Quis aliqua irure excepteur laboris enim. Nisi voluptate do ex veniam. Laborum aliquip sunt veniam non tempor non. Sunt mollit eu amet labore sunt nisi. Et culpa id consequat tempor incididunt culpa nisi do.\\r\\n ,\n     registered :  2014-02-11T10:14:23 +06:00 ,\n     latitude : 80.234385,\n     longitude : 47.861373,\n     tags : [\n       aute ,\n       ex ,\n       sit ,\n       exercitation ,\n       ipsum ,\n       enim ,\n       enim \n    ],\n     friends : [\n      {\n         id : 0,\n         name :  Beverley Frye \n      },\n      {\n         id : 1,\n         name :  Porter Noel \n      },\n      {\n         id : 2,\n         name :  Young Norris \n      }\n    ],\n     greeting :  Hello, Eileen Baxter! You have 10 unread messages. ,\n     favoriteFruit :  banana \n  },\n  {\n     _id :  59b766452441a635d70d4cc3 ,\n     index : 2,\n     guid :  5f65d18d-a9ba-430e-b384-0fa4664e99c2 ,\n     isActive : false,\n     balance :  $1,744.07 ,\n     picture :  http://placehold.it/32x32 ,\n     age : 23,\n     eyeColor :  blue ,\n     name :  Tillman Mercer ,\n     gender :  male ,\n     company :  PHOTOBIN ,\n     email :  tillmanmercer@photobin.com ,\n     phone :  +1 (842) 425-2254 ,\n     address :  555 Louisa Street, Snyderville, Georgia, 8496 ,\n     about :  Lorem tempor officia do esse irure. Deserunt et cupidatat deserunt laboris laborum eu irure mollit Lorem nulla eu et eiusmod sunt. Ipsum excepteur excepteur laboris incididunt minim. Lorem aliquip quis in esse qui voluptate occaecat culpa eu proident proident exercitation. Adipisicing ullamco culpa fugiat quis in amet. Occaecat consequat enim dolore culpa incididunt occaecat id adipisicing nostrud aliquip adipisicing cillum aliquip.\\r\\n ,\n     registered :  2017-01-31T08:59:19 +06:00 ,\n     latitude : 88.411723,\n     longitude : -70.578953,\n     tags : [\n       exercitation ,\n       dolore ,\n       et ,\n       ea ,\n       sint ,\n       ut ,\n       do \n    ],\n     friends : [\n      {\n         id : 0,\n         name :  Mcknight Frost \n      },\n      {\n         id : 1,\n         name :  Jodi Oneill \n      },\n      {\n         id : 2,\n         name :  Wynn Burch \n      }\n    ],\n     greeting :  Hello, Tillman Mercer! You have 6 unread messages. ,\n     favoriteFruit :  apple \n  },\n  {\n     _id :  59b76645c8114f14e092a4db ,\n     index : 3,\n     guid :  cfe699fe-5136-430b-ad78-29e5d8c95ded ,\n     isActive : false,\n     balance :  $3,459.12 ,\n     picture :  http://placehold.it/32x32 ,\n     age : 20,\n     eyeColor :  brown ,\n     name :  Chelsea Holt ,\n     gender :  female ,\n     company :  GORGANIC ,\n     email :  chelseaholt@gorganic.com ,\n     phone :  +1 (975) 593-2669 ,\n     address :  463 Coleman Street, Newcastle, Arizona, 1684 ,\n     about :  Mollit magna ea labore mollit sint qui nostrud anim duis. Ea est et enim sint officia. Pariatur occaecat aliquip ad velit. Amet cupidatat velit officia nulla dolore. Adipisicing mollit ullamco fugiat Lorem duis minim. Incididunt labore quis aliquip veniam.\\r\\n ,\n     registered :  2016-08-03T08:29:39 +05:00 ,\n     latitude : 67.066274,\n     longitude : -78.934842,\n     tags : [\n       ex ,\n       cillum ,\n       sunt ,\n       cupidatat ,\n       culpa ,\n       nostrud ,\n       sint \n    ],\n     friends : [\n      {\n         id : 0,\n         name :  Blanca Cline \n      },\n      {\n         id : 1,\n         name :  Christine Compton \n      },\n      {\n         id : 2,\n         name :  Sue Murphy \n      }\n    ],\n     greeting :  Hello, Chelsea Holt! You have 9 unread messages. ,\n     favoriteFruit :  apple \n  },\n  {\n     _id :  59b766457389819903326ae4 ,\n     index : 4,\n     guid :  da96c93f-57d3-4ea9-98b6-e29c02d4af9f ,\n     isActive : false,\n     balance :  $3,605.26 ,\n     picture :  http://placehold.it/32x32 ,\n     age : 30,\n     eyeColor :  blue ,\n     name :  Yolanda Mcfarland ,\n     gender :  female ,\n     company :  DIGIPRINT ,\n     email :  yolandamcfarland@digiprint.com ,\n     phone :  +1 (800) 447-2660 ,\n     address :  306 Boerum Place, Gasquet, Illinois, 1688 ,\n     about :  Consectetur dolore non anim in excepteur aliquip occaecat exercitation minim adipisicing. Reprehenderit sit eu ullamco consectetur consectetur Lorem aute nostrud ex nulla aliquip tempor laborum. Id pariatur ut veniam consequat enim excepteur qui. Sint et nisi mollit ad ut esse sunt quis proident consectetur officia. Ea adipisicing laborum occaecat Lorem reprehenderit ex cillum commodo dolor labore eiusmod nulla sit ipsum. Esse sit officia tempor ut amet. Officia ut veniam consequat et officia.\\r\\n ,\n     registered :  2017-07-18T11:13:41 +05:00 ,\n     latitude : 79.407789,\n     longitude : 116.313515,\n     tags : [\n       incididunt ,\n       aute ,\n       consectetur ,\n       mollit ,\n       incididunt ,\n       voluptate ,\n       sunt \n    ],\n     friends : [\n      {\n         id : 0,\n         name :  Barber Byrd \n      },\n      {\n         id : 1,\n         name :  Justice Travis \n      },\n      {\n         id : 2,\n         name :  Vega Mayer \n      }\n    ],\n     greeting :  Hello, Yolanda Mcfarland! You have 3 unread messages. ,\n     favoriteFruit :  strawberry \n  },\n  {\n     _id :  59b766451e1e27af6fbde83a ,\n     index : 5,\n     guid :  cee1a730-6115-4303-acae-b8b34a61e783 ,\n     isActive : true,\n     balance :  $2,025.11 ,\n     picture :  http://placehold.it/32x32 ,\n     age : 31,\n     eyeColor :  green ,\n     name :  Debora Fleming ,\n     gender :  female ,\n     company :  ENERSAVE ,\n     email :  deborafleming@enersave.com ,\n     phone :  +1 (980) 435-3399 ,\n     address :  339 Ovington Avenue, Orovada, Massachusetts, 3281 ,\n     about :  Esse tempor elit ad veniam. Ea aliquip elit nisi adipisicing adipisicing dolor. Qui adipisicing nostrud veniam ex est. Amet excepteur culpa quis ut.\\r\\n ,\n     registered :  2014-04-27T11:40:32 +05:00 ,\n     latitude : 29.545284,\n     longitude : 93.478955,\n     tags : [\n       adipisicing ,\n       occaecat ,\n       qui ,\n       irure ,\n       cillum ,\n       aliqua ,\n       non \n    ],\n     friends : [\n      {\n         id : 0,\n         name :  Louise Meadows \n      },\n      {\n         id : 1,\n         name :  Addie Lang \n      },\n      {\n         id : 2,\n         name :  Karyn Harmon \n      }\n    ],\n     greeting :  Hello, Debora Fleming! You have 3 unread messages. ,\n     favoriteFruit :  banana \n  }\n]", 
+            "location": "/signup/creative/#request", 
+            "text": "Headers:      Authorization: Bearer  token \n    Location: mx  POST  Content:  {\n    email : demo@mail.com ,\n    emailDoubleCheck : demo@mail.com ,\n    password : Password0fa4664e99c2 ,\n    newPassword :false,\n    passwordDoubleCheck : Password0fa4664e99c2 ,\n    name : cerebritos inc. ,\n    lastName : Jonh smith jonnes ,\n    bornDate : 1989-01-31T08:59:19 +06:00 ,\n    nationalIdentificationNumber : FASDFAS123123R ,\n    phoneNumber : 01325534363754 ,\n    acceptTerms :true,\n    taxIdentificationNumber : TAXDFAS123123R ,\n    addresses :[\n      {\n         street :  lorem impsu ,\n         externalNumber :  12 ,\n         internalNumber :  1b ,\n         city :  Mexico ,\n         country :  Mexico ,\n         municipality :  Ecatepec ,\n         neighborhood :  Magdalena ,\n         region :  32342 ,\n         defaultAddress : true\n      }\n    ],\n    hourlyRate :3,\n    experienceLevel :2\n}", 
             "title": "Request"
         }, 
         {
-            "location": "/singup/registration-creative/#response", 
-            "text": "[\n  {\n     _id :  59b766455822f0f207a6e1b0 ,\n     index : 0,\n     guid :  cf6273bd-f65c-49f9-bf59-b129bccf7546 ,\n     isActive : true,\n     balance :  $1,412.03 ,\n     picture :  http://placehold.it/32x32 ,\n     age : 35,\n     eyeColor :  green ,\n     name :  Hubbard Sosa ,\n     gender :  male ,\n     company :  FROLIX ,\n     email :  hubbardsosa@frolix.com ,\n     phone :  +1 (947) 537-3023 ,\n     address :  917 Tompkins Avenue, Grazierville, Alaska, 3895 ,\n     about :  Occaecat excepteur culpa Lorem enim deserunt consectetur ullamco labore velit labore. Exercitation consequat sunt culpa pariatur dolor nostrud labore voluptate officia laborum elit. Dolor ea laboris consectetur mollit nostrud incididunt ut sunt duis. Cillum aute quis nisi voluptate dolore consequat ipsum laborum nulla commodo. Est est excepteur et reprehenderit consequat do pariatur et qui. Duis anim occaecat nulla incididunt est laboris enim officia fugiat qui occaecat sint Lorem occaecat. Esse aute anim adipisicing exercitation nostrud est deserunt.\\r\\n ,\n     registered :  2015-08-02T02:09:53 +05:00 ,\n     latitude : -67.124037,\n     longitude : 113.473661,\n     tags : [\n       et ,\n       adipisicing ,\n       voluptate ,\n       esse ,\n       elit ,\n       aliqua ,\n       est \n    ],\n     friends : [\n      {\n         id : 0,\n         name :  Glover Gaines \n      },\n      {\n         id : 1,\n         name :  Wright Kirk \n      },\n      {\n         id : 2,\n         name :  Audra Paul \n      }\n    ],\n     greeting :  Hello, Hubbard Sosa! You have 9 unread messages. ,\n     favoriteFruit :  apple \n  },\n  {\n     _id :  59b76645882a39465e8533d4 ,\n     index : 1,\n     guid :  40923730-16d6-4c95-9614-88dfc2ec5563 ,\n     isActive : false,\n     balance :  $2,109.99 ,\n     picture :  http://placehold.it/32x32 ,\n     age : 22,\n     eyeColor :  green ,\n     name :  Eileen Baxter ,\n     gender :  female ,\n     company :  DEEPENDS ,\n     email :  eileenbaxter@deepends.com ,\n     phone :  +1 (954) 423-2689 ,\n     address :  558 Gates Avenue, Coalmont, Maryland, 2143 ,\n     about :  Aute est occaecat do quis Lorem cupidatat do. Quis aliqua irure excepteur laboris enim. Nisi voluptate do ex veniam. Laborum aliquip sunt veniam non tempor non. Sunt mollit eu amet labore sunt nisi. Et culpa id consequat tempor incididunt culpa nisi do.\\r\\n ,\n     registered :  2014-02-11T10:14:23 +06:00 ,\n     latitude : 80.234385,\n     longitude : 47.861373,\n     tags : [\n       aute ,\n       ex ,\n       sit ,\n       exercitation ,\n       ipsum ,\n       enim ,\n       enim \n    ],\n     friends : [\n      {\n         id : 0,\n         name :  Beverley Frye \n      },\n      {\n         id : 1,\n         name :  Porter Noel \n      },\n      {\n         id : 2,\n         name :  Young Norris \n      }\n    ],\n     greeting :  Hello, Eileen Baxter! You have 10 unread messages. ,\n     favoriteFruit :  banana \n  },\n  {\n     _id :  59b766452441a635d70d4cc3 ,\n     index : 2,\n     guid :  5f65d18d-a9ba-430e-b384-0fa4664e99c2 ,\n     isActive : false,\n     balance :  $1,744.07 ,\n     picture :  http://placehold.it/32x32 ,\n     age : 23,\n     eyeColor :  blue ,\n     name :  Tillman Mercer ,\n     gender :  male ,\n     company :  PHOTOBIN ,\n     email :  tillmanmercer@photobin.com ,\n     phone :  +1 (842) 425-2254 ,\n     address :  555 Louisa Street, Snyderville, Georgia, 8496 ,\n     about :  Lorem tempor officia do esse irure. Deserunt et cupidatat deserunt laboris laborum eu irure mollit Lorem nulla eu et eiusmod sunt. Ipsum excepteur excepteur laboris incididunt minim. Lorem aliquip quis in esse qui voluptate occaecat culpa eu proident proident exercitation. Adipisicing ullamco culpa fugiat quis in amet. Occaecat consequat enim dolore culpa incididunt occaecat id adipisicing nostrud aliquip adipisicing cillum aliquip.\\r\\n ,\n     registered :  2017-01-31T08:59:19 +06:00 ,\n     latitude : 88.411723,\n     longitude : -70.578953,\n     tags : [\n       exercitation ,\n       dolore ,\n       et ,\n       ea ,\n       sint ,\n       ut ,\n       do \n    ],\n     friends : [\n      {\n         id : 0,\n         name :  Mcknight Frost \n      },\n      {\n         id : 1,\n         name :  Jodi Oneill \n      },\n      {\n         id : 2,\n         name :  Wynn Burch \n      }\n    ],\n     greeting :  Hello, Tillman Mercer! You have 6 unread messages. ,\n     favoriteFruit :  apple \n  },\n  {\n     _id :  59b76645c8114f14e092a4db ,\n     index : 3,\n     guid :  cfe699fe-5136-430b-ad78-29e5d8c95ded ,\n     isActive : false,\n     balance :  $3,459.12 ,\n     picture :  http://placehold.it/32x32 ,\n     age : 20,\n     eyeColor :  brown ,\n     name :  Chelsea Holt ,\n     gender :  female ,\n     company :  GORGANIC ,\n     email :  chelseaholt@gorganic.com ,\n     phone :  +1 (975) 593-2669 ,\n     address :  463 Coleman Street, Newcastle, Arizona, 1684 ,\n     about :  Mollit magna ea labore mollit sint qui nostrud anim duis. Ea est et enim sint officia. Pariatur occaecat aliquip ad velit. Amet cupidatat velit officia nulla dolore. Adipisicing mollit ullamco fugiat Lorem duis minim. Incididunt labore quis aliquip veniam.\\r\\n ,\n     registered :  2016-08-03T08:29:39 +05:00 ,\n     latitude : 67.066274,\n     longitude : -78.934842,\n     tags : [\n       ex ,\n       cillum ,\n       sunt ,\n       cupidatat ,\n       culpa ,\n       nostrud ,\n       sint \n    ],\n     friends : [\n      {\n         id : 0,\n         name :  Blanca Cline \n      },\n      {\n         id : 1,\n         name :  Christine Compton \n      },\n      {\n         id : 2,\n         name :  Sue Murphy \n      }\n    ],\n     greeting :  Hello, Chelsea Holt! You have 9 unread messages. ,\n     favoriteFruit :  apple \n  },\n  {\n     _id :  59b766457389819903326ae4 ,\n     index : 4,\n     guid :  da96c93f-57d3-4ea9-98b6-e29c02d4af9f ,\n     isActive : false,\n     balance :  $3,605.26 ,\n     picture :  http://placehold.it/32x32 ,\n     age : 30,\n     eyeColor :  blue ,\n     name :  Yolanda Mcfarland ,\n     gender :  female ,\n     company :  DIGIPRINT ,\n     email :  yolandamcfarland@digiprint.com ,\n     phone :  +1 (800) 447-2660 ,\n     address :  306 Boerum Place, Gasquet, Illinois, 1688 ,\n     about :  Consectetur dolore non anim in excepteur aliquip occaecat exercitation minim adipisicing. Reprehenderit sit eu ullamco consectetur consectetur Lorem aute nostrud ex nulla aliquip tempor laborum. Id pariatur ut veniam consequat enim excepteur qui. Sint et nisi mollit ad ut esse sunt quis proident consectetur officia. Ea adipisicing laborum occaecat Lorem reprehenderit ex cillum commodo dolor labore eiusmod nulla sit ipsum. Esse sit officia tempor ut amet. Officia ut veniam consequat et officia.\\r\\n ,\n     registered :  2017-07-18T11:13:41 +05:00 ,\n     latitude : 79.407789,\n     longitude : 116.313515,\n     tags : [\n       incididunt ,\n       aute ,\n       consectetur ,\n       mollit ,\n       incididunt ,\n       voluptate ,\n       sunt \n    ],\n     friends : [\n      {\n         id : 0,\n         name :  Barber Byrd \n      },\n      {\n         id : 1,\n         name :  Justice Travis \n      },\n      {\n         id : 2,\n         name :  Vega Mayer \n      }\n    ],\n     greeting :  Hello, Yolanda Mcfarland! You have 3 unread messages. ,\n     favoriteFruit :  strawberry \n  },\n  {\n     _id :  59b766451e1e27af6fbde83a ,\n     index : 5,\n     guid :  cee1a730-6115-4303-acae-b8b34a61e783 ,\n     isActive : true,\n     balance :  $2,025.11 ,\n     picture :  http://placehold.it/32x32 ,\n     age : 31,\n     eyeColor :  green ,\n     name :  Debora Fleming ,\n     gender :  female ,\n     company :  ENERSAVE ,\n     email :  deborafleming@enersave.com ,\n     phone :  +1 (980) 435-3399 ,\n     address :  339 Ovington Avenue, Orovada, Massachusetts, 3281 ,\n     about :  Esse tempor elit ad veniam. Ea aliquip elit nisi adipisicing adipisicing dolor. Qui adipisicing nostrud veniam ex est. Amet excepteur culpa quis ut.\\r\\n ,\n     registered :  2014-04-27T11:40:32 +05:00 ,\n     latitude : 29.545284,\n     longitude : 93.478955,\n     tags : [\n       adipisicing ,\n       occaecat ,\n       qui ,\n       irure ,\n       cillum ,\n       aliqua ,\n       non \n    ],\n     friends : [\n      {\n         id : 0,\n         name :  Louise Meadows \n      },\n      {\n         id : 1,\n         name :  Addie Lang \n      },\n      {\n         id : 2,\n         name :  Karyn Harmon \n      }\n    ],\n     greeting :  Hello, Debora Fleming! You have 3 unread messages. ,\n     favoriteFruit :  banana \n  }\n]", 
-            "title": "Response"
+            "location": "/signup/creative/#response-success", 
+            "text": "", 
+            "title": "Response Success"
+        }, 
+        {
+            "location": "/signup/creative/#registered", 
+            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[],\n}", 
+            "title": "Registered"
+        }, 
+        {
+            "location": "/signup/creative/#response-errors", 
+            "text": "", 
+            "title": "Response Errors"
+        }, 
+        {
+            "location": "/signup/creative/#already-registered", 
+            "text": "HTTP Code:  402  {\n     message : already registered ,\n     context :[],\n}", 
+            "title": "Already registered"
+        }, 
+        {
+            "location": "/signup/creative/#banned-registration", 
+            "text": "HTTP Code:  402  {\n     message : banned registration ,\n     context :[],\n}", 
+            "title": "Banned registration"
+        }, 
+        {
+            "location": "/signup/creative/#incorrect-information-missing-fields", 
+            "text": "HTTP Code:  400  {\n     message : missing fields ,\n     context :[\n    {\n     phone : most numbers ,\n     email : already registred \n    }\n    ]\n}", 
+            "title": "Incorrect information / Missing fields"
+        }, 
+        {
+            "location": "/login/creative/", 
+            "text": "Login Creative\n\n\nRequest\n\n\nHeaders:\n\n\n    Authorization: Bearer \ntoken\n\n    Location: mx\n\n\n\n\nPOST\n Content:\n\n\n{\n   \nemail\n:\ndemo@mail.com\n,\n   \npassword\n:\nPassword0fa4664e99c2\n,\n   \npasswordDoubleCheck\n:\nPassword0fa4664e99c2\n,\n}\n\n\n\n\nResponse Success\n\n\nLoggedIn\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess LoggedIn\n,\n    \ncontext\n:[],\n}\n\n\n\n\nResponse Errors\n\n\nBad credentials\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\nbad credentials\n,\n    \ncontext\n:[],\n}\n\n\n\n\nBanned LoggedIn\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\nbanned LoggedIn\n,\n    \ncontext\n:[],\n}\n\n\n\n\nToken expired\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\ntoken expired\n,\n    \ncontext\n:[],\n}", 
+            "title": "Login Creative"
+        }, 
+        {
+            "location": "/login/creative/#login-creative", 
+            "text": "", 
+            "title": "Login Creative"
+        }, 
+        {
+            "location": "/login/creative/#request", 
+            "text": "Headers:      Authorization: Bearer  token \n    Location: mx  POST  Content:  {\n    email : demo@mail.com ,\n    password : Password0fa4664e99c2 ,\n    passwordDoubleCheck : Password0fa4664e99c2 ,\n}", 
+            "title": "Request"
+        }, 
+        {
+            "location": "/login/creative/#response-success", 
+            "text": "", 
+            "title": "Response Success"
+        }, 
+        {
+            "location": "/login/creative/#loggedin", 
+            "text": "HTTP Code:  200  {\n     message : success LoggedIn ,\n     context :[],\n}", 
+            "title": "LoggedIn"
+        }, 
+        {
+            "location": "/login/creative/#response-errors", 
+            "text": "", 
+            "title": "Response Errors"
+        }, 
+        {
+            "location": "/login/creative/#bad-credentials", 
+            "text": "HTTP Code:  402  {\n     message : bad credentials ,\n     context :[],\n}", 
+            "title": "Bad credentials"
+        }, 
+        {
+            "location": "/login/creative/#banned-loggedin", 
+            "text": "HTTP Code:  402  {\n     message : banned LoggedIn ,\n     context :[],\n}", 
+            "title": "Banned LoggedIn"
+        }, 
+        {
+            "location": "/login/creative/#token-expired", 
+            "text": "HTTP Code:  402  {\n     message : token expired ,\n     context :[],\n}", 
+            "title": "Token expired"
+        }, 
+        {
+            "location": "/signup/business/", 
+            "text": "Sign-Up Business\n\n\nRequest\n\n\nHeaders:\n\n\n    Authorization: Bearer \ntoken\n\n    Location: mx\n\n\n\n\nPOST\n Content:\n\n\n{\n   \nemail\n:\ndemo@mail.com\n,\n   \nemailDoubleCheck\n:\ndemo@mail.com\n,\n   \npassword\n:\nPassword0fa4664e99c2\n,\n   \nnewPassword\n:false,\n   \npasswordDoubleCheck\n:\nPassword0fa4664e99c2\n,\n   \nname\n:\ncerebritos inc.\n,\n   \nagentName\n:\nJonh smith jonnes\n,\n   \nbornDate\n:\n1989-01-31T08:59:19 +06:00\n,\n   \nnationalIdentificationNumber\n:\nFASDFAS123123R\n,\n   \nphoneNumber\n:\n01325534363754\n,\n   \nacceptTerms\n:true,\n   \ntaxIdentificationNumber\n:\nTAXDFAS123123R\n,\n   \naddresses\n:[\n      {\n        \nstreet\n: \nlorem impsu\n,\n        \nexternalNumber\n: \n12\n,\n        \ninternalNumber\n: \n1b\n,\n        \ncity\n: \nMexico\n,\n        \ncountry\n: \nMexico\n,\n        \nmunicipality\n: \nEcatepec\n,\n        \nneighborhood\n: \nMagdalena\n,\n        \nregion\n: \n32342\n,\n        \ndefaultAddress\n: true\n      }\n    ],\n   \nprojectPerYear\n:3,\n   \nteamSize\n:2\n}\n\n\n\n\nResponse Success\n\n\nRegistered\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[],\n}\n\n\n\n\nResponse Errors\n\n\nAlready registered\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\nalready registered\n,\n    \ncontext\n:[],\n}\n\n\n\n\nBanned registration\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\nbanned registration\n,\n    \ncontext\n:[],\n}\n\n\n\n\nIncorrect information / Missing fields\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nmissing fields\n,\n    \ncontext\n:[\n    {\n    \nphone\n:\nmost numbers\n,\n    \nemail\n:\nalready registred\n\n    }\n    ]\n}", 
+            "title": "Sign-Up Business"
+        }, 
+        {
+            "location": "/signup/business/#sign-up-business", 
+            "text": "", 
+            "title": "Sign-Up Business"
+        }, 
+        {
+            "location": "/signup/business/#request", 
+            "text": "Headers:      Authorization: Bearer  token \n    Location: mx  POST  Content:  {\n    email : demo@mail.com ,\n    emailDoubleCheck : demo@mail.com ,\n    password : Password0fa4664e99c2 ,\n    newPassword :false,\n    passwordDoubleCheck : Password0fa4664e99c2 ,\n    name : cerebritos inc. ,\n    agentName : Jonh smith jonnes ,\n    bornDate : 1989-01-31T08:59:19 +06:00 ,\n    nationalIdentificationNumber : FASDFAS123123R ,\n    phoneNumber : 01325534363754 ,\n    acceptTerms :true,\n    taxIdentificationNumber : TAXDFAS123123R ,\n    addresses :[\n      {\n         street :  lorem impsu ,\n         externalNumber :  12 ,\n         internalNumber :  1b ,\n         city :  Mexico ,\n         country :  Mexico ,\n         municipality :  Ecatepec ,\n         neighborhood :  Magdalena ,\n         region :  32342 ,\n         defaultAddress : true\n      }\n    ],\n    projectPerYear :3,\n    teamSize :2\n}", 
+            "title": "Request"
+        }, 
+        {
+            "location": "/signup/business/#response-success", 
+            "text": "", 
+            "title": "Response Success"
+        }, 
+        {
+            "location": "/signup/business/#registered", 
+            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[],\n}", 
+            "title": "Registered"
+        }, 
+        {
+            "location": "/signup/business/#response-errors", 
+            "text": "", 
+            "title": "Response Errors"
+        }, 
+        {
+            "location": "/signup/business/#already-registered", 
+            "text": "HTTP Code:  402  {\n     message : already registered ,\n     context :[],\n}", 
+            "title": "Already registered"
+        }, 
+        {
+            "location": "/signup/business/#banned-registration", 
+            "text": "HTTP Code:  402  {\n     message : banned registration ,\n     context :[],\n}", 
+            "title": "Banned registration"
+        }, 
+        {
+            "location": "/signup/business/#incorrect-information-missing-fields", 
+            "text": "HTTP Code:  400  {\n     message : missing fields ,\n     context :[\n    {\n     phone : most numbers ,\n     email : already registred \n    }\n    ]\n}", 
+            "title": "Incorrect information / Missing fields"
+        }, 
+        {
+            "location": "/login/business/", 
+            "text": "Login Business\n\n\nRequest\n\n\nHeaders:\n\n\n    Authorization: Bearer \ntoken\n\n    Location: mx\n\n\n\n\nPOST\n Content:\n\n\n{\n   \nemail\n:\ndemo@mail.com\n,\n   \npassword\n:\nPassword0fa4664e99c2\n,\n   \npasswordDoubleCheck\n:\nPassword0fa4664e99c2\n,\n}\n\n\n\n\nResponse Success\n\n\nLoggedIn\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess LoggedIn\n,\n    \ncontext\n:[],\n}\n\n\n\n\nResponse Errors\n\n\nBad credentials\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\nbad credentials\n,\n    \ncontext\n:[],\n}\n\n\n\n\nBanned LoggedIn\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\nbanned LoggedIn\n,\n    \ncontext\n:[],\n}\n\n\n\n\nToken expired\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\ntoken expired\n,\n    \ncontext\n:[],\n}", 
+            "title": "Login Business"
+        }, 
+        {
+            "location": "/login/business/#login-business", 
+            "text": "", 
+            "title": "Login Business"
+        }, 
+        {
+            "location": "/login/business/#request", 
+            "text": "Headers:      Authorization: Bearer  token \n    Location: mx  POST  Content:  {\n    email : demo@mail.com ,\n    password : Password0fa4664e99c2 ,\n    passwordDoubleCheck : Password0fa4664e99c2 ,\n}", 
+            "title": "Request"
+        }, 
+        {
+            "location": "/login/business/#response-success", 
+            "text": "", 
+            "title": "Response Success"
+        }, 
+        {
+            "location": "/login/business/#loggedin", 
+            "text": "HTTP Code:  200  {\n     message : success LoggedIn ,\n     context :[],\n}", 
+            "title": "LoggedIn"
+        }, 
+        {
+            "location": "/login/business/#response-errors", 
+            "text": "", 
+            "title": "Response Errors"
+        }, 
+        {
+            "location": "/login/business/#bad-credentials", 
+            "text": "HTTP Code:  402  {\n     message : bad credentials ,\n     context :[],\n}", 
+            "title": "Bad credentials"
+        }, 
+        {
+            "location": "/login/business/#banned-loggedin", 
+            "text": "HTTP Code:  402  {\n     message : banned LoggedIn ,\n     context :[],\n}", 
+            "title": "Banned LoggedIn"
+        }, 
+        {
+            "location": "/login/business/#token-expired", 
+            "text": "HTTP Code:  402  {\n     message : token expired ,\n     context :[],\n}", 
+            "title": "Token expired"
+        }, 
+        {
+            "location": "/profile/general/", 
+            "text": "Information General Creative / Business\n\n\nRequest\n\n\nHeaders:\n\n\n    Authorization: Bearer \ntoken\n\n    Location: mx\n\n\n\n\nGET\n Url:\n\n\nhttps://www.cerebritos.mx/p/general/\nidCreative\n\n\n\n\n\nPOST\n Content:\n\n\n{\n   \nemail\n:\ndemo@mail.com\n,\n   \nemailDoubleCheck\n:\ndemo@mail.com\n,\n   \npassword\n:\nPassword0fa4664e99c2\n,\n   \nnewPassword\n:false,\n   \npasswordDoubleCheck\n:\nPassword0fa4664e99c2\n,\n   \nname\n:\ncerebritos inc.\n,\n   \nagentName\n:\nJonh smith jonnes\n,\n   \nbornDate\n:\n1989-01-31T08:59:19 +06:00\n,\n   \nnationalIdentificationNumber\n:\nFASDFAS123123R\n,\n   \nphoneNumber\n:\n01325534363754\n,\n   \nacceptTerms\n:true,\n   \ntaxIdentificationNumber\n:\nTAXDFAS123123R\n,\n   \nprojectPerYear\n:3,\n   \nteamSize\n:2\n}\n\n\n\n\nResponse Success\n\n\nProfile found\n\n\nHTTP Code: \n200\n\n\nResponse business:\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[\n    {\n       \nid\n:\n123124\n,\n       \nidBrain\n:\n832952\n,\n       \nemail\n:\ndemo@mail.com\n,\n       \nemailDoubleCheck\n:\ndemo@mail.com\n,\n       \npassword\n:\nPassword0fa4664e99c2\n,\n       \nnewPassword\n:false,\n       \npasswordDoubleCheck\n:\nPassword0fa4664e99c2\n,\n       \nname\n:\ncerebritos inc.\n,\n       \nagentName\n:\nJonh smith jonnes\n,\n       \nbornDate\n:\n1989-01-31T08:59:19 +06:00\n,\n       \nnationalIdentificationNumber\n:\nFASDFAS123123R\n,\n       \nphoneNumber\n:\n01325534363754\n,\n       \nacceptTerms\n:true,\n       \ntaxIdentificationNumber\n:\nTAXDFAS123123R\n,\n       \naddresses\n:[\n          {\n            \nstreet\n: \nlorem impsu\n,\n            \nexternalNumber\n: \n12\n,\n            \ninternalNumber\n: \n1b\n,\n            \ncity\n: \nMexico\n,\n            \ncountry\n: \nMexico\n,\n            \nmunicipality\n: \nEcatepec\n,\n            \nneighborhood\n: \nMagdalena\n,\n            \nregion\n: \n32342\n,\n            \ndefaultAddress\n: true\n          }\n        ],\n       \nprojectPerYear\n:3,\n       \nteamSize\n:2\n    }\n    ],\n}\n\n\n\n\nResponse creative:\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[\n    {\n       \nid\n:\n123124\n,\n       \nidBrain\n:\n832952\n,\n       \nemail\n:\ndemo@mail.com\n,\n       \nemailDoubleCheck\n:\ndemo@mail.com\n,\n       \npassword\n:\nPassword0fa4664e99c2\n,\n       \nnewPassword\n:false,\n       \npasswordDoubleCheck\n:\nPassword0fa4664e99c2\n,\n       \nname\n:\ncerebritos inc.\n,\n       \nlastName\n:\nJonh smith jonnes\n,\n       \nbornDate\n:\n1989-01-31T08:59:19 +06:00\n,\n       \nnationalIdentificationNumber\n:\nFASDFAS123123R\n,\n       \nphoneNumber\n:\n01325534363754\n,\n       \nacceptTerms\n:true,\n       \ntaxIdentificationNumber\n:\nTAXDFAS123123R\n,\n       \naddresses\n:[\n          {\n            \nstreet\n: \nlorem impsu\n,\n            \nexternalNumber\n: \n12\n,\n            \ninternalNumber\n: \n1b\n,\n            \ncity\n: \nMexico\n,\n            \ncountry\n: \nMexico\n,\n            \nmunicipality\n: \nEcatepec\n,\n            \nneighborhood\n: \nMagdalena\n,\n            \nregion\n: \n32342\n,\n            \ndefaultAddress\n: true\n          }\n        ],\n       \nhourlyRate\n:3,\n       \nexperienceLevel\n:2\n    }\n    ],\n}\n\n\n\n\nUpdated profile\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[],\n}\n\n\n\n\nResponse Errors\n\n\nProfile not found\n\n\nHTTP Code: \n404\n\n\n{\n    \nmessage\n:\nprofile not found\n,\n    \ncontext\n:[],\n}\n\n\n\n\nToken expired\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\ntoken expired\n,\n    \ncontext\n:[],\n}\n\n\n\n\nIncorrect information / Missing fields\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\nmissing fields\n,\n    \ncontext\n:[\n    {\n    \nphone\n:\nmost numbers\n,\n    \nemail\n:\nalready registred\n\n    }\n    ]\n}", 
+            "title": "General information"
+        }, 
+        {
+            "location": "/profile/general/#information-general-creative-business", 
+            "text": "", 
+            "title": "Information General Creative / Business"
+        }, 
+        {
+            "location": "/profile/general/#request", 
+            "text": "Headers:      Authorization: Bearer  token \n    Location: mx  GET  Url:  https://www.cerebritos.mx/p/general/ idCreative   POST  Content:  {\n    email : demo@mail.com ,\n    emailDoubleCheck : demo@mail.com ,\n    password : Password0fa4664e99c2 ,\n    newPassword :false,\n    passwordDoubleCheck : Password0fa4664e99c2 ,\n    name : cerebritos inc. ,\n    agentName : Jonh smith jonnes ,\n    bornDate : 1989-01-31T08:59:19 +06:00 ,\n    nationalIdentificationNumber : FASDFAS123123R ,\n    phoneNumber : 01325534363754 ,\n    acceptTerms :true,\n    taxIdentificationNumber : TAXDFAS123123R ,\n    projectPerYear :3,\n    teamSize :2\n}", 
+            "title": "Request"
+        }, 
+        {
+            "location": "/profile/general/#response-success", 
+            "text": "", 
+            "title": "Response Success"
+        }, 
+        {
+            "location": "/profile/general/#profile-found", 
+            "text": "HTTP Code:  200  Response business:  {\n     message : success ,\n     context :[\n    {\n        id : 123124 ,\n        idBrain : 832952 ,\n        email : demo@mail.com ,\n        emailDoubleCheck : demo@mail.com ,\n        password : Password0fa4664e99c2 ,\n        newPassword :false,\n        passwordDoubleCheck : Password0fa4664e99c2 ,\n        name : cerebritos inc. ,\n        agentName : Jonh smith jonnes ,\n        bornDate : 1989-01-31T08:59:19 +06:00 ,\n        nationalIdentificationNumber : FASDFAS123123R ,\n        phoneNumber : 01325534363754 ,\n        acceptTerms :true,\n        taxIdentificationNumber : TAXDFAS123123R ,\n        addresses :[\n          {\n             street :  lorem impsu ,\n             externalNumber :  12 ,\n             internalNumber :  1b ,\n             city :  Mexico ,\n             country :  Mexico ,\n             municipality :  Ecatepec ,\n             neighborhood :  Magdalena ,\n             region :  32342 ,\n             defaultAddress : true\n          }\n        ],\n        projectPerYear :3,\n        teamSize :2\n    }\n    ],\n}  Response creative:  {\n     message : success ,\n     context :[\n    {\n        id : 123124 ,\n        idBrain : 832952 ,\n        email : demo@mail.com ,\n        emailDoubleCheck : demo@mail.com ,\n        password : Password0fa4664e99c2 ,\n        newPassword :false,\n        passwordDoubleCheck : Password0fa4664e99c2 ,\n        name : cerebritos inc. ,\n        lastName : Jonh smith jonnes ,\n        bornDate : 1989-01-31T08:59:19 +06:00 ,\n        nationalIdentificationNumber : FASDFAS123123R ,\n        phoneNumber : 01325534363754 ,\n        acceptTerms :true,\n        taxIdentificationNumber : TAXDFAS123123R ,\n        addresses :[\n          {\n             street :  lorem impsu ,\n             externalNumber :  12 ,\n             internalNumber :  1b ,\n             city :  Mexico ,\n             country :  Mexico ,\n             municipality :  Ecatepec ,\n             neighborhood :  Magdalena ,\n             region :  32342 ,\n             defaultAddress : true\n          }\n        ],\n        hourlyRate :3,\n        experienceLevel :2\n    }\n    ],\n}", 
+            "title": "Profile found"
+        }, 
+        {
+            "location": "/profile/general/#updated-profile", 
+            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[],\n}", 
+            "title": "Updated profile"
+        }, 
+        {
+            "location": "/profile/general/#response-errors", 
+            "text": "", 
+            "title": "Response Errors"
+        }, 
+        {
+            "location": "/profile/general/#profile-not-found", 
+            "text": "HTTP Code:  404  {\n     message : profile not found ,\n     context :[],\n}", 
+            "title": "Profile not found"
+        }, 
+        {
+            "location": "/profile/general/#token-expired", 
+            "text": "HTTP Code:  402  {\n     message : token expired ,\n     context :[],\n}", 
+            "title": "Token expired"
+        }, 
+        {
+            "location": "/profile/general/#incorrect-information-missing-fields", 
+            "text": "HTTP Code:  402  {\n     message : missing fields ,\n     context :[\n    {\n     phone : most numbers ,\n     email : already registred \n    }\n    ]\n}", 
+            "title": "Incorrect information / Missing fields"
+        }, 
+        {
+            "location": "/profile/school/", 
+            "text": "Information School Creative\n\n\nRequest\n\n\nHeaders:\n\n\n    Authorization: Bearer \ntoken\n\n    Location: mx\n\n\n\n\nGET\n Url:\n\n\nhttps://www.cerebritos.mx/p/school/\nidCreative\n\n\n\n\n\nPOST\n Content:\n\n\n[\n    {\n        \nname\n: \nintituto albert smith state\n,\n        \ncertificate\n:true,\n        \ntitle\n:\nsystems engineer\n\n        \nstartYear\n: \n2012-01-31T08:59:19 +06:00\n,\n        \nendYear\n: \n2015-01-31T08:59:19 +06:00\n,\n        \ntruncated career\n:false\n    },\n    {\n        \nname\n: \nuniversidad panamericana\n,\n        \ncertificate\n:false,\n        \ntitle\n:\nnone\n\n        \nstartYear\n: \n2016-01-31T08:59:19 +06:00\n,\n        \nendYear\n: \n2016-01-31T08:59:19 +06:00\n,\n        \ntruncated career\n:true\n    }\n]\n\n\n\n\nResponse Success\n\n\nProfile found\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[\n    {\n       \nid\n:\n123124\n,\n       \nidBrain\n:\n832952\n,\n       \nskills\n:[\n            {\n                \n0\n: \nintituto albert smith state\n,\n                \n1\n:true,\n                \n2\n:\nsystems engineer\n,\n                \n3\n: \n2012-01-31T08:59:19 +06:00\n,\n                \n4\n: \n2015-01-31T08:59:19 +06:00\n,\n                \ntruncatedCareer\n:false\n            },\n            {\n                \nname\n: \nuniversidad panamericana\n,\n                \ncertificate\n:false,\n                \ntitle\n:\nnone\n,\n                \nstartYear\n: \n2016-01-31T08:59:19 +06:00\n,\n                \nendYear\n: \n2016-01-31T08:59:19 +06:00\n,\n                \ntruncatedCareer\n:true\n            }\n        ],\n    }\n    ],\n}\n\n\n\n\nUpdated profile\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[],\n}\n\n\n\n\nResponse Errors\n\n\nProfile not found\n\n\nHTTP Code: \n404\n\n\n{\n    \nmessage\n:\nProfile not found\n,\n    \ncontext\n:[],\n}\n\n\n\n\nToken expired\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\ntoken expired\n,\n    \ncontext\n:[],\n}\n\n\n\n\nIncorrect information / Missing fields\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nmissing fields\n,\n    \ncontext\n:[\n    {\n    \nskills\n:\nmissing data\n\n    }\n    ]\n}", 
+            "title": "School information"
+        }, 
+        {
+            "location": "/profile/school/#information-school-creative", 
+            "text": "", 
+            "title": "Information School Creative"
+        }, 
+        {
+            "location": "/profile/school/#request", 
+            "text": "Headers:      Authorization: Bearer  token \n    Location: mx  GET  Url:  https://www.cerebritos.mx/p/school/ idCreative   POST  Content:  [\n    {\n         name :  intituto albert smith state ,\n         certificate :true,\n         title : systems engineer \n         startYear :  2012-01-31T08:59:19 +06:00 ,\n         endYear :  2015-01-31T08:59:19 +06:00 ,\n         truncated career :false\n    },\n    {\n         name :  universidad panamericana ,\n         certificate :false,\n         title : none \n         startYear :  2016-01-31T08:59:19 +06:00 ,\n         endYear :  2016-01-31T08:59:19 +06:00 ,\n         truncated career :true\n    }\n]", 
+            "title": "Request"
+        }, 
+        {
+            "location": "/profile/school/#response-success", 
+            "text": "", 
+            "title": "Response Success"
+        }, 
+        {
+            "location": "/profile/school/#profile-found", 
+            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[\n    {\n        id : 123124 ,\n        idBrain : 832952 ,\n        skills :[\n            {\n                 0 :  intituto albert smith state ,\n                 1 :true,\n                 2 : systems engineer ,\n                 3 :  2012-01-31T08:59:19 +06:00 ,\n                 4 :  2015-01-31T08:59:19 +06:00 ,\n                 truncatedCareer :false\n            },\n            {\n                 name :  universidad panamericana ,\n                 certificate :false,\n                 title : none ,\n                 startYear :  2016-01-31T08:59:19 +06:00 ,\n                 endYear :  2016-01-31T08:59:19 +06:00 ,\n                 truncatedCareer :true\n            }\n        ],\n    }\n    ],\n}", 
+            "title": "Profile found"
+        }, 
+        {
+            "location": "/profile/school/#updated-profile", 
+            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[],\n}", 
+            "title": "Updated profile"
+        }, 
+        {
+            "location": "/profile/school/#response-errors", 
+            "text": "", 
+            "title": "Response Errors"
+        }, 
+        {
+            "location": "/profile/school/#profile-not-found", 
+            "text": "HTTP Code:  404  {\n     message : Profile not found ,\n     context :[],\n}", 
+            "title": "Profile not found"
+        }, 
+        {
+            "location": "/profile/school/#token-expired", 
+            "text": "HTTP Code:  402  {\n     message : token expired ,\n     context :[],\n}", 
+            "title": "Token expired"
+        }, 
+        {
+            "location": "/profile/school/#incorrect-information-missing-fields", 
+            "text": "HTTP Code:  400  {\n     message : missing fields ,\n     context :[\n    {\n     skills : missing data \n    }\n    ]\n}", 
+            "title": "Incorrect information / Missing fields"
+        }, 
+        {
+            "location": "/profile/skills/", 
+            "text": "Information General Creative / Business\n\n\nRequest\n\n\nHeaders:\n\n\n    Authorization: Bearer \ntoken\n\n    Location: mx\n\n\n\n\nGET\n Url:\n\n\nhttps://www.cerebritos.mx/p/skills/\nidCreative\n\n\n\n\n\nPOST\n Content:\n\n\n{\n   \ntypesOffers\n:3,\n   \ntypesAreas\n:[\n            {\n            \n0\n:\nserivice network\n,\n            \n1\n:\ndevelop\n,\n            \n2\n:\nsupport\n,\n            \n3\n:\nanalitics\n,\n            \n4\n:\ncommunity manager\n\n            }\n        ],\n   \nskills\n:[\n        {\n            \n0\n:\nPHP\n,\n            \n1\n:\nSCRUM\n,\n            \n2\n:\nSLACK\n,\n            \n3\n:\nWATCH TV\n,\n            \n4\n:\nPIZZA\n,\n            \n5\n:\nWORD\n\n        }\n    ],\n    \nexperienceLevel\n:3\n}\n\n\n\n\nResponse Success\n\n\nProfile found\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[\n            {\n           \ntypesOffers\n:3,\n           \ntypesAreas\n:[\n                    {\n                    \n0\n:\nserivice network\n,\n                    \n1\n:\ndevelop\n,\n                    \n2\n:\nsupport\n,\n                    \n3\n:\nanalitics\n,\n                    \n4\n:\ncommunity manager\n\n                    }\n                ],\n           \nskills\n:[\n                {\n                    \n0\n:\nPHP\n,\n                    \n1\n:\nSCRUM\n,\n                    \n2\n:\nSLACK\n,\n                    \n3\n:\nWATCH TV\n,\n                    \n4\n:\nPIZZA\n,\n                    \n5\n:\nWORD\n\n                }\n            ],\n            \nexperienceLevel\n:3\n        }\n    ]\n}\n\n\n\n\nUpdated profile\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[],\n}\n\n\n\n\nResponse Errors\n\n\nProfile not found\n\n\nHTTP Code: \n404\n\n\n{\n    \nmessage\n:\nProfile not found\n,\n    \ncontext\n:[],\n}\n\n\n\n\nToken expired\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\ntoken expired\n,\n    \ncontext\n:[],\n}\n\n\n\n\nIncorrect information / Missing fields\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nmissing fields\n,\n    \ncontext\n:[\n    {\n    \ntypesOffers\n:3,\n    \nexperienceLevel\n:3\n    }\n    ]\n}", 
+            "title": "Skills information"
+        }, 
+        {
+            "location": "/profile/skills/#information-general-creative-business", 
+            "text": "", 
+            "title": "Information General Creative / Business"
+        }, 
+        {
+            "location": "/profile/skills/#request", 
+            "text": "Headers:      Authorization: Bearer  token \n    Location: mx  GET  Url:  https://www.cerebritos.mx/p/skills/ idCreative   POST  Content:  {\n    typesOffers :3,\n    typesAreas :[\n            {\n             0 : serivice network ,\n             1 : develop ,\n             2 : support ,\n             3 : analitics ,\n             4 : community manager \n            }\n        ],\n    skills :[\n        {\n             0 : PHP ,\n             1 : SCRUM ,\n             2 : SLACK ,\n             3 : WATCH TV ,\n             4 : PIZZA ,\n             5 : WORD \n        }\n    ],\n     experienceLevel :3\n}", 
+            "title": "Request"
+        }, 
+        {
+            "location": "/profile/skills/#response-success", 
+            "text": "", 
+            "title": "Response Success"
+        }, 
+        {
+            "location": "/profile/skills/#profile-found", 
+            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[\n            {\n            typesOffers :3,\n            typesAreas :[\n                    {\n                     0 : serivice network ,\n                     1 : develop ,\n                     2 : support ,\n                     3 : analitics ,\n                     4 : community manager \n                    }\n                ],\n            skills :[\n                {\n                     0 : PHP ,\n                     1 : SCRUM ,\n                     2 : SLACK ,\n                     3 : WATCH TV ,\n                     4 : PIZZA ,\n                     5 : WORD \n                }\n            ],\n             experienceLevel :3\n        }\n    ]\n}", 
+            "title": "Profile found"
+        }, 
+        {
+            "location": "/profile/skills/#updated-profile", 
+            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[],\n}", 
+            "title": "Updated profile"
+        }, 
+        {
+            "location": "/profile/skills/#response-errors", 
+            "text": "", 
+            "title": "Response Errors"
+        }, 
+        {
+            "location": "/profile/skills/#profile-not-found", 
+            "text": "HTTP Code:  404  {\n     message : Profile not found ,\n     context :[],\n}", 
+            "title": "Profile not found"
+        }, 
+        {
+            "location": "/profile/skills/#token-expired", 
+            "text": "HTTP Code:  402  {\n     message : token expired ,\n     context :[],\n}", 
+            "title": "Token expired"
+        }, 
+        {
+            "location": "/profile/skills/#incorrect-information-missing-fields", 
+            "text": "HTTP Code:  400  {\n     message : missing fields ,\n     context :[\n    {\n     typesOffers :3,\n     experienceLevel :3\n    }\n    ]\n}", 
+            "title": "Incorrect information / Missing fields"
+        }, 
+        {
+            "location": "/profile/membership/", 
+            "text": "Information Membership Creative / Business\n\n\nRequest\n\n\nHeaders:\n\n\n    Authorization: Bearer \ntoken\n\n    Location: mx\n\n\n\n\nGET\n Url:\n\n\nhttps://www.cerebritos.mx/p/membership/\nidCreative\n\n\n\n\n\nResponse Success\n\n\nProfile found\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[\n    {\n       \nid\n:\n123124\n,\n       \nidBrain\n:\n832952\n,\n       \ntypeUser\n:1,\n       \nidTypeMembership\n:3,\n       \nstartDate\n:\n2017-01-31T08:59:19 +06:00\n,\n       \nendDate\n:\n2018-01-31T08:59:19 +06:00\n,\n    }\n    ],\n}\n\n\n\n\nResponse Errors\n\n\nProfile not found\n\n\nHTTP Code: \n404\n\n\n{\n    \nmessage\n:\nProfile not found\n,\n    \ncontext\n:[],\n}\n\n\n\n\nToken expired\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\ntoken expired\n,\n    \ncontext\n:[],\n}", 
+            "title": "Membership information"
+        }, 
+        {
+            "location": "/profile/membership/#information-membership-creative-business", 
+            "text": "", 
+            "title": "Information Membership Creative / Business"
+        }, 
+        {
+            "location": "/profile/membership/#request", 
+            "text": "Headers:      Authorization: Bearer  token \n    Location: mx  GET  Url:  https://www.cerebritos.mx/p/membership/ idCreative", 
+            "title": "Request"
+        }, 
+        {
+            "location": "/profile/membership/#response-success", 
+            "text": "", 
+            "title": "Response Success"
+        }, 
+        {
+            "location": "/profile/membership/#profile-found", 
+            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[\n    {\n        id : 123124 ,\n        idBrain : 832952 ,\n        typeUser :1,\n        idTypeMembership :3,\n        startDate : 2017-01-31T08:59:19 +06:00 ,\n        endDate : 2018-01-31T08:59:19 +06:00 ,\n    }\n    ],\n}", 
+            "title": "Profile found"
+        }, 
+        {
+            "location": "/profile/membership/#response-errors", 
+            "text": "", 
+            "title": "Response Errors"
+        }, 
+        {
+            "location": "/profile/membership/#profile-not-found", 
+            "text": "HTTP Code:  404  {\n     message : Profile not found ,\n     context :[],\n}", 
+            "title": "Profile not found"
+        }, 
+        {
+            "location": "/profile/membership/#token-expired", 
+            "text": "HTTP Code:  402  {\n     message : token expired ,\n     context :[],\n}", 
+            "title": "Token expired"
+        }, 
+        {
+            "location": "/profile/payment/", 
+            "text": "Information Payment Creative / Business\n\n\nRequest\n\n\nHeaders:\n\n\n    Authorization: Bearer \ntoken\n\n    Location: mx\n\n\n\n\nGET\n Url:\n\n\nhttps://www.cerebritos.mx/p/payment/\nidCreative\n\n\n\n\n\nPOST\n Content:\n\n\n{\n    \nccn\n:\n42908304012957057\n,\n    \ncardType\n:1,\n    \nexpirationDate\n:\n0220\n,\n    \ncsc\n:1312,\n    \ndefaultAddess\n:false,\n    \naddresses\n:[\n        {\n        \nstreet\n: \nlorem impsu\n,\n        \nexternalNumber\n: \n12\n,\n        \ninternalNumber\n: \n1b\n,\n        \ncity\n: \nMexico\n,\n        \ncountry\n: \nMexico\n,\n        \nmunicipality\n: \nEcatepec\n,\n        \nneighborhood\n: \nMagdalena\n,\n        \nregion\n: \n32342\n,\n        \ndefaultAddress\n: true\n        }\n    ],\n}\n\n\n\n\nResponse Success\n\n\nProfile found\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[\n        {\n        \nccn\n:\n42908304012957057\n,\n        \ncardType\n:1,\n        \nexpirationDate\n:\n0220\n,\n        \ncsc\n:1312,\n        \ndefaultAddess\n:false,\n        \naddresses\n:[\n            {\n            \nstreet\n: \nlorem impsu\n,\n            \nexternalNumber\n: \n12\n,\n            \ninternalNumber\n: \n1b\n,\n            \ncity\n: \nMexico\n,\n            \ncountry\n: \nMexico\n,\n            \nmunicipality\n: \nEcatepec\n,\n            \nneighborhood\n: \nMagdalena\n,\n            \nregion\n: \n32342\n,\n            \ndefaultAddress\n: true\n            }\n        ]\n        }\n    ]\n}\n\n\n\n\nUpdated profile\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[],\n}\n\n\n\n\nResponse Errors\n\n\nProfile not found\n\n\nHTTP Code: \n404\n\n\n{\n    \nmessage\n:\nprofile not found\n,\n    \ncontext\n:[],\n}\n\n\n\n\nCard validation failed\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\ncard validation failed\n,\n    \ncontext\n:[\n    {\n    \nerror\n:\nbanned credit card number\n\n    }\n    ],\n}\n\n\n\n\nToken expired\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\ntoken expired\n,\n    \ncontext\n:[],\n}\n\n\n\n\nIncorrect information / Missing fields\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nmissing fields\n,\n    \ncontext\n:[\n    {\n    \nccn\n:\ninvalid number\n\n    }\n    ]\n}", 
+            "title": "Payment information"
+        }, 
+        {
+            "location": "/profile/payment/#information-payment-creative-business", 
+            "text": "", 
+            "title": "Information Payment Creative / Business"
+        }, 
+        {
+            "location": "/profile/payment/#request", 
+            "text": "Headers:      Authorization: Bearer  token \n    Location: mx  GET  Url:  https://www.cerebritos.mx/p/payment/ idCreative   POST  Content:  {\n     ccn : 42908304012957057 ,\n     cardType :1,\n     expirationDate : 0220 ,\n     csc :1312,\n     defaultAddess :false,\n     addresses :[\n        {\n         street :  lorem impsu ,\n         externalNumber :  12 ,\n         internalNumber :  1b ,\n         city :  Mexico ,\n         country :  Mexico ,\n         municipality :  Ecatepec ,\n         neighborhood :  Magdalena ,\n         region :  32342 ,\n         defaultAddress : true\n        }\n    ],\n}", 
+            "title": "Request"
+        }, 
+        {
+            "location": "/profile/payment/#response-success", 
+            "text": "", 
+            "title": "Response Success"
+        }, 
+        {
+            "location": "/profile/payment/#profile-found", 
+            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[\n        {\n         ccn : 42908304012957057 ,\n         cardType :1,\n         expirationDate : 0220 ,\n         csc :1312,\n         defaultAddess :false,\n         addresses :[\n            {\n             street :  lorem impsu ,\n             externalNumber :  12 ,\n             internalNumber :  1b ,\n             city :  Mexico ,\n             country :  Mexico ,\n             municipality :  Ecatepec ,\n             neighborhood :  Magdalena ,\n             region :  32342 ,\n             defaultAddress : true\n            }\n        ]\n        }\n    ]\n}", 
+            "title": "Profile found"
+        }, 
+        {
+            "location": "/profile/payment/#updated-profile", 
+            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[],\n}", 
+            "title": "Updated profile"
+        }, 
+        {
+            "location": "/profile/payment/#response-errors", 
+            "text": "", 
+            "title": "Response Errors"
+        }, 
+        {
+            "location": "/profile/payment/#profile-not-found", 
+            "text": "HTTP Code:  404  {\n     message : profile not found ,\n     context :[],\n}", 
+            "title": "Profile not found"
+        }, 
+        {
+            "location": "/profile/payment/#card-validation-failed", 
+            "text": "HTTP Code:  400  {\n     message : card validation failed ,\n     context :[\n    {\n     error : banned credit card number \n    }\n    ],\n}", 
+            "title": "Card validation failed"
+        }, 
+        {
+            "location": "/profile/payment/#token-expired", 
+            "text": "HTTP Code:  402  {\n     message : token expired ,\n     context :[],\n}", 
+            "title": "Token expired"
+        }, 
+        {
+            "location": "/profile/payment/#incorrect-information-missing-fields", 
+            "text": "HTTP Code:  400  {\n     message : missing fields ,\n     context :[\n    {\n     ccn : invalid number \n    }\n    ]\n}", 
+            "title": "Incorrect information / Missing fields"
+        }, 
+        {
+            "location": "/profile/project-bag/", 
+            "text": "Information Project Bag Creative / Business\n\n\nRequest\n\n\nHeaders:\n\n\n    Authorization: Bearer \ntoken\n\n    Location: mx\n\n\n\n\nGET\n Url:\n\n\nhttps://www.cerebritos.mx/p/project_bag/\nidCreative\n\n\n\n\n\nResponse Success\n\n\nProfile found\n\n\nHTTP Code: \n200\n\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[\n        {\n            \nid\n:\n1313\n,\n            \nprojects\n:[\n                \nfinalized\n:[\n                    {\n                        \nstatus\n:paid,\n                        \ntittle\n:\nNulla sodales, tortor ut efficitur mollis.\n,\n                        \nshortDescription\n:\nPraesent ut arcu imperdiet, ultricies sem eu, ultrices neque. Morbi ut tempor dolor. Suspendisse rutrum, est sed egestas condimentum, risus diam tempus lectus, at bibendum libero felis vel nisl.\n,\n                        \nreview\n:\nPraesent ut arcu imperdiet, ultricies sem eu.\n,\n                        \ncomment\n:\nIn mollis, tortor a aliquet vulputate, orci ex viverra eros, nec euismod ipsum ex non felis.\n\n                    },\n                    {\n                        \nstatus\n:paid,\n                        \ntittle\n:\nNulla sodales, tortor ut efficitur mollis.\n,\n                        \nshortDescription\n:\nPraesent ut arcu imperdiet, ultricies sem eu, ultrices neque. Morbi ut tempor dolor. Suspendisse rutrum, est sed egestas condimentum, risus diam tempus lectus, at bibendum libero felis vel nisl.\n,\n                        \nreview\n:\nPraesent ut arcu imperdiet, ultricies sem eu.\n,\n                        \ncomment\n:\nIn mollis, tortor a aliquet vulputate, orci ex viverra eros, nec euismod ipsum ex non felis.\n\n                    }\n                ],\n                \npitch\n:[\n                    {\n                        \nstatus\n:bid,\n                        \nlinkBrief\n:\nhttp://www.cerebritos.mx/b/312313\n,\n                        \ntittle\n:\nNulla sodales, tortor ut efficitur mollis.\n,\n                        \nhook\n:\nPraesent ut arcu imperdiet, ultricies sem eu, ultrices neque. Morbi ut tempor dolor. Suspendisse rutrum, est sed egestas condimentum, risus diam tempus lectus, at bibendum libero felis vel nisl.\n\n                    }\n                ]\n            ]\n        }\n    ]\n}\n\n\n\n\nResponse Errors\n\n\nProfile not found\n\n\nHTTP Code: \n404\n\n\n{\n    \nmessage\n:\nprofile not found\n,\n    \ncontext\n:[],\n}\n\n\n\n\nToken expired\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\ntoken expired\n,\n    \ncontext\n:[],\n}", 
+            "title": "Project Bag"
+        }, 
+        {
+            "location": "/profile/project-bag/#information-project-bag-creative-business", 
+            "text": "", 
+            "title": "Information Project Bag Creative / Business"
+        }, 
+        {
+            "location": "/profile/project-bag/#request", 
+            "text": "Headers:      Authorization: Bearer  token \n    Location: mx  GET  Url:  https://www.cerebritos.mx/p/project_bag/ idCreative", 
+            "title": "Request"
+        }, 
+        {
+            "location": "/profile/project-bag/#response-success", 
+            "text": "", 
+            "title": "Response Success"
+        }, 
+        {
+            "location": "/profile/project-bag/#profile-found", 
+            "text": "HTTP Code:  200  \n{\n     message : success ,\n     context :[\n        {\n             id : 1313 ,\n             projects :[\n                 finalized :[\n                    {\n                         status :paid,\n                         tittle : Nulla sodales, tortor ut efficitur mollis. ,\n                         shortDescription : Praesent ut arcu imperdiet, ultricies sem eu, ultrices neque. Morbi ut tempor dolor. Suspendisse rutrum, est sed egestas condimentum, risus diam tempus lectus, at bibendum libero felis vel nisl. ,\n                         review : Praesent ut arcu imperdiet, ultricies sem eu. ,\n                         comment : In mollis, tortor a aliquet vulputate, orci ex viverra eros, nec euismod ipsum ex non felis. \n                    },\n                    {\n                         status :paid,\n                         tittle : Nulla sodales, tortor ut efficitur mollis. ,\n                         shortDescription : Praesent ut arcu imperdiet, ultricies sem eu, ultrices neque. Morbi ut tempor dolor. Suspendisse rutrum, est sed egestas condimentum, risus diam tempus lectus, at bibendum libero felis vel nisl. ,\n                         review : Praesent ut arcu imperdiet, ultricies sem eu. ,\n                         comment : In mollis, tortor a aliquet vulputate, orci ex viverra eros, nec euismod ipsum ex non felis. \n                    }\n                ],\n                 pitch :[\n                    {\n                         status :bid,\n                         linkBrief : http://www.cerebritos.mx/b/312313 ,\n                         tittle : Nulla sodales, tortor ut efficitur mollis. ,\n                         hook : Praesent ut arcu imperdiet, ultricies sem eu, ultrices neque. Morbi ut tempor dolor. Suspendisse rutrum, est sed egestas condimentum, risus diam tempus lectus, at bibendum libero felis vel nisl. \n                    }\n                ]\n            ]\n        }\n    ]\n}", 
+            "title": "Profile found"
+        }, 
+        {
+            "location": "/profile/project-bag/#response-errors", 
+            "text": "", 
+            "title": "Response Errors"
+        }, 
+        {
+            "location": "/profile/project-bag/#profile-not-found", 
+            "text": "HTTP Code:  404  {\n     message : profile not found ,\n     context :[],\n}", 
+            "title": "Profile not found"
+        }, 
+        {
+            "location": "/profile/project-bag/#token-expired", 
+            "text": "HTTP Code:  402  {\n     message : token expired ,\n     context :[],\n}", 
+            "title": "Token expired"
+        }, 
+        {
+            "location": "/project/brief/", 
+            "text": "Brief\n\n\nRequest\n\n\nHeaders:\n\n\n    Authorization: Bearer \ntoken\n\n    Location: mx\n\n\n\n\nGET\n Url:\n\n\nhttps://www.cerebritos.mx/b/\nidBrief\n\n\n\n\n\nPOST\n Content:\n\n\n{\n    \nbusinessId\n:\n1313\n,\n    \ntitle\n:\nNescafe para todos\n,\n    \ncategory\n:[\n        {\n        \n0\n:\ncreative\n,\n        \n1\n:\ncoffee\n,\n        \n2\n:\nvideo\n,\n        \n3\n:\nmusic\n,\n        \n4\n:\norchesta\n,\n        }\n    ],\n    \nobjectGoal\n:\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et convallis erat, sit amet sodales metus. Nullam molestie gravida nisl, ac maximus augue eleifend ac.\n,\n    \nmessageTone\n:\nPraesent maximus ex ante. Sed fermentum sagittis est, eu sollicitudin ligula faucibus non. Mauris mollis placerat bibendum.\n,\n    \nuniqueSellingPoint\n:\nMorbi finibus augue sit amet sollicitudin dignissim. Pellentesque vulputate augue ornare, imperdiet mi eget, consectetur enim.\n,\n    \nbudget\n:\n100000000\n,\n    \ndeadLine\n:\n1989-01-31T08:59:19 +06:00\n,\n    \ntypeFile\n:1,\n    \ntechnicalSpecification\n:\nSed sit amet ipsum ac ante ultrices fringilla. Quisque metus sapien, ornare a mollis quis, sagittis aliquam urna. Donec ipsum sem, auctor non tortor at, ullamcorper ornare metus. Integer eu erat elit.\n,\n    \nwellBeing\n:\nPhasellus ac efficitur erat. Donec consequat nec ligula sed finibus. Vestibulum odio lacus, commodo non turpis scelerisque, ultricies elementum est.\n,\n    \ncompetition\n:\nPraesent ut arcu imperdiet, ultricies sem eu, ultrices neque.\n,\n    \ncustomerInsight\n:\nIn mollis, tortor a aliquet vulputate, orci ex viverra eros, nec euismod ipsum ex non felis. Phasellus vel commodo lectus. Sed purus nisl, porttitor et facilisis a, venenatis non sapien.\n,\n    \nexpectations\n:\nAliquam quis suscipit libero, ut malesuada diam. Nulla commodo congue velit vel sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis semper egestas lectus eu elementum. Phasellus sed lacinia justo, eu tincidunt risus.\n,\n}\n\n\n\n\nResponse Success\n\n\nBrief published\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[],\n}\n\n\n\n\nBrief save\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[],\n}\n\n\n\n\nBrief updated\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[],\n}\n\n\n\n\nBrief found\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[\n        {\n            \nId\n:\n1313\n,\n            \nbrainId\n:\n1313\n,\n            \nbusinessId\n:\n1313\n,\n            \ntitle\n:\nNescafe para todos\n,\n            \ncategory\n:[\n                {\n                \n0\n:\ncreative\n,\n                \n1\n:\ncoffee\n,\n                \n2\n:\nvideo\n,\n                \n3\n:\nmusic\n,\n                \n4\n:\norchesta\n,\n                }\n            ],\n            \nobjectGoal\n:\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et convallis erat, sit amet sodales metus. Nullam molestie gravida nisl, ac maximus augue eleifend ac.\n,\n            \nmessageTone\n:\nPraesent maximus ex ante. Sed fermentum sagittis est, eu sollicitudin ligula faucibus non. Mauris mollis placerat bibendum.\n,\n            \nuniqueSellingPoint\n:\nMorbi finibus augue sit amet sollicitudin dignissim. Pellentesque vulputate augue ornare, imperdiet mi eget, consectetur enim.\n,\n            \nbudget\n:\n100000000\n,\n            \ndeadLine\n:\n1989-01-31T08:59:19 +06:00\n,\n            \ntypeFile\n:1,\n            \ntechnicalSpecification\n:\nSed sit amet ipsum ac ante ultrices fringilla. Quisque metus sapien, ornare a mollis quis, sagittis aliquam urna. Donec ipsum sem, auctor non tortor at, ullamcorper ornare metus. Integer eu erat elit.\n,\n            \nwellBeing\n:\nPhasellus ac efficitur erat. Donec consequat nec ligula sed finibus. Vestibulum odio lacus, commodo non turpis scelerisque, ultricies elementum est.\n,\n            \ncompetition\n:\nPraesent ut arcu imperdiet, ultricies sem eu, ultrices neque.\n,\n            \ncustomerInsight\n:\nIn mollis, tortor a aliquet vulputate, orci ex viverra eros, nec euismod ipsum ex non felis. Phasellus vel commodo lectus. Sed purus nisl, porttitor et facilisis a, venenatis non sapien.\n,\n            \nexpectations\n:\nAliquam quis suscipit libero, ut malesuada diam. Nulla commodo congue velit vel sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis semper egestas lectus eu elementum. Phasellus sed lacinia justo, eu tincidunt risus.\n,\n        }\n    ],\n}\n\n\n\n\nResponse Errors\n\n\nBrief expired\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\nbrief expired\n,\n    \ncontext\n:[],\n}\n\n\n\n\nBrief Already registered\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\nbrief Already registered\n,\n    \ncontext\n:[],\n}\n\n\n\n\nIncorrect information / Missing fields\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nmissing fields\n,\n    \ncontext\n:[\n    {\n    \ntitle\n:\nmissing\n,\n    \nbudget\n:\nis't number\n\n    }\n    ]\n}\n\n\n\n\nBrief not found\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nbrief not found\n,\n    \ncontext\n:[],\n}", 
+            "title": "Brief"
+        }, 
+        {
+            "location": "/project/brief/#brief", 
+            "text": "", 
+            "title": "Brief"
+        }, 
+        {
+            "location": "/project/brief/#request", 
+            "text": "Headers:      Authorization: Bearer  token \n    Location: mx  GET  Url:  https://www.cerebritos.mx/b/ idBrief   POST  Content:  {\n     businessId : 1313 ,\n     title : Nescafe para todos ,\n     category :[\n        {\n         0 : creative ,\n         1 : coffee ,\n         2 : video ,\n         3 : music ,\n         4 : orchesta ,\n        }\n    ],\n     objectGoal : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et convallis erat, sit amet sodales metus. Nullam molestie gravida nisl, ac maximus augue eleifend ac. ,\n     messageTone : Praesent maximus ex ante. Sed fermentum sagittis est, eu sollicitudin ligula faucibus non. Mauris mollis placerat bibendum. ,\n     uniqueSellingPoint : Morbi finibus augue sit amet sollicitudin dignissim. Pellentesque vulputate augue ornare, imperdiet mi eget, consectetur enim. ,\n     budget : 100000000 ,\n     deadLine : 1989-01-31T08:59:19 +06:00 ,\n     typeFile :1,\n     technicalSpecification : Sed sit amet ipsum ac ante ultrices fringilla. Quisque metus sapien, ornare a mollis quis, sagittis aliquam urna. Donec ipsum sem, auctor non tortor at, ullamcorper ornare metus. Integer eu erat elit. ,\n     wellBeing : Phasellus ac efficitur erat. Donec consequat nec ligula sed finibus. Vestibulum odio lacus, commodo non turpis scelerisque, ultricies elementum est. ,\n     competition : Praesent ut arcu imperdiet, ultricies sem eu, ultrices neque. ,\n     customerInsight : In mollis, tortor a aliquet vulputate, orci ex viverra eros, nec euismod ipsum ex non felis. Phasellus vel commodo lectus. Sed purus nisl, porttitor et facilisis a, venenatis non sapien. ,\n     expectations : Aliquam quis suscipit libero, ut malesuada diam. Nulla commodo congue velit vel sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis semper egestas lectus eu elementum. Phasellus sed lacinia justo, eu tincidunt risus. ,\n}", 
+            "title": "Request"
+        }, 
+        {
+            "location": "/project/brief/#response-success", 
+            "text": "", 
+            "title": "Response Success"
+        }, 
+        {
+            "location": "/project/brief/#brief-published", 
+            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[],\n}", 
+            "title": "Brief published"
+        }, 
+        {
+            "location": "/project/brief/#brief-save", 
+            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[],\n}", 
+            "title": "Brief save"
+        }, 
+        {
+            "location": "/project/brief/#brief-updated", 
+            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[],\n}", 
+            "title": "Brief updated"
+        }, 
+        {
+            "location": "/project/brief/#brief-found", 
+            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[\n        {\n             Id : 1313 ,\n             brainId : 1313 ,\n             businessId : 1313 ,\n             title : Nescafe para todos ,\n             category :[\n                {\n                 0 : creative ,\n                 1 : coffee ,\n                 2 : video ,\n                 3 : music ,\n                 4 : orchesta ,\n                }\n            ],\n             objectGoal : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et convallis erat, sit amet sodales metus. Nullam molestie gravida nisl, ac maximus augue eleifend ac. ,\n             messageTone : Praesent maximus ex ante. Sed fermentum sagittis est, eu sollicitudin ligula faucibus non. Mauris mollis placerat bibendum. ,\n             uniqueSellingPoint : Morbi finibus augue sit amet sollicitudin dignissim. Pellentesque vulputate augue ornare, imperdiet mi eget, consectetur enim. ,\n             budget : 100000000 ,\n             deadLine : 1989-01-31T08:59:19 +06:00 ,\n             typeFile :1,\n             technicalSpecification : Sed sit amet ipsum ac ante ultrices fringilla. Quisque metus sapien, ornare a mollis quis, sagittis aliquam urna. Donec ipsum sem, auctor non tortor at, ullamcorper ornare metus. Integer eu erat elit. ,\n             wellBeing : Phasellus ac efficitur erat. Donec consequat nec ligula sed finibus. Vestibulum odio lacus, commodo non turpis scelerisque, ultricies elementum est. ,\n             competition : Praesent ut arcu imperdiet, ultricies sem eu, ultrices neque. ,\n             customerInsight : In mollis, tortor a aliquet vulputate, orci ex viverra eros, nec euismod ipsum ex non felis. Phasellus vel commodo lectus. Sed purus nisl, porttitor et facilisis a, venenatis non sapien. ,\n             expectations : Aliquam quis suscipit libero, ut malesuada diam. Nulla commodo congue velit vel sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis semper egestas lectus eu elementum. Phasellus sed lacinia justo, eu tincidunt risus. ,\n        }\n    ],\n}", 
+            "title": "Brief found"
+        }, 
+        {
+            "location": "/project/brief/#response-errors", 
+            "text": "", 
+            "title": "Response Errors"
+        }, 
+        {
+            "location": "/project/brief/#brief-expired", 
+            "text": "HTTP Code:  402  {\n     message : brief expired ,\n     context :[],\n}", 
+            "title": "Brief expired"
+        }, 
+        {
+            "location": "/project/brief/#brief-already-registered", 
+            "text": "HTTP Code:  402  {\n     message : brief Already registered ,\n     context :[],\n}", 
+            "title": "Brief Already registered"
+        }, 
+        {
+            "location": "/project/brief/#incorrect-information-missing-fields", 
+            "text": "HTTP Code:  400  {\n     message : missing fields ,\n     context :[\n    {\n     title : missing ,\n     budget : is't number \n    }\n    ]\n}", 
+            "title": "Incorrect information / Missing fields"
+        }, 
+        {
+            "location": "/project/brief/#brief-not-found", 
+            "text": "HTTP Code:  400  {\n     message : brief not found ,\n     context :[],\n}", 
+            "title": "Brief not found"
+        }, 
+        {
+            "location": "/project/pitch/", 
+            "text": "Pitch\n\n\nRequest\n\n\nHeaders:\n\n\n    Authorization: Bearer \ntoken\n\n    Location: mx\n\n\n\n\nGET\n Url:\n\n\nhttps://www.cerebritos.mx/p/\nidPitch\n\n\n\n\n\nPOST\n Content:\n\n\n{\n    \nuserId\n:\n1313\n,\n    \ntitle\n:\nNescafe para todos\n,\n    \nhook\n:\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et convallis erat, sit amet sodales metus. Nullam molestie gravida nisl, ac maximus augue eleifend ac.\n,\n    \ntypeFile\n:1,\n    \nuniqSellingPoint\n:\nPraesent maximus ex ante. Sed fermentum sagittis est, eu sollicitudin ligula faucibus non. Mauris mollis placerat bibendum.\n,\n    \ncompensation\n:\nMorbi finibus augue sit amet sollicitudin dignissim. Pellentesque vulputate augue ornare, imperdiet mi eget, consectetur enim.\n,\n    \ncategory\n:[\n        {\n        \n0\n:\ncreative\n,\n        \n1\n:\ncoffee\n,\n        \n2\n:\nvideo\n,\n        \n3\n:\nmusic\n,\n        \n4\n:\norchesta\n,\n        }\n    ],\n    \nexpectations\n:\n100000000\n,\n    \ndeadLine\n:\n1989-01-31T08:59:19 +06:00\n\n}\n\n\n\n\nResponse Success\n\n\nPitch published\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[],\n}\n\n\n\n\nPitch save\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[],\n}\n\n\n\n\nPitch updated\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[],\n}\n\n\n\n\nPitch found\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[\n        {\n            \nId\n:\n1313\n,\n            \nbrainId\n:\n1313\n,\n            \nuserId\n:\n1313\n,\n            \ntitle\n:\nNescafe para todos\n,\n            \nhook\n:\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et convallis erat, sit amet sodales metus. Nullam molestie gravida nisl, ac maximus augue eleifend ac.\n,\n            \ntypeFile\n:1,\n            \nuniqSellingPoint\n:\nPraesent maximus ex ante. Sed fermentum sagittis est, eu sollicitudin ligula faucibus non. Mauris mollis placerat bibendum.\n,\n            \ncompensation\n:\nMorbi finibus augue sit amet sollicitudin dignissim. Pellentesque vulputate augue ornare, imperdiet mi eget, consectetur enim.\n,\n            \ncategory\n:[\n                {\n                \n0\n:\ncreative\n,\n                \n1\n:\ncoffee\n,\n                \n2\n:\nvideo\n,\n                \n3\n:\nmusic\n,\n                \n4\n:\norchesta\n,\n                }\n            ],\n            \nexpectations\n:\n100000000\n,\n            \ndeadLine\n:\n1989-01-31T08:59:19 +06:00\n\n        }\n    ]\n}\n\n\n\n\nResponse Errors\n\n\nPitch expired (1)\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\npitch expired\n,\n    \ncontext\n:[],\n}\n\n\n\n\nPitch Already registered\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\npitch Already registered\n,\n    \ncontext\n:[],\n}\n\n\n\n\nBrief not available (2)\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\nbrief not available\n,\n    \ncontext\n:[],\n}\n\n\n\n\nIncorrect information / Missing fields\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nmissing fields\n,\n    \ncontext\n:[\n    {\n    \ntitle\n:\nmissing\n,\n    \nhook\n:\nvery long\n\n    }\n    ]\n}\n\n\n\n\nPitch not found\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\npitch not found\n,\n    \ncontext\n:[],\n}\n\n\n\n\n\n\n(1) In Review.\n\n\n(2) Time expired for the brief.", 
+            "title": "Pitch"
+        }, 
+        {
+            "location": "/project/pitch/#pitch", 
+            "text": "", 
+            "title": "Pitch"
+        }, 
+        {
+            "location": "/project/pitch/#request", 
+            "text": "Headers:      Authorization: Bearer  token \n    Location: mx  GET  Url:  https://www.cerebritos.mx/p/ idPitch   POST  Content:  {\n     userId : 1313 ,\n     title : Nescafe para todos ,\n     hook : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et convallis erat, sit amet sodales metus. Nullam molestie gravida nisl, ac maximus augue eleifend ac. ,\n     typeFile :1,\n     uniqSellingPoint : Praesent maximus ex ante. Sed fermentum sagittis est, eu sollicitudin ligula faucibus non. Mauris mollis placerat bibendum. ,\n     compensation : Morbi finibus augue sit amet sollicitudin dignissim. Pellentesque vulputate augue ornare, imperdiet mi eget, consectetur enim. ,\n     category :[\n        {\n         0 : creative ,\n         1 : coffee ,\n         2 : video ,\n         3 : music ,\n         4 : orchesta ,\n        }\n    ],\n     expectations : 100000000 ,\n     deadLine : 1989-01-31T08:59:19 +06:00 \n}", 
+            "title": "Request"
+        }, 
+        {
+            "location": "/project/pitch/#response-success", 
+            "text": "", 
+            "title": "Response Success"
+        }, 
+        {
+            "location": "/project/pitch/#pitch-published", 
+            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[],\n}", 
+            "title": "Pitch published"
+        }, 
+        {
+            "location": "/project/pitch/#pitch-save", 
+            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[],\n}", 
+            "title": "Pitch save"
+        }, 
+        {
+            "location": "/project/pitch/#pitch-updated", 
+            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[],\n}", 
+            "title": "Pitch updated"
+        }, 
+        {
+            "location": "/project/pitch/#pitch-found", 
+            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[\n        {\n             Id : 1313 ,\n             brainId : 1313 ,\n             userId : 1313 ,\n             title : Nescafe para todos ,\n             hook : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et convallis erat, sit amet sodales metus. Nullam molestie gravida nisl, ac maximus augue eleifend ac. ,\n             typeFile :1,\n             uniqSellingPoint : Praesent maximus ex ante. Sed fermentum sagittis est, eu sollicitudin ligula faucibus non. Mauris mollis placerat bibendum. ,\n             compensation : Morbi finibus augue sit amet sollicitudin dignissim. Pellentesque vulputate augue ornare, imperdiet mi eget, consectetur enim. ,\n             category :[\n                {\n                 0 : creative ,\n                 1 : coffee ,\n                 2 : video ,\n                 3 : music ,\n                 4 : orchesta ,\n                }\n            ],\n             expectations : 100000000 ,\n             deadLine : 1989-01-31T08:59:19 +06:00 \n        }\n    ]\n}", 
+            "title": "Pitch found"
+        }, 
+        {
+            "location": "/project/pitch/#response-errors", 
+            "text": "", 
+            "title": "Response Errors"
+        }, 
+        {
+            "location": "/project/pitch/#pitch-expired-1", 
+            "text": "HTTP Code:  402  {\n     message : pitch expired ,\n     context :[],\n}", 
+            "title": "Pitch expired (1)"
+        }, 
+        {
+            "location": "/project/pitch/#pitch-already-registered", 
+            "text": "HTTP Code:  402  {\n     message : pitch Already registered ,\n     context :[],\n}", 
+            "title": "Pitch Already registered"
+        }, 
+        {
+            "location": "/project/pitch/#brief-not-available-2", 
+            "text": "HTTP Code:  402  {\n     message : brief not available ,\n     context :[],\n}", 
+            "title": "Brief not available (2)"
+        }, 
+        {
+            "location": "/project/pitch/#incorrect-information-missing-fields", 
+            "text": "HTTP Code:  400  {\n     message : missing fields ,\n     context :[\n    {\n     title : missing ,\n     hook : very long \n    }\n    ]\n}", 
+            "title": "Incorrect information / Missing fields"
+        }, 
+        {
+            "location": "/project/pitch/#pitch-not-found", 
+            "text": "HTTP Code:  400  {\n     message : pitch not found ,\n     context :[],\n}   (1) In Review.  (2) Time expired for the brief.", 
+            "title": "Pitch not found"
         }
     ]
 }
