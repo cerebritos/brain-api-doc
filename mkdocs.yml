@@ -1,0 +1,26 @@
+site_name: Brain
+site_url: http://www.cerebritos.mx
+site_description: Documentation for Brain api 1.0.
+site_author: Brain Api Team
+
+repo_url: https://github.com/mkdocs/mkdocs/
+
+pages:
+- Home: index.md
+- Security:
+    - Sign-Up Creative: signup/creative.md
+    - Login Creative: login/creative.md
+    - Sign-Up Business: signup/business.md
+    - Login Business: login/business.md
+- Profile:
+    - General information: profile/general.md
+    - School information: profile/school.md
+    - Skills information: profile/skills.md
+    - Membership information: profile/membership.md
+    - Payment information: profile/payment.md
+    - Project Bag: profile/project-bag.md
+- Project:
+    - Brief: project/brief.md
+    - Pitch: project/pitch.md
+
+copyright: Copyright &copy; 2017 Maintained by the <a href="/about/release-notes/#maintenance-team">Brain Team</a>.
