@@ -4,32 +4,41 @@
 
 Headers:
 ```
-	Authorization: Bearer <token>
-	Location: mx
+	X-Auth-Country: mx
+	X-Auth: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9...
+	Content-Type: application/json
+	Accept: application/json
 ```
 
-`GET` Url:
+## Obtain Creative Profile
+`Post` Url:
 ```url
-https://www.cerebritos.mx/p/general/<idCreative>
+https://www.cerebritos.mx/mapi/v1/creative/profile
+```
+
+`POST` Content:
+```json
+{}
+```
+
+## Update Creative Profile
+`Post` Url:
+```url
+https://www.cerebritos.mx/mapi/v1/creative/update-profile
 ```
 
 `POST` Content:
 ```json
 {
-   "email":"demo@mail.com",
-   "emailDoubleCheck":"demo@mail.com",
-   "password":"Password0fa4664e99c2",
-   "newPassword":false,
-   "passwordDoubleCheck":"Password0fa4664e99c2",
-   "name":"cerebritos inc.",
-   "agentName":"Jonh smith jonnes",
-   "bornDate":"1989-01-31T08:59:19 +06:00",
-   "nationalIdentificationNumber":"FASDFAS123123R",
-   "phoneNumber":"01325534363754",
-   "acceptTerms":true,
-   "taxIdentificationNumber":"TAXDFAS123123R",
-   "projectPerYear":3,
-   "teamSize":2
+  "firstName": "test",
+  "lastName": "test test",
+  "gender": "male",
+  "bornDate": {
+        	"year":"1989",
+        	"month":"5",
+        	"day":"2"
+        },
+  "email": "test@cerebritos.com"
 }
 ```
 
@@ -42,80 +51,30 @@ HTTP Code: `200`
 Response business:
 ```json
 {
-	"message":"success",
-	"context":[
-    {
-	   "id":"123124",
-	   "idBrain":"832952",
-	   "email":"demo@mail.com",
-	   "emailDoubleCheck":"demo@mail.com",
-	   "password":"Password0fa4664e99c2",
-	   "newPassword":false,
-	   "passwordDoubleCheck":"Password0fa4664e99c2",
-	   "name":"cerebritos inc.",
-	   "agentName":"Jonh smith jonnes",
-	   "bornDate":"1989-01-31T08:59:19 +06:00",
-	   "nationalIdentificationNumber":"FASDFAS123123R",
-	   "phoneNumber":"01325534363754",
-	   "acceptTerms":true,
-	   "taxIdentificationNumber":"TAXDFAS123123R",
-	   "addresses":[
-	      {
-	        "street": "lorem impsu",
-	        "externalNumber": "12",
-	        "internalNumber": "1b",
-	        "city": "Mexico",
-	        "country": "Mexico",
-	        "municipality": "Ecatepec",
-	        "neighborhood": "Magdalena",
-	        "region": "32342",
-	        "defaultAddress": true
-	      }
-	    ],
-	   "projectPerYear":3,
-	   "teamSize":2
-	}
-	],
+    "id": "3",
+    "cerebritos_id": "38a300f32b75e9e56f9ae68c1c5e155d",
+    "email": "functional.test8@cerebritos.com",
+    "first_name": "Functional",
+    "last_name": "Test",
+    "bornDate": "1989-05-02 00:00:00",
+    "gender": "male",
+    "nationalIdentificationNumber": "FASDFAS123123D",
+    "taxIdentificationNumber": "TAXDFAS123123R"
 }
 ```
 
 Response creative:
 ```json
 {
-	"message":"success",
-	"context":[
-    {
-	   "id":"123124",
-	   "idBrain":"832952",
-	   "email":"demo@mail.com",
-	   "emailDoubleCheck":"demo@mail.com",
-	   "password":"Password0fa4664e99c2",
-	   "newPassword":false,
-	   "passwordDoubleCheck":"Password0fa4664e99c2",
-	   "name":"cerebritos inc.",
-	   "lastName":"Jonh smith jonnes",
-	   "bornDate":"1989-01-31T08:59:19 +06:00",
-	   "nationalIdentificationNumber":"FASDFAS123123R",
-	   "phoneNumber":"01325534363754",
-	   "acceptTerms":true,
-	   "taxIdentificationNumber":"TAXDFAS123123R",
-	   "addresses":[
-	      {
-	        "street": "lorem impsu",
-	        "externalNumber": "12",
-	        "internalNumber": "1b",
-	        "city": "Mexico",
-	        "country": "Mexico",
-	        "municipality": "Ecatepec",
-	        "neighborhood": "Magdalena",
-	        "region": "32342",
-	        "defaultAddress": true
-	      }
-	    ],
-	   "hourlyRate":3,
-	   "experienceLevel":2
-	}
-	],
+    "id": "3",
+    "cerebritos_id": "38a300f32b75e9e56f9ae68c1c5e155d",
+    "email": "functional.test8@cerebritos.com",
+    "first_name": "Functional",
+    "last_name": "Test",
+    "bornDate": "1989-05-02 00:00:00",
+    "gender": "male",
+    "nationalIdentificationNumber": "FASDFAS123123D",
+    "taxIdentificationNumber": "TAXDFAS123123R"
 }
 ```
 
@@ -125,8 +84,8 @@ HTTP Code: `200`
 
 ```json
 {
-	"message":"success",
-	"context":[],
+    "message": "success",
+    "context": "Tus datos han sido Actualizados"
 }
 ```
 
@@ -134,38 +93,37 @@ HTTP Code: `200`
 
 ### Profile not found
 
-HTTP Code: `404`
+HTTP Code: `400`
 
 ```json
 {
-	"message":"profile not found",
-	"context":[],
+	"message":"No se encontro ese Usuario",
+	"context":[]
 }
 ```
 
 ### Token expired
 
-HTTP Code: `402`
+HTTP Code: `400`
 
 ```json
 {
 	"message":"token expired",
-	"context":[],
+	"context":[]
 }
 ```
 
 ### Incorrect information / Missing fields
 
-HTTP Code: `402`
+HTTP Code: `400`
 
 ```json
 {
-	"message":"missing fields",
-	"context":[
-	{
-	"phone":"most numbers",
-	"email":"already registred"
-	}
-	]
+    "message": "Hubo un problema al actualizar los datos del usuario.",
+    "context": {
+        "lastName": [
+            "Este valor no debería estar vacío."
+        ]
+    }
 }
 ```

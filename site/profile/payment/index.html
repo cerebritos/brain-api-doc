@@ -153,23 +153,24 @@
 <h1 id="information-payment-creative-business">Information Payment Creative / Business</h1>
 <h2 id="request">Request</h2>
 <p>Headers:</p>
-<pre><code>    Authorization: Bearer &lt;token&gt;
-    Location: mx
+<pre><code>    X-Auth-Country: mx
+    X-Auth: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9...
+    Content-Type: application/json
+    Accept: application/json
 </code></pre>
 
-<p><code>GET</code> Url:</p>
-<pre><code class="url">https://www.cerebritos.mx/p/payment/&lt;idCreative&gt;
+<p><code>POST</code> Url:</p>
+<pre><code class="url">https://www.cerebritos.mx/mapi/v1/payment
 </code></pre>
 
 <p><code>POST</code> Content:</p>
 <pre><code class="json">{
-    &quot;ccn&quot;:&quot;42908304012957057&quot;,
-    &quot;cardType&quot;:1,
-    &quot;expirationDate&quot;:&quot;0220&quot;,
-    &quot;csc&quot;:1312,
-    &quot;defaultAddess&quot;:false,
-    &quot;addresses&quot;:[
-        {
+    &quot;ccn&quot;: &quot;42908304012957057&quot;,
+    &quot;cardType&quot;: 1,
+    &quot;expirationDate&quot;: &quot;0220&quot;,
+    &quot;csc&quot;: 1312,
+    &quot;defaultAddess&quot;: false,
+    &quot;addresses&quot;: [{
         &quot;street&quot;: &quot;lorem impsu&quot;,
         &quot;externalNumber&quot;: &quot;12&quot;,
         &quot;internalNumber&quot;: &quot;1b&quot;,
@@ -179,8 +180,7 @@
         &quot;neighborhood&quot;: &quot;Magdalena&quot;,
         &quot;region&quot;: &quot;32342&quot;,
         &quot;defaultAddress&quot;: true
-        }
-    ],
+    }]
 }
 </code></pre>
 
@@ -218,16 +218,16 @@
 <p>HTTP Code: <code>200</code></p>
 <pre><code class="json">{
     &quot;message&quot;:&quot;success&quot;,
-    &quot;context&quot;:[],
+    &quot;context&quot;:[]
 }
 </code></pre>
 
 <h2 id="response-errors">Response Errors</h2>
 <h3 id="profile-not-found">Profile not found</h3>
-<p>HTTP Code: <code>404</code></p>
+<p>HTTP Code: <code>400</code></p>
 <pre><code class="json">{
     &quot;message&quot;:&quot;profile not found&quot;,
-    &quot;context&quot;:[],
+    &quot;context&quot;:[]
 }
 </code></pre>
 
@@ -239,15 +239,15 @@
     {
     &quot;error&quot;:&quot;banned credit card number&quot;
     }
-    ],
+    ]
 }
 </code></pre>
 
 <h3 id="token-expired">Token expired</h3>
-<p>HTTP Code: <code>402</code></p>
+<p>HTTP Code: <code>400</code></p>
 <pre><code class="json">{
     &quot;message&quot;:&quot;token expired&quot;,
-    &quot;context&quot;:[],
+    &quot;context&quot;:[]
 }
 </code></pre>
 

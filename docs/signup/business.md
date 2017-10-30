@@ -4,40 +4,38 @@
 
 Headers:
 ```
-	Authorization: Bearer <token>
-	Location: mx
+	X-Auth-Country: mx
+	Content-Type: application/json
+	Accept: application/json
+```
+Url:
+```url
+https://www.cerebritos.mx/mapi/creative
 ```
 
 `POST` Content:
 ```json
 {
-   "email":"demo@mail.com",
-   "emailDoubleCheck":"demo@mail.com",
-   "password":"Password0fa4664e99c2",
-   "newPassword":false,
-   "passwordDoubleCheck":"Password0fa4664e99c2",
-   "name":"cerebritos inc.",
-   "agentName":"Jonh smith jonnes",
-   "bornDate":"1989-01-31T08:59:19 +06:00",
-   "nationalIdentificationNumber":"FASDFAS123123R",
-   "phoneNumber":"01325534363754",
-   "acceptTerms":true,
-   "taxIdentificationNumber":"TAXDFAS123123R",
-   "addresses":[
-      {
-        "street": "lorem impsu",
-        "externalNumber": "12",
-        "internalNumber": "1b",
-        "city": "Mexico",
-        "country": "Mexico",
-        "municipality": "Ecatepec",
-        "neighborhood": "Magdalena",
-        "region": "32342",
-        "defaultAddress": true
-      }
-    ],
-   "projectPerYear":3,
-   "teamSize":2
+    "registration": {
+        "email": "functional.test8@cerebritos.com",
+        "typeUser": 2,
+        "firstName": "Functional",
+        "lastName": "Test",
+        "agentName": "",
+        "bornDate": {
+        	"year":"1989",
+        	"month":"5",
+        	"day":"2"
+        },
+        "gender": "male",
+        "password": "abcd1234",
+        "nationalIdentificationNumber":"FASDFAS123123D",
+        "taxIdentificationNumber":"TAXDFAS123123R",
+        "phoneNumber": "55 3436 5887",
+        "hourlyRate":3,
+        "experienceLevel":2,
+        "acceptTerms": true
+    }
 }
 ```
 ## Response Success
@@ -48,8 +46,7 @@ HTTP Code: `200`
 
 ```json
 {
-	"message":"success",
-	"context":[],
+    "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9.eyJleHAi"
 }
 ```
 
@@ -57,23 +54,23 @@ HTTP Code: `200`
 
 ### Already registered
 
-HTTP Code: `402`
+HTTP Code: `400`
 
 ```json
 {
-	"message":"already registered",
-	"context":[],
+    "message": "El email ya existe",
+    "context": null
 }
 ```
 
 ### Banned registration
 
-HTTP Code: `402`
+HTTP Code: `400`
 
 ```json
 {
-	"message":"banned registration",
-	"context":[],
+	"message":"Este email esta Baneado",
+	"context":[]
 }
 ```
 
@@ -83,12 +80,11 @@ HTTP Code: `400`
 
 ```json
 {
-	"message":"missing fields",
-	"context":[
-	{
-	"phone":"most numbers",
-	"email":"already registred"
-	}
-	]
+    "message": "Hubo un problema al registrar el usuario.",
+    "context": {
+        "firstName": [
+            "Este valor no debería estar vacío."
+        ]
+    }
 }
 ```

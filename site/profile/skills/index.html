@@ -153,37 +153,35 @@
 <h1 id="information-general-creative-business">Information General Creative / Business</h1>
 <h2 id="request">Request</h2>
 <p>Headers:</p>
-<pre><code>    Authorization: Bearer &lt;token&gt;
-    Location: mx
+<pre><code>    X-Auth-Country: mx
+    X-Auth: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9...
+    Content-Type: application/json
+    Accept: application/json
 </code></pre>
 
-<p><code>GET</code> Url:</p>
-<pre><code class="url">https://www.cerebritos.mx/p/skills/&lt;idCreative&gt;
+<p><code>POST</code> Url:</p>
+<pre><code class="url">https://www.cerebritos.mx/mapi/v1/skills
 </code></pre>
 
 <p><code>POST</code> Content:</p>
 <pre><code class="json">{
-   &quot;typesOffers&quot;:3,
-   &quot;typesAreas&quot;:[
-            {
-            &quot;0&quot;:&quot;serivice network&quot;,
-            &quot;1&quot;:&quot;develop&quot;,
-            &quot;2&quot;:&quot;support&quot;,
-            &quot;3&quot;:&quot;analitics&quot;,
-            &quot;4&quot;:&quot;community manager&quot;
-            }
-        ],
-   &quot;skills&quot;:[
-        {
-            &quot;0&quot;:&quot;PHP&quot;,
-            &quot;1&quot;:&quot;SCRUM&quot;,
-            &quot;2&quot;:&quot;SLACK&quot;,
-            &quot;3&quot;:&quot;WATCH TV&quot;,
-            &quot;4&quot;:&quot;PIZZA&quot;,
-            &quot;5&quot;:&quot;WORD&quot;
-        }
-    ],
-    &quot;experienceLevel&quot;:3
+    &quot;typesOffers&quot;: 3,
+    &quot;typesAreas&quot;: [{
+        &quot;0&quot;: &quot;serivice network&quot;,
+        &quot;1&quot;: &quot;develop&quot;,
+        &quot;2&quot;: &quot;support&quot;,
+        &quot;3&quot;: &quot;analitics&quot;,
+        &quot;4&quot;: &quot;community manager&quot;
+    }],
+    &quot;skills&quot;: [{
+        &quot;0&quot;: &quot;PHP&quot;,
+        &quot;1&quot;: &quot;SCRUM&quot;,
+        &quot;2&quot;: &quot;SLACK&quot;,
+        &quot;3&quot;: &quot;WATCH TV&quot;,
+        &quot;4&quot;: &quot;PIZZA&quot;,
+        &quot;5&quot;: &quot;WORD&quot;
+    }],
+    &quot;experienceLevel&quot;: 3
 }
 </code></pre>
 
@@ -191,32 +189,26 @@
 <h3 id="profile-found">Profile found</h3>
 <p>HTTP Code: <code>200</code></p>
 <pre><code class="json">{
-    &quot;message&quot;:&quot;success&quot;,
-    &quot;context&quot;:[
-            {
-           &quot;typesOffers&quot;:3,
-           &quot;typesAreas&quot;:[
-                    {
-                    &quot;0&quot;:&quot;serivice network&quot;,
-                    &quot;1&quot;:&quot;develop&quot;,
-                    &quot;2&quot;:&quot;support&quot;,
-                    &quot;3&quot;:&quot;analitics&quot;,
-                    &quot;4&quot;:&quot;community manager&quot;
-                    }
-                ],
-           &quot;skills&quot;:[
-                {
-                    &quot;0&quot;:&quot;PHP&quot;,
-                    &quot;1&quot;:&quot;SCRUM&quot;,
-                    &quot;2&quot;:&quot;SLACK&quot;,
-                    &quot;3&quot;:&quot;WATCH TV&quot;,
-                    &quot;4&quot;:&quot;PIZZA&quot;,
-                    &quot;5&quot;:&quot;WORD&quot;
-                }
-            ],
-            &quot;experienceLevel&quot;:3
-        }
-    ]
+    &quot;message&quot;: &quot;success&quot;,
+    &quot;context&quot;: [{
+        &quot;typesOffers&quot;: 3,
+        &quot;typesAreas&quot;: [{
+            &quot;0&quot;: &quot;serivice network&quot;,
+            &quot;1&quot;: &quot;develop&quot;,
+            &quot;2&quot;: &quot;support&quot;,
+            &quot;3&quot;: &quot;analitics&quot;,
+            &quot;4&quot;: &quot;community manager&quot;
+        }],
+        &quot;skills&quot;: [{
+            &quot;0&quot;: &quot;PHP&quot;,
+            &quot;1&quot;: &quot;SCRUM&quot;,
+            &quot;2&quot;: &quot;SLACK&quot;,
+            &quot;3&quot;: &quot;WATCH TV&quot;,
+            &quot;4&quot;: &quot;PIZZA&quot;,
+            &quot;5&quot;: &quot;WORD&quot;
+        }],
+        &quot;experienceLevel&quot;: 3
+    }]
 }
 </code></pre>
 
@@ -224,24 +216,24 @@
 <p>HTTP Code: <code>200</code></p>
 <pre><code class="json">{
     &quot;message&quot;:&quot;success&quot;,
-    &quot;context&quot;:[],
+    &quot;context&quot;:[]
 }
 </code></pre>
 
 <h2 id="response-errors">Response Errors</h2>
 <h3 id="profile-not-found">Profile not found</h3>
-<p>HTTP Code: <code>404</code></p>
+<p>HTTP Code: <code>400</code></p>
 <pre><code class="json">{
     &quot;message&quot;:&quot;Profile not found&quot;,
-    &quot;context&quot;:[],
+    &quot;context&quot;:[]
 }
 </code></pre>
 
 <h3 id="token-expired">Token expired</h3>
-<p>HTTP Code: <code>402</code></p>
+<p>HTTP Code: <code>400</code></p>
 <pre><code class="json">{
     &quot;message&quot;:&quot;token expired&quot;,
-    &quot;context&quot;:[],
+    &quot;context&quot;:[]
 }
 </code></pre>
 

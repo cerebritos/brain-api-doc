@@ -4,25 +4,26 @@
 
 Headers:
 ```
-	Authorization: Bearer <token>
-	Location: mx
+	X-Auth-Country: mx
+	X-Auth: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9...
+	Content-Type: application/json
+	Accept: application/json
 ```
 
-`GET` Url:
+`POST` Url:
 ```url
-https://www.cerebritos.mx/p/payment/<idCreative>
+https://www.cerebritos.mx/mapi/v1/payment
 ```
 
 `POST` Content:
 ```json
 {
-	"ccn":"42908304012957057",
-	"cardType":1,
-	"expirationDate":"0220",
-	"csc":1312,
-	"defaultAddess":false,
-	"addresses":[
-		{
+	"ccn": "42908304012957057",
+	"cardType": 1,
+	"expirationDate": "0220",
+	"csc": 1312,
+	"defaultAddess": false,
+	"addresses": [{
 		"street": "lorem impsu",
 		"externalNumber": "12",
 		"internalNumber": "1b",
@@ -32,8 +33,7 @@ https://www.cerebritos.mx/p/payment/<idCreative>
 		"neighborhood": "Magdalena",
 		"region": "32342",
 		"defaultAddress": true
-		}
-	],
+	}]
 }
 ```
 ## Response Success
@@ -77,7 +77,7 @@ HTTP Code: `200`
 ```json
 {
 	"message":"success",
-	"context":[],
+	"context":[]
 }
 ```
 
@@ -85,12 +85,12 @@ HTTP Code: `200`
 
 ### Profile not found
 
-HTTP Code: `404`
+HTTP Code: `400`
 
 ```json
 {
 	"message":"profile not found",
-	"context":[],
+	"context":[]
 }
 ```
 
@@ -105,18 +105,18 @@ HTTP Code: `400`
 	{
 	"error":"banned credit card number"
 	}
-	],
+	]
 }
 ```
 
 ### Token expired
 
-HTTP Code: `402`
+HTTP Code: `400`
 
 ```json
 {
 	"message":"token expired",
-	"context":[],
+	"context":[]
 }
 ```
 

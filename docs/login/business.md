@@ -4,16 +4,22 @@
 
 Headers:
 ```
-	Authorization: Bearer <token>
-	Location: mx
+	X-Auth-Country: mx
+	Content-Type: application/json
+	Accept: application/json
+```
+
+## Login
+`Post` Url:
+```url
+https://www.cerebritos.mx/mapi/v1/auth/login
 ```
 
 `POST` Content:
 ```json
 {
-   "email":"demo@mail.com",
-   "password":"Password0fa4664e99c2",
-   "passwordDoubleCheck":"Password0fa4664e99c2",
+   "username": "functional.test8@cerebritos.com",
+   "password": "abcd1234"
 }
 ```
 ## Response Success
@@ -24,8 +30,12 @@ HTTP Code: `200`
 
 ```json
 {
-	"message":"success LoggedIn",
-	"context":[],
+    "token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9...",
+    "id": "3",
+    "cerebritosId": "38a300f32b75e9e56f9ae68c1c5e155d",
+    "username": "test@cerebritos.com",
+    "firstName": "Functional",
+    "lastName": "Test"
 }
 ```
 
@@ -33,33 +43,33 @@ HTTP Code: `200`
 
 ### Bad credentials
 
-HTTP Code: `402`
+HTTP Code: `400`
 
 ```json
 {
 	"message":"bad credentials",
-	"context":[],
+	"context":[]
 }
 ```
 
 ### Banned LoggedIn
 
-HTTP Code: `402`
+HTTP Code: `400`
 
 ```json
 {
 	"message":"banned LoggedIn",
-	"context":[],
+	"context":[]
 }
 ```
 
 ### Token expired
 
-HTTP Code: `402`
+HTTP Code: `400`
 
 ```json
 {
 	"message":"token expired",
-	"context":[],
+	"context":[]
 }
 ```

@@ -163,23 +163,21 @@
 
 <p><code>POST</code> Content:</p>
 <pre><code class="json">{
-    &quot;userId&quot;:&quot;1313&quot;,
-    &quot;title&quot;:&quot;Nescafe para todos&quot;,
-    &quot;hook&quot;:&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et convallis erat, sit amet sodales metus. Nullam molestie gravida nisl, ac maximus augue eleifend ac.&quot;,
-    &quot;typeFile&quot;:1,
-    &quot;uniqSellingPoint&quot;:&quot;Praesent maximus ex ante. Sed fermentum sagittis est, eu sollicitudin ligula faucibus non. Mauris mollis placerat bibendum.&quot;,
-    &quot;compensation&quot;:&quot;Morbi finibus augue sit amet sollicitudin dignissim. Pellentesque vulputate augue ornare, imperdiet mi eget, consectetur enim.&quot;,
-    &quot;category&quot;:[
-        {
-        &quot;0&quot;:&quot;creative&quot;,
-        &quot;1&quot;:&quot;coffee&quot;,
-        &quot;2&quot;:&quot;video&quot;,
-        &quot;3&quot;:&quot;music&quot;,
-        &quot;4&quot;:&quot;orchesta&quot;,
-        }
-    ],
-    &quot;expectations&quot;:&quot;100000000&quot;,
-    &quot;deadLine&quot;:&quot;1989-01-31T08:59:19 +06:00&quot;
+    &quot;userId&quot;: &quot;1313&quot;,
+    &quot;title&quot;: &quot;Nescafe para todos&quot;,
+    &quot;hook&quot;: &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et convallis erat, sit amet sodales metus. Nullam molestie gravida nisl, ac maximus augue eleifend ac.&quot;,
+    &quot;typeFile&quot;: 1,
+    &quot;uniqSellingPoint&quot;: &quot;Praesent maximus ex ante. Sed fermentum sagittis est, eu sollicitudin ligula faucibus non. Mauris mollis placerat bibendum.&quot;,
+    &quot;compensation&quot;: &quot;Morbi finibus augue sit amet sollicitudin dignissim. Pellentesque vulputate augue ornare, imperdiet mi eget, consectetur enim.&quot;,
+    &quot;category&quot;: [{
+        &quot;0&quot;: &quot;creative&quot;,
+        &quot;1&quot;: &quot;coffee&quot;,
+        &quot;2&quot;: &quot;video&quot;,
+        &quot;3&quot;: &quot;music&quot;,
+        &quot;4&quot;: &quot;orchesta&quot;
+    }],
+    &quot;expectations&quot;: &quot;100000000&quot;,
+    &quot;deadLine&quot;: &quot;1989-01-31T08:59:19 +06:00&quot;
 }
 </code></pre>
 
@@ -240,7 +238,7 @@
 
 <h2 id="response-errors">Response Errors</h2>
 <h3 id="pitch-expired-1">Pitch expired (1)</h3>
-<p>HTTP Code: <code>402</code></p>
+<p>HTTP Code: <code>400</code></p>
 <pre><code class="json">{
     &quot;message&quot;:&quot;pitch expired&quot;,
     &quot;context&quot;:[],
@@ -248,7 +246,7 @@
 </code></pre>
 
 <h3 id="pitch-already-registered">Pitch Already registered</h3>
-<p>HTTP Code: <code>402</code></p>
+<p>HTTP Code: <code>400</code></p>
 <pre><code class="json">{
     &quot;message&quot;:&quot;pitch Already registered&quot;,
     &quot;context&quot;:[],
@@ -256,7 +254,7 @@
 </code></pre>
 
 <h3 id="brief-not-available-2">Brief not available (2)</h3>
-<p>HTTP Code: <code>402</code></p>
+<p>HTTP Code: <code>400</code></p>
 <pre><code class="json">{
     &quot;message&quot;:&quot;brief not available&quot;,
     &quot;context&quot;:[],

@@ -153,31 +153,32 @@
 <h1 id="information-school-creative">Information School Creative</h1>
 <h2 id="request">Request</h2>
 <p>Headers:</p>
-<pre><code>    Authorization: Bearer &lt;token&gt;
-    Location: mx
+<pre><code>    X-Auth-Country: mx
+    X-Auth: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9...
+    Content-Type: application/json
+    Accept: application/json
 </code></pre>
 
-<p><code>GET</code> Url:</p>
-<pre><code class="url">https://www.cerebritos.mx/p/school/&lt;idCreative&gt;
+<p><code>POST</code> Url:</p>
+<pre><code class="url">https://www.cerebritos.mx/mapi/v1/school
 </code></pre>
 
 <p><code>POST</code> Content:</p>
-<pre><code class="json">[
-    {
+<pre><code class="json">[{
         &quot;name&quot;: &quot;intituto albert smith state&quot;,
-        &quot;certificate&quot;:true,
-        &quot;title&quot;:&quot;systems engineer&quot;
+        &quot;certificate&quot;: true,
+        &quot;title&quot;: &quot;systems engineer&quot;,
         &quot;startYear&quot;: &quot;2012-01-31T08:59:19 +06:00&quot;,
         &quot;endYear&quot;: &quot;2015-01-31T08:59:19 +06:00&quot;,
-        &quot;truncated career&quot;:false
+        &quot;truncated career&quot;: false
     },
     {
         &quot;name&quot;: &quot;universidad panamericana&quot;,
-        &quot;certificate&quot;:false,
-        &quot;title&quot;:&quot;none&quot;
+        &quot;certificate&quot;: false,
+        &quot;title&quot;: &quot;none&quot;,
         &quot;startYear&quot;: &quot;2016-01-31T08:59:19 +06:00&quot;,
         &quot;endYear&quot;: &quot;2016-01-31T08:59:19 +06:00&quot;,
-        &quot;truncated career&quot;:true
+        &quot;truncated career&quot;: true
     }
 ]
 </code></pre>
@@ -186,31 +187,28 @@
 <h3 id="profile-found">Profile found</h3>
 <p>HTTP Code: <code>200</code></p>
 <pre><code class="json">{
-    &quot;message&quot;:&quot;success&quot;,
-    &quot;context&quot;:[
-    {
-       &quot;id&quot;:&quot;123124&quot;,
-       &quot;idBrain&quot;:&quot;832952&quot;,
-       &quot;skills&quot;:[
-            {
+    &quot;message&quot;: &quot;success&quot;,
+    &quot;context&quot;: [{
+        &quot;id&quot;: &quot;123124&quot;,
+        &quot;idBrain&quot;: &quot;832952&quot;,
+        &quot;skills&quot;: [{
                 &quot;0&quot;: &quot;intituto albert smith state&quot;,
-                &quot;1&quot;:true,
-                &quot;2&quot;:&quot;systems engineer&quot;,
+                &quot;1&quot;: true,
+                &quot;2&quot;: &quot;systems engineer&quot;,
                 &quot;3&quot;: &quot;2012-01-31T08:59:19 +06:00&quot;,
                 &quot;4&quot;: &quot;2015-01-31T08:59:19 +06:00&quot;,
-                &quot;truncatedCareer&quot;:false
+                &quot;truncatedCareer&quot;: false
             },
             {
                 &quot;name&quot;: &quot;universidad panamericana&quot;,
-                &quot;certificate&quot;:false,
-                &quot;title&quot;:&quot;none&quot;,
+                &quot;certificate&quot;: false,
+                &quot;title&quot;: &quot;none&quot;,
                 &quot;startYear&quot;: &quot;2016-01-31T08:59:19 +06:00&quot;,
                 &quot;endYear&quot;: &quot;2016-01-31T08:59:19 +06:00&quot;,
-                &quot;truncatedCareer&quot;:true
+                &quot;truncatedCareer&quot;: true
             }
-        ],
-    }
-    ],
+        ]
+    }]
 }
 </code></pre>
 
@@ -218,24 +216,24 @@
 <p>HTTP Code: <code>200</code></p>
 <pre><code class="json">{
     &quot;message&quot;:&quot;success&quot;,
-    &quot;context&quot;:[],
+    &quot;context&quot;:[]
 }
 </code></pre>
 
 <h2 id="response-errors">Response Errors</h2>
 <h3 id="profile-not-found">Profile not found</h3>
-<p>HTTP Code: <code>404</code></p>
+<p>HTTP Code: <code>400</code></p>
 <pre><code class="json">{
     &quot;message&quot;:&quot;Profile not found&quot;,
-    &quot;context&quot;:[],
+    &quot;context&quot;:[]
 }
 </code></pre>
 
 <h3 id="token-expired">Token expired</h3>
-<p>HTTP Code: <code>402</code></p>
+<p>HTTP Code: <code>400</code></p>
 <pre><code class="json">{
     &quot;message&quot;:&quot;token expired&quot;,
-    &quot;context&quot;:[],
+    &quot;context&quot;:[]
 }
 </code></pre>
 

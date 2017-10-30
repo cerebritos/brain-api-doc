@@ -16,23 +16,21 @@ https://www.cerebritos.mx/p/<idPitch>
 `POST` Content:
 ```json
 {
-	"userId":"1313",
-	"title":"Nescafe para todos",
-	"hook":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et convallis erat, sit amet sodales metus. Nullam molestie gravida nisl, ac maximus augue eleifend ac.",
-	"typeFile":1,
-	"uniqSellingPoint":"Praesent maximus ex ante. Sed fermentum sagittis est, eu sollicitudin ligula faucibus non. Mauris mollis placerat bibendum.",
-	"compensation":"Morbi finibus augue sit amet sollicitudin dignissim. Pellentesque vulputate augue ornare, imperdiet mi eget, consectetur enim.",
-	"category":[
-		{
-		"0":"creative",
-		"1":"coffee",
-		"2":"video",
-		"3":"music",
-		"4":"orchesta",
-		}
-	],
-	"expectations":"100000000",
-	"deadLine":"1989-01-31T08:59:19 +06:00"
+	"userId": "1313",
+	"title": "Nescafe para todos",
+	"hook": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et convallis erat, sit amet sodales metus. Nullam molestie gravida nisl, ac maximus augue eleifend ac.",
+	"typeFile": 1,
+	"uniqSellingPoint": "Praesent maximus ex ante. Sed fermentum sagittis est, eu sollicitudin ligula faucibus non. Mauris mollis placerat bibendum.",
+	"compensation": "Morbi finibus augue sit amet sollicitudin dignissim. Pellentesque vulputate augue ornare, imperdiet mi eget, consectetur enim.",
+	"category": [{
+		"0": "creative",
+		"1": "coffee",
+		"2": "video",
+		"3": "music",
+		"4": "orchesta"
+	}],
+	"expectations": "100000000",
+	"deadLine": "1989-01-31T08:59:19 +06:00"
 }
 ```
 
@@ -108,7 +106,7 @@ HTTP Code: `200`
 
 ### Pitch expired (1)
 
-HTTP Code: `402`
+HTTP Code: `400`
 
 ```json
 {
@@ -119,7 +117,7 @@ HTTP Code: `402`
 
 ### Pitch Already registered
 
-HTTP Code: `402`
+HTTP Code: `400`
 
 ```json
 {
@@ -130,7 +128,7 @@ HTTP Code: `402`
 
 ### Brief not available (2)
 
-HTTP Code: `402`
+HTTP Code: `400`
 
 ```json
 {

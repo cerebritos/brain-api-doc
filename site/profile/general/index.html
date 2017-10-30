@@ -144,6 +144,8 @@
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#information-general-creative-business">Information General Creative / Business</a></li>
             <li><a href="#request">Request</a></li>
+            <li><a href="#obtain-creative-profile">Obtain Creative Profile</a></li>
+            <li><a href="#update-creative-profile">Update Creative Profile</a></li>
             <li><a href="#response-success">Response Success</a></li>
             <li><a href="#response-errors">Response Errors</a></li>
     </ul>
@@ -153,30 +155,37 @@
 <h1 id="information-general-creative-business">Information General Creative / Business</h1>
 <h2 id="request">Request</h2>
 <p>Headers:</p>
-<pre><code>    Authorization: Bearer &lt;token&gt;
-    Location: mx
+<pre><code>    X-Auth-Country: mx
+    X-Auth: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9...
+    Content-Type: application/json
+    Accept: application/json
 </code></pre>
 
-<p><code>GET</code> Url:</p>
-<pre><code class="url">https://www.cerebritos.mx/p/general/&lt;idCreative&gt;
+<h2 id="obtain-creative-profile">Obtain Creative Profile</h2>
+<p><code>Post</code> Url:</p>
+<pre><code class="url">https://www.cerebritos.mx/mapi/v1/creative/profile
+</code></pre>
+
+<p><code>POST</code> Content:</p>
+<pre><code class="json">{}
+</code></pre>
+
+<h2 id="update-creative-profile">Update Creative Profile</h2>
+<p><code>Post</code> Url:</p>
+<pre><code class="url">https://www.cerebritos.mx/mapi/v1/creative/update-profile
 </code></pre>
 
 <p><code>POST</code> Content:</p>
 <pre><code class="json">{
-   &quot;email&quot;:&quot;demo@mail.com&quot;,
-   &quot;emailDoubleCheck&quot;:&quot;demo@mail.com&quot;,
-   &quot;password&quot;:&quot;Password0fa4664e99c2&quot;,
-   &quot;newPassword&quot;:false,
-   &quot;passwordDoubleCheck&quot;:&quot;Password0fa4664e99c2&quot;,
-   &quot;name&quot;:&quot;cerebritos inc.&quot;,
-   &quot;agentName&quot;:&quot;Jonh smith jonnes&quot;,
-   &quot;bornDate&quot;:&quot;1989-01-31T08:59:19 +06:00&quot;,
-   &quot;nationalIdentificationNumber&quot;:&quot;FASDFAS123123R&quot;,
-   &quot;phoneNumber&quot;:&quot;01325534363754&quot;,
-   &quot;acceptTerms&quot;:true,
-   &quot;taxIdentificationNumber&quot;:&quot;TAXDFAS123123R&quot;,
-   &quot;projectPerYear&quot;:3,
-   &quot;teamSize&quot;:2
+  &quot;firstName&quot;: &quot;test&quot;,
+  &quot;lastName&quot;: &quot;test test&quot;,
+  &quot;gender&quot;: &quot;male&quot;,
+  &quot;bornDate&quot;: {
+            &quot;year&quot;:&quot;1989&quot;,
+            &quot;month&quot;:&quot;5&quot;,
+            &quot;day&quot;:&quot;2&quot;
+        },
+  &quot;email&quot;: &quot;test@cerebritos.com&quot;
 }
 </code></pre>
 
@@ -185,117 +194,66 @@
 <p>HTTP Code: <code>200</code></p>
 <p>Response business:</p>
 <pre><code class="json">{
-    &quot;message&quot;:&quot;success&quot;,
-    &quot;context&quot;:[
-    {
-       &quot;id&quot;:&quot;123124&quot;,
-       &quot;idBrain&quot;:&quot;832952&quot;,
-       &quot;email&quot;:&quot;demo@mail.com&quot;,
-       &quot;emailDoubleCheck&quot;:&quot;demo@mail.com&quot;,
-       &quot;password&quot;:&quot;Password0fa4664e99c2&quot;,
-       &quot;newPassword&quot;:false,
-       &quot;passwordDoubleCheck&quot;:&quot;Password0fa4664e99c2&quot;,
-       &quot;name&quot;:&quot;cerebritos inc.&quot;,
-       &quot;agentName&quot;:&quot;Jonh smith jonnes&quot;,
-       &quot;bornDate&quot;:&quot;1989-01-31T08:59:19 +06:00&quot;,
-       &quot;nationalIdentificationNumber&quot;:&quot;FASDFAS123123R&quot;,
-       &quot;phoneNumber&quot;:&quot;01325534363754&quot;,
-       &quot;acceptTerms&quot;:true,
-       &quot;taxIdentificationNumber&quot;:&quot;TAXDFAS123123R&quot;,
-       &quot;addresses&quot;:[
-          {
-            &quot;street&quot;: &quot;lorem impsu&quot;,
-            &quot;externalNumber&quot;: &quot;12&quot;,
-            &quot;internalNumber&quot;: &quot;1b&quot;,
-            &quot;city&quot;: &quot;Mexico&quot;,
-            &quot;country&quot;: &quot;Mexico&quot;,
-            &quot;municipality&quot;: &quot;Ecatepec&quot;,
-            &quot;neighborhood&quot;: &quot;Magdalena&quot;,
-            &quot;region&quot;: &quot;32342&quot;,
-            &quot;defaultAddress&quot;: true
-          }
-        ],
-       &quot;projectPerYear&quot;:3,
-       &quot;teamSize&quot;:2
-    }
-    ],
+    &quot;id&quot;: &quot;3&quot;,
+    &quot;cerebritos_id&quot;: &quot;38a300f32b75e9e56f9ae68c1c5e155d&quot;,
+    &quot;email&quot;: &quot;functional.test8@cerebritos.com&quot;,
+    &quot;first_name&quot;: &quot;Functional&quot;,
+    &quot;last_name&quot;: &quot;Test&quot;,
+    &quot;bornDate&quot;: &quot;1989-05-02 00:00:00&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;nationalIdentificationNumber&quot;: &quot;FASDFAS123123D&quot;,
+    &quot;taxIdentificationNumber&quot;: &quot;TAXDFAS123123R&quot;
 }
 </code></pre>
 
 <p>Response creative:</p>
 <pre><code class="json">{
-    &quot;message&quot;:&quot;success&quot;,
-    &quot;context&quot;:[
-    {
-       &quot;id&quot;:&quot;123124&quot;,
-       &quot;idBrain&quot;:&quot;832952&quot;,
-       &quot;email&quot;:&quot;demo@mail.com&quot;,
-       &quot;emailDoubleCheck&quot;:&quot;demo@mail.com&quot;,
-       &quot;password&quot;:&quot;Password0fa4664e99c2&quot;,
-       &quot;newPassword&quot;:false,
-       &quot;passwordDoubleCheck&quot;:&quot;Password0fa4664e99c2&quot;,
-       &quot;name&quot;:&quot;cerebritos inc.&quot;,
-       &quot;lastName&quot;:&quot;Jonh smith jonnes&quot;,
-       &quot;bornDate&quot;:&quot;1989-01-31T08:59:19 +06:00&quot;,
-       &quot;nationalIdentificationNumber&quot;:&quot;FASDFAS123123R&quot;,
-       &quot;phoneNumber&quot;:&quot;01325534363754&quot;,
-       &quot;acceptTerms&quot;:true,
-       &quot;taxIdentificationNumber&quot;:&quot;TAXDFAS123123R&quot;,
-       &quot;addresses&quot;:[
-          {
-            &quot;street&quot;: &quot;lorem impsu&quot;,
-            &quot;externalNumber&quot;: &quot;12&quot;,
-            &quot;internalNumber&quot;: &quot;1b&quot;,
-            &quot;city&quot;: &quot;Mexico&quot;,
-            &quot;country&quot;: &quot;Mexico&quot;,
-            &quot;municipality&quot;: &quot;Ecatepec&quot;,
-            &quot;neighborhood&quot;: &quot;Magdalena&quot;,
-            &quot;region&quot;: &quot;32342&quot;,
-            &quot;defaultAddress&quot;: true
-          }
-        ],
-       &quot;hourlyRate&quot;:3,
-       &quot;experienceLevel&quot;:2
-    }
-    ],
+    &quot;id&quot;: &quot;3&quot;,
+    &quot;cerebritos_id&quot;: &quot;38a300f32b75e9e56f9ae68c1c5e155d&quot;,
+    &quot;email&quot;: &quot;functional.test8@cerebritos.com&quot;,
+    &quot;first_name&quot;: &quot;Functional&quot;,
+    &quot;last_name&quot;: &quot;Test&quot;,
+    &quot;bornDate&quot;: &quot;1989-05-02 00:00:00&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;nationalIdentificationNumber&quot;: &quot;FASDFAS123123D&quot;,
+    &quot;taxIdentificationNumber&quot;: &quot;TAXDFAS123123R&quot;
 }
 </code></pre>
 
 <h3 id="updated-profile">Updated profile</h3>
 <p>HTTP Code: <code>200</code></p>
 <pre><code class="json">{
-    &quot;message&quot;:&quot;success&quot;,
-    &quot;context&quot;:[],
+    &quot;message&quot;: &quot;success&quot;,
+    &quot;context&quot;: &quot;Tus datos han sido Actualizados&quot;
 }
 </code></pre>
 
 <h2 id="response-errors">Response Errors</h2>
 <h3 id="profile-not-found">Profile not found</h3>
-<p>HTTP Code: <code>404</code></p>
+<p>HTTP Code: <code>400</code></p>
 <pre><code class="json">{
-    &quot;message&quot;:&quot;profile not found&quot;,
-    &quot;context&quot;:[],
+    &quot;message&quot;:&quot;No se encontro ese Usuario&quot;,
+    &quot;context&quot;:[]
 }
 </code></pre>
 
 <h3 id="token-expired">Token expired</h3>
-<p>HTTP Code: <code>402</code></p>
+<p>HTTP Code: <code>400</code></p>
 <pre><code class="json">{
     &quot;message&quot;:&quot;token expired&quot;,
-    &quot;context&quot;:[],
+    &quot;context&quot;:[]
 }
 </code></pre>
 
 <h3 id="incorrect-information-missing-fields">Incorrect information / Missing fields</h3>
-<p>HTTP Code: <code>402</code></p>
+<p>HTTP Code: <code>400</code></p>
 <pre><code class="json">{
-    &quot;message&quot;:&quot;missing fields&quot;,
-    &quot;context&quot;:[
-    {
-    &quot;phone&quot;:&quot;most numbers&quot;,
-    &quot;email&quot;:&quot;already registred&quot;
+    &quot;message&quot;: &quot;Hubo un problema al actualizar los datos del usuario.&quot;,
+    &quot;context&quot;: {
+        &quot;lastName&quot;: [
+            &quot;Este valor no debería estar vacío.&quot;
+        ]
     }
-    ]
 }
 </code></pre></div>
         </div>

@@ -12,7 +12,7 @@
         }, 
         {
             "location": "/signup/creative/", 
-            "text": "Sign-Up Creative\n\n\nRequest\n\n\nHeaders:\n\n\n    Authorization: Bearer \ntoken\n\n    Location: mx\n\n\n\n\nPOST\n Content:\n\n\n{\n   \nemail\n:\ndemo@mail.com\n,\n   \nemailDoubleCheck\n:\ndemo@mail.com\n,\n   \npassword\n:\nPassword0fa4664e99c2\n,\n   \nnewPassword\n:false,\n   \npasswordDoubleCheck\n:\nPassword0fa4664e99c2\n,\n   \nname\n:\ncerebritos inc.\n,\n   \nlastName\n:\nJonh smith jonnes\n,\n   \nbornDate\n:\n1989-01-31T08:59:19 +06:00\n,\n   \nnationalIdentificationNumber\n:\nFASDFAS123123R\n,\n   \nphoneNumber\n:\n01325534363754\n,\n   \nacceptTerms\n:true,\n   \ntaxIdentificationNumber\n:\nTAXDFAS123123R\n,\n   \naddresses\n:[\n      {\n        \nstreet\n: \nlorem impsu\n,\n        \nexternalNumber\n: \n12\n,\n        \ninternalNumber\n: \n1b\n,\n        \ncity\n: \nMexico\n,\n        \ncountry\n: \nMexico\n,\n        \nmunicipality\n: \nEcatepec\n,\n        \nneighborhood\n: \nMagdalena\n,\n        \nregion\n: \n32342\n,\n        \ndefaultAddress\n: true\n      }\n    ],\n   \nhourlyRate\n:3,\n   \nexperienceLevel\n:2\n}\n\n\n\n\nResponse Success\n\n\nRegistered\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[],\n}\n\n\n\n\nResponse Errors\n\n\nAlready registered\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\nalready registered\n,\n    \ncontext\n:[],\n}\n\n\n\n\nBanned registration\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\nbanned registration\n,\n    \ncontext\n:[],\n}\n\n\n\n\nIncorrect information / Missing fields\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nmissing fields\n,\n    \ncontext\n:[\n    {\n    \nphone\n:\nmost numbers\n,\n    \nemail\n:\nalready registred\n\n    }\n    ]\n}", 
+            "text": "Sign-Up Creative\n\n\nRequest\n\n\nHeaders:\n\n\n    X-Auth-Country: mx\n    Content-Type: application/json\n    Accept: application/json\n\n\n\n\nUrl:\n\n\nhttps://www.cerebritos.mx/mapi/creative\n\n\n\n\nPOST\n Content:\n\n\n{\n    \nregistration\n: {\n        \nemail\n: \nfunctional.test8@cerebritos.com\n,\n        \ntypeUser\n: 1,\n        \nfirstName\n: \nFunctional\n,\n        \nlastName\n: \nTest\n,\n        \nbornDate\n: {\n            \nyear\n:\n1989\n,\n            \nmonth\n:\n5\n,\n            \nday\n:\n2\n\n        },\n        \ngender\n: \nmale\n,\n        \npassword\n: \nabcd1234\n,\n        \nnationalIdentificationNumber\n:\nFASDFAS123123D\n,\n        \ntaxIdentificationNumber\n:\nTAXDFAS123123R\n,\n        \nphoneNumber\n: \n55 3436 5887\n,\n        \nhourlyRate\n:3,\n        \nexperienceLevel\n:2,\n        \nacceptTerms\n: true\n    }\n}\n\n\n\n\nResponse Success\n\n\nRegistered\n\n\nHTTP Code: \n200\n\n\n{\n    \ntoken\n: \neyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9.eyJleHAi\n\n}\n\n\n\n\nResponse Errors\n\n\nAlready registered\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n: \nEl email ya existe\n,\n    \ncontext\n: null\n}\n\n\n\n\nBanned registration\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nEste email esta Baneado\n,\n    \ncontext\n:[]\n}\n\n\n\n\nIncorrect information / Missing fields\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n: \nHubo un problema al registrar el usuario.\n,\n    \ncontext\n: {\n        \nfirstName\n: [\n            \nEste valor no deber\u00eda estar vac\u00edo.\n\n        ]\n    }\n}", 
             "title": "Sign-Up Creative"
         }, 
         {
@@ -22,7 +22,7 @@
         }, 
         {
             "location": "/signup/creative/#request", 
-            "text": "Headers:      Authorization: Bearer  token \n    Location: mx  POST  Content:  {\n    email : demo@mail.com ,\n    emailDoubleCheck : demo@mail.com ,\n    password : Password0fa4664e99c2 ,\n    newPassword :false,\n    passwordDoubleCheck : Password0fa4664e99c2 ,\n    name : cerebritos inc. ,\n    lastName : Jonh smith jonnes ,\n    bornDate : 1989-01-31T08:59:19 +06:00 ,\n    nationalIdentificationNumber : FASDFAS123123R ,\n    phoneNumber : 01325534363754 ,\n    acceptTerms :true,\n    taxIdentificationNumber : TAXDFAS123123R ,\n    addresses :[\n      {\n         street :  lorem impsu ,\n         externalNumber :  12 ,\n         internalNumber :  1b ,\n         city :  Mexico ,\n         country :  Mexico ,\n         municipality :  Ecatepec ,\n         neighborhood :  Magdalena ,\n         region :  32342 ,\n         defaultAddress : true\n      }\n    ],\n    hourlyRate :3,\n    experienceLevel :2\n}", 
+            "text": "Headers:      X-Auth-Country: mx\n    Content-Type: application/json\n    Accept: application/json  Url:  https://www.cerebritos.mx/mapi/creative  POST  Content:  {\n     registration : {\n         email :  functional.test8@cerebritos.com ,\n         typeUser : 1,\n         firstName :  Functional ,\n         lastName :  Test ,\n         bornDate : {\n             year : 1989 ,\n             month : 5 ,\n             day : 2 \n        },\n         gender :  male ,\n         password :  abcd1234 ,\n         nationalIdentificationNumber : FASDFAS123123D ,\n         taxIdentificationNumber : TAXDFAS123123R ,\n         phoneNumber :  55 3436 5887 ,\n         hourlyRate :3,\n         experienceLevel :2,\n         acceptTerms : true\n    }\n}", 
             "title": "Request"
         }, 
         {
@@ -32,7 +32,7 @@
         }, 
         {
             "location": "/signup/creative/#registered", 
-            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[],\n}", 
+            "text": "HTTP Code:  200  {\n     token :  eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9.eyJleHAi \n}", 
             "title": "Registered"
         }, 
         {
@@ -42,22 +42,22 @@
         }, 
         {
             "location": "/signup/creative/#already-registered", 
-            "text": "HTTP Code:  402  {\n     message : already registered ,\n     context :[],\n}", 
+            "text": "HTTP Code:  400  {\n     message :  El email ya existe ,\n     context : null\n}", 
             "title": "Already registered"
         }, 
         {
             "location": "/signup/creative/#banned-registration", 
-            "text": "HTTP Code:  402  {\n     message : banned registration ,\n     context :[],\n}", 
+            "text": "HTTP Code:  400  {\n     message : Este email esta Baneado ,\n     context :[]\n}", 
             "title": "Banned registration"
         }, 
         {
             "location": "/signup/creative/#incorrect-information-missing-fields", 
-            "text": "HTTP Code:  400  {\n     message : missing fields ,\n     context :[\n    {\n     phone : most numbers ,\n     email : already registred \n    }\n    ]\n}", 
+            "text": "HTTP Code:  400  {\n     message :  Hubo un problema al registrar el usuario. ,\n     context : {\n         firstName : [\n             Este valor no deber\u00eda estar vac\u00edo. \n        ]\n    }\n}", 
             "title": "Incorrect information / Missing fields"
         }, 
         {
             "location": "/login/creative/", 
-            "text": "Login Creative\n\n\nRequest\n\n\nHeaders:\n\n\n    Authorization: Bearer \ntoken\n\n    Location: mx\n\n\n\n\nPOST\n Content:\n\n\n{\n   \nemail\n:\ndemo@mail.com\n,\n   \npassword\n:\nPassword0fa4664e99c2\n,\n   \npasswordDoubleCheck\n:\nPassword0fa4664e99c2\n,\n}\n\n\n\n\nResponse Success\n\n\nLoggedIn\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess LoggedIn\n,\n    \ncontext\n:[],\n}\n\n\n\n\nResponse Errors\n\n\nBad credentials\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\nbad credentials\n,\n    \ncontext\n:[],\n}\n\n\n\n\nBanned LoggedIn\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\nbanned LoggedIn\n,\n    \ncontext\n:[],\n}\n\n\n\n\nToken expired\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\ntoken expired\n,\n    \ncontext\n:[],\n}", 
+            "text": "Login Creative\n\n\nRequest\n\n\nHeaders:\n\n\n    X-Auth-Country: mx\n    Content-Type: application/json\n    Accept: application/json\n\n\n\n\nLogin\n\n\nPost\n Url:\n\n\nhttps://www.cerebritos.mx/mapi/v1/auth/login\n\n\n\n\nPOST\n Content:\n\n\n{\n   \nusername\n: \nfunctional.test8@cerebritos.com\n,\n   \npassword\n: \nabcd1234\n\n}\n\n\n\n\nResponse Success\n\n\nLoggedIn\n\n\nHTTP Code: \n200\n\n\n{\n    \ntoken\n: \neyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9...\n,\n    \nid\n: \n3\n,\n    \ncerebritosId\n: \n38a300f32b75e9e56f9ae68c1c5e155d\n,\n    \nusername\n: \ntest@cerebritos.com\n,\n    \nfirstName\n: \nFunctional\n,\n    \nlastName\n: \nTest\n\n}\n\n\n\n\nResponse Errors\n\n\nBad credentials\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nbad credentials\n,\n    \ncontext\n:[]\n}\n\n\n\n\nBanned LoggedIn\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nbanned LoggedIn\n,\n    \ncontext\n:[]\n}\n\n\n\n\nToken expired\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\ntoken expired\n,\n    \ncontext\n:[]\n}", 
             "title": "Login Creative"
         }, 
         {
@@ -67,8 +67,13 @@
         }, 
         {
             "location": "/login/creative/#request", 
-            "text": "Headers:      Authorization: Bearer  token \n    Location: mx  POST  Content:  {\n    email : demo@mail.com ,\n    password : Password0fa4664e99c2 ,\n    passwordDoubleCheck : Password0fa4664e99c2 ,\n}", 
+            "text": "Headers:      X-Auth-Country: mx\n    Content-Type: application/json\n    Accept: application/json", 
             "title": "Request"
+        }, 
+        {
+            "location": "/login/creative/#login", 
+            "text": "Post  Url:  https://www.cerebritos.mx/mapi/v1/auth/login  POST  Content:  {\n    username :  functional.test8@cerebritos.com ,\n    password :  abcd1234 \n}", 
+            "title": "Login"
         }, 
         {
             "location": "/login/creative/#response-success", 
@@ -77,7 +82,7 @@
         }, 
         {
             "location": "/login/creative/#loggedin", 
-            "text": "HTTP Code:  200  {\n     message : success LoggedIn ,\n     context :[],\n}", 
+            "text": "HTTP Code:  200  {\n     token :  eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9... ,\n     id :  3 ,\n     cerebritosId :  38a300f32b75e9e56f9ae68c1c5e155d ,\n     username :  test@cerebritos.com ,\n     firstName :  Functional ,\n     lastName :  Test \n}", 
             "title": "LoggedIn"
         }, 
         {
@@ -87,22 +92,22 @@
         }, 
         {
             "location": "/login/creative/#bad-credentials", 
-            "text": "HTTP Code:  402  {\n     message : bad credentials ,\n     context :[],\n}", 
+            "text": "HTTP Code:  400  {\n     message : bad credentials ,\n     context :[]\n}", 
             "title": "Bad credentials"
         }, 
         {
             "location": "/login/creative/#banned-loggedin", 
-            "text": "HTTP Code:  402  {\n     message : banned LoggedIn ,\n     context :[],\n}", 
+            "text": "HTTP Code:  400  {\n     message : banned LoggedIn ,\n     context :[]\n}", 
             "title": "Banned LoggedIn"
         }, 
         {
             "location": "/login/creative/#token-expired", 
-            "text": "HTTP Code:  402  {\n     message : token expired ,\n     context :[],\n}", 
+            "text": "HTTP Code:  400  {\n     message : token expired ,\n     context :[]\n}", 
             "title": "Token expired"
         }, 
         {
             "location": "/signup/business/", 
-            "text": "Sign-Up Business\n\n\nRequest\n\n\nHeaders:\n\n\n    Authorization: Bearer \ntoken\n\n    Location: mx\n\n\n\n\nPOST\n Content:\n\n\n{\n   \nemail\n:\ndemo@mail.com\n,\n   \nemailDoubleCheck\n:\ndemo@mail.com\n,\n   \npassword\n:\nPassword0fa4664e99c2\n,\n   \nnewPassword\n:false,\n   \npasswordDoubleCheck\n:\nPassword0fa4664e99c2\n,\n   \nname\n:\ncerebritos inc.\n,\n   \nagentName\n:\nJonh smith jonnes\n,\n   \nbornDate\n:\n1989-01-31T08:59:19 +06:00\n,\n   \nnationalIdentificationNumber\n:\nFASDFAS123123R\n,\n   \nphoneNumber\n:\n01325534363754\n,\n   \nacceptTerms\n:true,\n   \ntaxIdentificationNumber\n:\nTAXDFAS123123R\n,\n   \naddresses\n:[\n      {\n        \nstreet\n: \nlorem impsu\n,\n        \nexternalNumber\n: \n12\n,\n        \ninternalNumber\n: \n1b\n,\n        \ncity\n: \nMexico\n,\n        \ncountry\n: \nMexico\n,\n        \nmunicipality\n: \nEcatepec\n,\n        \nneighborhood\n: \nMagdalena\n,\n        \nregion\n: \n32342\n,\n        \ndefaultAddress\n: true\n      }\n    ],\n   \nprojectPerYear\n:3,\n   \nteamSize\n:2\n}\n\n\n\n\nResponse Success\n\n\nRegistered\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[],\n}\n\n\n\n\nResponse Errors\n\n\nAlready registered\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\nalready registered\n,\n    \ncontext\n:[],\n}\n\n\n\n\nBanned registration\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\nbanned registration\n,\n    \ncontext\n:[],\n}\n\n\n\n\nIncorrect information / Missing fields\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nmissing fields\n,\n    \ncontext\n:[\n    {\n    \nphone\n:\nmost numbers\n,\n    \nemail\n:\nalready registred\n\n    }\n    ]\n}", 
+            "text": "Sign-Up Business\n\n\nRequest\n\n\nHeaders:\n\n\n    X-Auth-Country: mx\n    Content-Type: application/json\n    Accept: application/json\n\n\n\n\nUrl:\n\n\nhttps://www.cerebritos.mx/mapi/creative\n\n\n\n\nPOST\n Content:\n\n\n{\n    \nregistration\n: {\n        \nemail\n: \nfunctional.test8@cerebritos.com\n,\n        \ntypeUser\n: 2,\n        \nfirstName\n: \nFunctional\n,\n        \nlastName\n: \nTest\n,\n        \nagentName\n: \n,\n        \nbornDate\n: {\n            \nyear\n:\n1989\n,\n            \nmonth\n:\n5\n,\n            \nday\n:\n2\n\n        },\n        \ngender\n: \nmale\n,\n        \npassword\n: \nabcd1234\n,\n        \nnationalIdentificationNumber\n:\nFASDFAS123123D\n,\n        \ntaxIdentificationNumber\n:\nTAXDFAS123123R\n,\n        \nphoneNumber\n: \n55 3436 5887\n,\n        \nhourlyRate\n:3,\n        \nexperienceLevel\n:2,\n        \nacceptTerms\n: true\n    }\n}\n\n\n\n\nResponse Success\n\n\nRegistered\n\n\nHTTP Code: \n200\n\n\n{\n    \ntoken\n: \neyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9.eyJleHAi\n\n}\n\n\n\n\nResponse Errors\n\n\nAlready registered\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n: \nEl email ya existe\n,\n    \ncontext\n: null\n}\n\n\n\n\nBanned registration\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nEste email esta Baneado\n,\n    \ncontext\n:[]\n}\n\n\n\n\nIncorrect information / Missing fields\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n: \nHubo un problema al registrar el usuario.\n,\n    \ncontext\n: {\n        \nfirstName\n: [\n            \nEste valor no deber\u00eda estar vac\u00edo.\n\n        ]\n    }\n}", 
             "title": "Sign-Up Business"
         }, 
         {
@@ -112,7 +117,7 @@
         }, 
         {
             "location": "/signup/business/#request", 
-            "text": "Headers:      Authorization: Bearer  token \n    Location: mx  POST  Content:  {\n    email : demo@mail.com ,\n    emailDoubleCheck : demo@mail.com ,\n    password : Password0fa4664e99c2 ,\n    newPassword :false,\n    passwordDoubleCheck : Password0fa4664e99c2 ,\n    name : cerebritos inc. ,\n    agentName : Jonh smith jonnes ,\n    bornDate : 1989-01-31T08:59:19 +06:00 ,\n    nationalIdentificationNumber : FASDFAS123123R ,\n    phoneNumber : 01325534363754 ,\n    acceptTerms :true,\n    taxIdentificationNumber : TAXDFAS123123R ,\n    addresses :[\n      {\n         street :  lorem impsu ,\n         externalNumber :  12 ,\n         internalNumber :  1b ,\n         city :  Mexico ,\n         country :  Mexico ,\n         municipality :  Ecatepec ,\n         neighborhood :  Magdalena ,\n         region :  32342 ,\n         defaultAddress : true\n      }\n    ],\n    projectPerYear :3,\n    teamSize :2\n}", 
+            "text": "Headers:      X-Auth-Country: mx\n    Content-Type: application/json\n    Accept: application/json  Url:  https://www.cerebritos.mx/mapi/creative  POST  Content:  {\n     registration : {\n         email :  functional.test8@cerebritos.com ,\n         typeUser : 2,\n         firstName :  Functional ,\n         lastName :  Test ,\n         agentName :  ,\n         bornDate : {\n             year : 1989 ,\n             month : 5 ,\n             day : 2 \n        },\n         gender :  male ,\n         password :  abcd1234 ,\n         nationalIdentificationNumber : FASDFAS123123D ,\n         taxIdentificationNumber : TAXDFAS123123R ,\n         phoneNumber :  55 3436 5887 ,\n         hourlyRate :3,\n         experienceLevel :2,\n         acceptTerms : true\n    }\n}", 
             "title": "Request"
         }, 
         {
@@ -122,7 +127,7 @@
         }, 
         {
             "location": "/signup/business/#registered", 
-            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[],\n}", 
+            "text": "HTTP Code:  200  {\n     token :  eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9.eyJleHAi \n}", 
             "title": "Registered"
         }, 
         {
@@ -132,22 +137,22 @@
         }, 
         {
             "location": "/signup/business/#already-registered", 
-            "text": "HTTP Code:  402  {\n     message : already registered ,\n     context :[],\n}", 
+            "text": "HTTP Code:  400  {\n     message :  El email ya existe ,\n     context : null\n}", 
             "title": "Already registered"
         }, 
         {
             "location": "/signup/business/#banned-registration", 
-            "text": "HTTP Code:  402  {\n     message : banned registration ,\n     context :[],\n}", 
+            "text": "HTTP Code:  400  {\n     message : Este email esta Baneado ,\n     context :[]\n}", 
             "title": "Banned registration"
         }, 
         {
             "location": "/signup/business/#incorrect-information-missing-fields", 
-            "text": "HTTP Code:  400  {\n     message : missing fields ,\n     context :[\n    {\n     phone : most numbers ,\n     email : already registred \n    }\n    ]\n}", 
+            "text": "HTTP Code:  400  {\n     message :  Hubo un problema al registrar el usuario. ,\n     context : {\n         firstName : [\n             Este valor no deber\u00eda estar vac\u00edo. \n        ]\n    }\n}", 
             "title": "Incorrect information / Missing fields"
         }, 
         {
             "location": "/login/business/", 
-            "text": "Login Business\n\n\nRequest\n\n\nHeaders:\n\n\n    Authorization: Bearer \ntoken\n\n    Location: mx\n\n\n\n\nPOST\n Content:\n\n\n{\n   \nemail\n:\ndemo@mail.com\n,\n   \npassword\n:\nPassword0fa4664e99c2\n,\n   \npasswordDoubleCheck\n:\nPassword0fa4664e99c2\n,\n}\n\n\n\n\nResponse Success\n\n\nLoggedIn\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess LoggedIn\n,\n    \ncontext\n:[],\n}\n\n\n\n\nResponse Errors\n\n\nBad credentials\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\nbad credentials\n,\n    \ncontext\n:[],\n}\n\n\n\n\nBanned LoggedIn\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\nbanned LoggedIn\n,\n    \ncontext\n:[],\n}\n\n\n\n\nToken expired\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\ntoken expired\n,\n    \ncontext\n:[],\n}", 
+            "text": "Login Business\n\n\nRequest\n\n\nHeaders:\n\n\n    X-Auth-Country: mx\n    Content-Type: application/json\n    Accept: application/json\n\n\n\n\nLogin\n\n\nPost\n Url:\n\n\nhttps://www.cerebritos.mx/mapi/v1/auth/login\n\n\n\n\nPOST\n Content:\n\n\n{\n   \nusername\n: \nfunctional.test8@cerebritos.com\n,\n   \npassword\n: \nabcd1234\n\n}\n\n\n\n\nResponse Success\n\n\nLoggedIn\n\n\nHTTP Code: \n200\n\n\n{\n    \ntoken\n: \neyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9...\n,\n    \nid\n: \n3\n,\n    \ncerebritosId\n: \n38a300f32b75e9e56f9ae68c1c5e155d\n,\n    \nusername\n: \ntest@cerebritos.com\n,\n    \nfirstName\n: \nFunctional\n,\n    \nlastName\n: \nTest\n\n}\n\n\n\n\nResponse Errors\n\n\nBad credentials\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nbad credentials\n,\n    \ncontext\n:[]\n}\n\n\n\n\nBanned LoggedIn\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nbanned LoggedIn\n,\n    \ncontext\n:[]\n}\n\n\n\n\nToken expired\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\ntoken expired\n,\n    \ncontext\n:[]\n}", 
             "title": "Login Business"
         }, 
         {
@@ -157,8 +162,13 @@
         }, 
         {
             "location": "/login/business/#request", 
-            "text": "Headers:      Authorization: Bearer  token \n    Location: mx  POST  Content:  {\n    email : demo@mail.com ,\n    password : Password0fa4664e99c2 ,\n    passwordDoubleCheck : Password0fa4664e99c2 ,\n}", 
+            "text": "Headers:      X-Auth-Country: mx\n    Content-Type: application/json\n    Accept: application/json", 
             "title": "Request"
+        }, 
+        {
+            "location": "/login/business/#login", 
+            "text": "Post  Url:  https://www.cerebritos.mx/mapi/v1/auth/login  POST  Content:  {\n    username :  functional.test8@cerebritos.com ,\n    password :  abcd1234 \n}", 
+            "title": "Login"
         }, 
         {
             "location": "/login/business/#response-success", 
@@ -167,7 +177,7 @@
         }, 
         {
             "location": "/login/business/#loggedin", 
-            "text": "HTTP Code:  200  {\n     message : success LoggedIn ,\n     context :[],\n}", 
+            "text": "HTTP Code:  200  {\n     token :  eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9... ,\n     id :  3 ,\n     cerebritosId :  38a300f32b75e9e56f9ae68c1c5e155d ,\n     username :  test@cerebritos.com ,\n     firstName :  Functional ,\n     lastName :  Test \n}", 
             "title": "LoggedIn"
         }, 
         {
@@ -177,22 +187,22 @@
         }, 
         {
             "location": "/login/business/#bad-credentials", 
-            "text": "HTTP Code:  402  {\n     message : bad credentials ,\n     context :[],\n}", 
+            "text": "HTTP Code:  400  {\n     message : bad credentials ,\n     context :[]\n}", 
             "title": "Bad credentials"
         }, 
         {
             "location": "/login/business/#banned-loggedin", 
-            "text": "HTTP Code:  402  {\n     message : banned LoggedIn ,\n     context :[],\n}", 
+            "text": "HTTP Code:  400  {\n     message : banned LoggedIn ,\n     context :[]\n}", 
             "title": "Banned LoggedIn"
         }, 
         {
             "location": "/login/business/#token-expired", 
-            "text": "HTTP Code:  402  {\n     message : token expired ,\n     context :[],\n}", 
+            "text": "HTTP Code:  400  {\n     message : token expired ,\n     context :[]\n}", 
             "title": "Token expired"
         }, 
         {
             "location": "/profile/general/", 
-            "text": "Information General Creative / Business\n\n\nRequest\n\n\nHeaders:\n\n\n    Authorization: Bearer \ntoken\n\n    Location: mx\n\n\n\n\nGET\n Url:\n\n\nhttps://www.cerebritos.mx/p/general/\nidCreative\n\n\n\n\n\nPOST\n Content:\n\n\n{\n   \nemail\n:\ndemo@mail.com\n,\n   \nemailDoubleCheck\n:\ndemo@mail.com\n,\n   \npassword\n:\nPassword0fa4664e99c2\n,\n   \nnewPassword\n:false,\n   \npasswordDoubleCheck\n:\nPassword0fa4664e99c2\n,\n   \nname\n:\ncerebritos inc.\n,\n   \nagentName\n:\nJonh smith jonnes\n,\n   \nbornDate\n:\n1989-01-31T08:59:19 +06:00\n,\n   \nnationalIdentificationNumber\n:\nFASDFAS123123R\n,\n   \nphoneNumber\n:\n01325534363754\n,\n   \nacceptTerms\n:true,\n   \ntaxIdentificationNumber\n:\nTAXDFAS123123R\n,\n   \nprojectPerYear\n:3,\n   \nteamSize\n:2\n}\n\n\n\n\nResponse Success\n\n\nProfile found\n\n\nHTTP Code: \n200\n\n\nResponse business:\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[\n    {\n       \nid\n:\n123124\n,\n       \nidBrain\n:\n832952\n,\n       \nemail\n:\ndemo@mail.com\n,\n       \nemailDoubleCheck\n:\ndemo@mail.com\n,\n       \npassword\n:\nPassword0fa4664e99c2\n,\n       \nnewPassword\n:false,\n       \npasswordDoubleCheck\n:\nPassword0fa4664e99c2\n,\n       \nname\n:\ncerebritos inc.\n,\n       \nagentName\n:\nJonh smith jonnes\n,\n       \nbornDate\n:\n1989-01-31T08:59:19 +06:00\n,\n       \nnationalIdentificationNumber\n:\nFASDFAS123123R\n,\n       \nphoneNumber\n:\n01325534363754\n,\n       \nacceptTerms\n:true,\n       \ntaxIdentificationNumber\n:\nTAXDFAS123123R\n,\n       \naddresses\n:[\n          {\n            \nstreet\n: \nlorem impsu\n,\n            \nexternalNumber\n: \n12\n,\n            \ninternalNumber\n: \n1b\n,\n            \ncity\n: \nMexico\n,\n            \ncountry\n: \nMexico\n,\n            \nmunicipality\n: \nEcatepec\n,\n            \nneighborhood\n: \nMagdalena\n,\n            \nregion\n: \n32342\n,\n            \ndefaultAddress\n: true\n          }\n        ],\n       \nprojectPerYear\n:3,\n       \nteamSize\n:2\n    }\n    ],\n}\n\n\n\n\nResponse creative:\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[\n    {\n       \nid\n:\n123124\n,\n       \nidBrain\n:\n832952\n,\n       \nemail\n:\ndemo@mail.com\n,\n       \nemailDoubleCheck\n:\ndemo@mail.com\n,\n       \npassword\n:\nPassword0fa4664e99c2\n,\n       \nnewPassword\n:false,\n       \npasswordDoubleCheck\n:\nPassword0fa4664e99c2\n,\n       \nname\n:\ncerebritos inc.\n,\n       \nlastName\n:\nJonh smith jonnes\n,\n       \nbornDate\n:\n1989-01-31T08:59:19 +06:00\n,\n       \nnationalIdentificationNumber\n:\nFASDFAS123123R\n,\n       \nphoneNumber\n:\n01325534363754\n,\n       \nacceptTerms\n:true,\n       \ntaxIdentificationNumber\n:\nTAXDFAS123123R\n,\n       \naddresses\n:[\n          {\n            \nstreet\n: \nlorem impsu\n,\n            \nexternalNumber\n: \n12\n,\n            \ninternalNumber\n: \n1b\n,\n            \ncity\n: \nMexico\n,\n            \ncountry\n: \nMexico\n,\n            \nmunicipality\n: \nEcatepec\n,\n            \nneighborhood\n: \nMagdalena\n,\n            \nregion\n: \n32342\n,\n            \ndefaultAddress\n: true\n          }\n        ],\n       \nhourlyRate\n:3,\n       \nexperienceLevel\n:2\n    }\n    ],\n}\n\n\n\n\nUpdated profile\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[],\n}\n\n\n\n\nResponse Errors\n\n\nProfile not found\n\n\nHTTP Code: \n404\n\n\n{\n    \nmessage\n:\nprofile not found\n,\n    \ncontext\n:[],\n}\n\n\n\n\nToken expired\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\ntoken expired\n,\n    \ncontext\n:[],\n}\n\n\n\n\nIncorrect information / Missing fields\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\nmissing fields\n,\n    \ncontext\n:[\n    {\n    \nphone\n:\nmost numbers\n,\n    \nemail\n:\nalready registred\n\n    }\n    ]\n}", 
+            "text": "Information General Creative / Business\n\n\nRequest\n\n\nHeaders:\n\n\n    X-Auth-Country: mx\n    X-Auth: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9...\n    Content-Type: application/json\n    Accept: application/json\n\n\n\n\nObtain Creative Profile\n\n\nPost\n Url:\n\n\nhttps://www.cerebritos.mx/mapi/v1/creative/profile\n\n\n\n\nPOST\n Content:\n\n\n{}\n\n\n\n\nUpdate Creative Profile\n\n\nPost\n Url:\n\n\nhttps://www.cerebritos.mx/mapi/v1/creative/update-profile\n\n\n\n\nPOST\n Content:\n\n\n{\n  \nfirstName\n: \ntest\n,\n  \nlastName\n: \ntest test\n,\n  \ngender\n: \nmale\n,\n  \nbornDate\n: {\n            \nyear\n:\n1989\n,\n            \nmonth\n:\n5\n,\n            \nday\n:\n2\n\n        },\n  \nemail\n: \ntest@cerebritos.com\n\n}\n\n\n\n\nResponse Success\n\n\nProfile found\n\n\nHTTP Code: \n200\n\n\nResponse business:\n\n\n{\n    \nid\n: \n3\n,\n    \ncerebritos_id\n: \n38a300f32b75e9e56f9ae68c1c5e155d\n,\n    \nemail\n: \nfunctional.test8@cerebritos.com\n,\n    \nfirst_name\n: \nFunctional\n,\n    \nlast_name\n: \nTest\n,\n    \nbornDate\n: \n1989-05-02 00:00:00\n,\n    \ngender\n: \nmale\n,\n    \nnationalIdentificationNumber\n: \nFASDFAS123123D\n,\n    \ntaxIdentificationNumber\n: \nTAXDFAS123123R\n\n}\n\n\n\n\nResponse creative:\n\n\n{\n    \nid\n: \n3\n,\n    \ncerebritos_id\n: \n38a300f32b75e9e56f9ae68c1c5e155d\n,\n    \nemail\n: \nfunctional.test8@cerebritos.com\n,\n    \nfirst_name\n: \nFunctional\n,\n    \nlast_name\n: \nTest\n,\n    \nbornDate\n: \n1989-05-02 00:00:00\n,\n    \ngender\n: \nmale\n,\n    \nnationalIdentificationNumber\n: \nFASDFAS123123D\n,\n    \ntaxIdentificationNumber\n: \nTAXDFAS123123R\n\n}\n\n\n\n\nUpdated profile\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n: \nsuccess\n,\n    \ncontext\n: \nTus datos han sido Actualizados\n\n}\n\n\n\n\nResponse Errors\n\n\nProfile not found\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nNo se encontro ese Usuario\n,\n    \ncontext\n:[]\n}\n\n\n\n\nToken expired\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\ntoken expired\n,\n    \ncontext\n:[]\n}\n\n\n\n\nIncorrect information / Missing fields\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n: \nHubo un problema al actualizar los datos del usuario.\n,\n    \ncontext\n: {\n        \nlastName\n: [\n            \nEste valor no deber\u00eda estar vac\u00edo.\n\n        ]\n    }\n}", 
             "title": "General information"
         }, 
         {
@@ -202,8 +212,18 @@
         }, 
         {
             "location": "/profile/general/#request", 
-            "text": "Headers:      Authorization: Bearer  token \n    Location: mx  GET  Url:  https://www.cerebritos.mx/p/general/ idCreative   POST  Content:  {\n    email : demo@mail.com ,\n    emailDoubleCheck : demo@mail.com ,\n    password : Password0fa4664e99c2 ,\n    newPassword :false,\n    passwordDoubleCheck : Password0fa4664e99c2 ,\n    name : cerebritos inc. ,\n    agentName : Jonh smith jonnes ,\n    bornDate : 1989-01-31T08:59:19 +06:00 ,\n    nationalIdentificationNumber : FASDFAS123123R ,\n    phoneNumber : 01325534363754 ,\n    acceptTerms :true,\n    taxIdentificationNumber : TAXDFAS123123R ,\n    projectPerYear :3,\n    teamSize :2\n}", 
+            "text": "Headers:      X-Auth-Country: mx\n    X-Auth: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9...\n    Content-Type: application/json\n    Accept: application/json", 
             "title": "Request"
+        }, 
+        {
+            "location": "/profile/general/#obtain-creative-profile", 
+            "text": "Post  Url:  https://www.cerebritos.mx/mapi/v1/creative/profile  POST  Content:  {}", 
+            "title": "Obtain Creative Profile"
+        }, 
+        {
+            "location": "/profile/general/#update-creative-profile", 
+            "text": "Post  Url:  https://www.cerebritos.mx/mapi/v1/creative/update-profile  POST  Content:  {\n   firstName :  test ,\n   lastName :  test test ,\n   gender :  male ,\n   bornDate : {\n             year : 1989 ,\n             month : 5 ,\n             day : 2 \n        },\n   email :  test@cerebritos.com \n}", 
+            "title": "Update Creative Profile"
         }, 
         {
             "location": "/profile/general/#response-success", 
@@ -212,12 +232,12 @@
         }, 
         {
             "location": "/profile/general/#profile-found", 
-            "text": "HTTP Code:  200  Response business:  {\n     message : success ,\n     context :[\n    {\n        id : 123124 ,\n        idBrain : 832952 ,\n        email : demo@mail.com ,\n        emailDoubleCheck : demo@mail.com ,\n        password : Password0fa4664e99c2 ,\n        newPassword :false,\n        passwordDoubleCheck : Password0fa4664e99c2 ,\n        name : cerebritos inc. ,\n        agentName : Jonh smith jonnes ,\n        bornDate : 1989-01-31T08:59:19 +06:00 ,\n        nationalIdentificationNumber : FASDFAS123123R ,\n        phoneNumber : 01325534363754 ,\n        acceptTerms :true,\n        taxIdentificationNumber : TAXDFAS123123R ,\n        addresses :[\n          {\n             street :  lorem impsu ,\n             externalNumber :  12 ,\n             internalNumber :  1b ,\n             city :  Mexico ,\n             country :  Mexico ,\n             municipality :  Ecatepec ,\n             neighborhood :  Magdalena ,\n             region :  32342 ,\n             defaultAddress : true\n          }\n        ],\n        projectPerYear :3,\n        teamSize :2\n    }\n    ],\n}  Response creative:  {\n     message : success ,\n     context :[\n    {\n        id : 123124 ,\n        idBrain : 832952 ,\n        email : demo@mail.com ,\n        emailDoubleCheck : demo@mail.com ,\n        password : Password0fa4664e99c2 ,\n        newPassword :false,\n        passwordDoubleCheck : Password0fa4664e99c2 ,\n        name : cerebritos inc. ,\n        lastName : Jonh smith jonnes ,\n        bornDate : 1989-01-31T08:59:19 +06:00 ,\n        nationalIdentificationNumber : FASDFAS123123R ,\n        phoneNumber : 01325534363754 ,\n        acceptTerms :true,\n        taxIdentificationNumber : TAXDFAS123123R ,\n        addresses :[\n          {\n             street :  lorem impsu ,\n             externalNumber :  12 ,\n             internalNumber :  1b ,\n             city :  Mexico ,\n             country :  Mexico ,\n             municipality :  Ecatepec ,\n             neighborhood :  Magdalena ,\n             region :  32342 ,\n             defaultAddress : true\n          }\n        ],\n        hourlyRate :3,\n        experienceLevel :2\n    }\n    ],\n}", 
+            "text": "HTTP Code:  200  Response business:  {\n     id :  3 ,\n     cerebritos_id :  38a300f32b75e9e56f9ae68c1c5e155d ,\n     email :  functional.test8@cerebritos.com ,\n     first_name :  Functional ,\n     last_name :  Test ,\n     bornDate :  1989-05-02 00:00:00 ,\n     gender :  male ,\n     nationalIdentificationNumber :  FASDFAS123123D ,\n     taxIdentificationNumber :  TAXDFAS123123R \n}  Response creative:  {\n     id :  3 ,\n     cerebritos_id :  38a300f32b75e9e56f9ae68c1c5e155d ,\n     email :  functional.test8@cerebritos.com ,\n     first_name :  Functional ,\n     last_name :  Test ,\n     bornDate :  1989-05-02 00:00:00 ,\n     gender :  male ,\n     nationalIdentificationNumber :  FASDFAS123123D ,\n     taxIdentificationNumber :  TAXDFAS123123R \n}", 
             "title": "Profile found"
         }, 
         {
             "location": "/profile/general/#updated-profile", 
-            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[],\n}", 
+            "text": "HTTP Code:  200  {\n     message :  success ,\n     context :  Tus datos han sido Actualizados \n}", 
             "title": "Updated profile"
         }, 
         {
@@ -227,22 +247,22 @@
         }, 
         {
             "location": "/profile/general/#profile-not-found", 
-            "text": "HTTP Code:  404  {\n     message : profile not found ,\n     context :[],\n}", 
+            "text": "HTTP Code:  400  {\n     message : No se encontro ese Usuario ,\n     context :[]\n}", 
             "title": "Profile not found"
         }, 
         {
             "location": "/profile/general/#token-expired", 
-            "text": "HTTP Code:  402  {\n     message : token expired ,\n     context :[],\n}", 
+            "text": "HTTP Code:  400  {\n     message : token expired ,\n     context :[]\n}", 
             "title": "Token expired"
         }, 
         {
             "location": "/profile/general/#incorrect-information-missing-fields", 
-            "text": "HTTP Code:  402  {\n     message : missing fields ,\n     context :[\n    {\n     phone : most numbers ,\n     email : already registred \n    }\n    ]\n}", 
+            "text": "HTTP Code:  400  {\n     message :  Hubo un problema al actualizar los datos del usuario. ,\n     context : {\n         lastName : [\n             Este valor no deber\u00eda estar vac\u00edo. \n        ]\n    }\n}", 
             "title": "Incorrect information / Missing fields"
         }, 
         {
             "location": "/profile/school/", 
-            "text": "Information School Creative\n\n\nRequest\n\n\nHeaders:\n\n\n    Authorization: Bearer \ntoken\n\n    Location: mx\n\n\n\n\nGET\n Url:\n\n\nhttps://www.cerebritos.mx/p/school/\nidCreative\n\n\n\n\n\nPOST\n Content:\n\n\n[\n    {\n        \nname\n: \nintituto albert smith state\n,\n        \ncertificate\n:true,\n        \ntitle\n:\nsystems engineer\n\n        \nstartYear\n: \n2012-01-31T08:59:19 +06:00\n,\n        \nendYear\n: \n2015-01-31T08:59:19 +06:00\n,\n        \ntruncated career\n:false\n    },\n    {\n        \nname\n: \nuniversidad panamericana\n,\n        \ncertificate\n:false,\n        \ntitle\n:\nnone\n\n        \nstartYear\n: \n2016-01-31T08:59:19 +06:00\n,\n        \nendYear\n: \n2016-01-31T08:59:19 +06:00\n,\n        \ntruncated career\n:true\n    }\n]\n\n\n\n\nResponse Success\n\n\nProfile found\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[\n    {\n       \nid\n:\n123124\n,\n       \nidBrain\n:\n832952\n,\n       \nskills\n:[\n            {\n                \n0\n: \nintituto albert smith state\n,\n                \n1\n:true,\n                \n2\n:\nsystems engineer\n,\n                \n3\n: \n2012-01-31T08:59:19 +06:00\n,\n                \n4\n: \n2015-01-31T08:59:19 +06:00\n,\n                \ntruncatedCareer\n:false\n            },\n            {\n                \nname\n: \nuniversidad panamericana\n,\n                \ncertificate\n:false,\n                \ntitle\n:\nnone\n,\n                \nstartYear\n: \n2016-01-31T08:59:19 +06:00\n,\n                \nendYear\n: \n2016-01-31T08:59:19 +06:00\n,\n                \ntruncatedCareer\n:true\n            }\n        ],\n    }\n    ],\n}\n\n\n\n\nUpdated profile\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[],\n}\n\n\n\n\nResponse Errors\n\n\nProfile not found\n\n\nHTTP Code: \n404\n\n\n{\n    \nmessage\n:\nProfile not found\n,\n    \ncontext\n:[],\n}\n\n\n\n\nToken expired\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\ntoken expired\n,\n    \ncontext\n:[],\n}\n\n\n\n\nIncorrect information / Missing fields\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nmissing fields\n,\n    \ncontext\n:[\n    {\n    \nskills\n:\nmissing data\n\n    }\n    ]\n}", 
+            "text": "Information School Creative\n\n\nRequest\n\n\nHeaders:\n\n\n    X-Auth-Country: mx\n    X-Auth: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9...\n    Content-Type: application/json\n    Accept: application/json\n\n\n\n\nPOST\n Url:\n\n\nhttps://www.cerebritos.mx/mapi/v1/school\n\n\n\n\nPOST\n Content:\n\n\n[{\n        \nname\n: \nintituto albert smith state\n,\n        \ncertificate\n: true,\n        \ntitle\n: \nsystems engineer\n,\n        \nstartYear\n: \n2012-01-31T08:59:19 +06:00\n,\n        \nendYear\n: \n2015-01-31T08:59:19 +06:00\n,\n        \ntruncated career\n: false\n    },\n    {\n        \nname\n: \nuniversidad panamericana\n,\n        \ncertificate\n: false,\n        \ntitle\n: \nnone\n,\n        \nstartYear\n: \n2016-01-31T08:59:19 +06:00\n,\n        \nendYear\n: \n2016-01-31T08:59:19 +06:00\n,\n        \ntruncated career\n: true\n    }\n]\n\n\n\n\nResponse Success\n\n\nProfile found\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n: \nsuccess\n,\n    \ncontext\n: [{\n        \nid\n: \n123124\n,\n        \nidBrain\n: \n832952\n,\n        \nskills\n: [{\n                \n0\n: \nintituto albert smith state\n,\n                \n1\n: true,\n                \n2\n: \nsystems engineer\n,\n                \n3\n: \n2012-01-31T08:59:19 +06:00\n,\n                \n4\n: \n2015-01-31T08:59:19 +06:00\n,\n                \ntruncatedCareer\n: false\n            },\n            {\n                \nname\n: \nuniversidad panamericana\n,\n                \ncertificate\n: false,\n                \ntitle\n: \nnone\n,\n                \nstartYear\n: \n2016-01-31T08:59:19 +06:00\n,\n                \nendYear\n: \n2016-01-31T08:59:19 +06:00\n,\n                \ntruncatedCareer\n: true\n            }\n        ]\n    }]\n}\n\n\n\n\nUpdated profile\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[]\n}\n\n\n\n\nResponse Errors\n\n\nProfile not found\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nProfile not found\n,\n    \ncontext\n:[]\n}\n\n\n\n\nToken expired\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\ntoken expired\n,\n    \ncontext\n:[]\n}\n\n\n\n\nIncorrect information / Missing fields\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nmissing fields\n,\n    \ncontext\n:[\n    {\n    \nskills\n:\nmissing data\n\n    }\n    ]\n}", 
             "title": "School information"
         }, 
         {
@@ -252,7 +272,7 @@
         }, 
         {
             "location": "/profile/school/#request", 
-            "text": "Headers:      Authorization: Bearer  token \n    Location: mx  GET  Url:  https://www.cerebritos.mx/p/school/ idCreative   POST  Content:  [\n    {\n         name :  intituto albert smith state ,\n         certificate :true,\n         title : systems engineer \n         startYear :  2012-01-31T08:59:19 +06:00 ,\n         endYear :  2015-01-31T08:59:19 +06:00 ,\n         truncated career :false\n    },\n    {\n         name :  universidad panamericana ,\n         certificate :false,\n         title : none \n         startYear :  2016-01-31T08:59:19 +06:00 ,\n         endYear :  2016-01-31T08:59:19 +06:00 ,\n         truncated career :true\n    }\n]", 
+            "text": "Headers:      X-Auth-Country: mx\n    X-Auth: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9...\n    Content-Type: application/json\n    Accept: application/json  POST  Url:  https://www.cerebritos.mx/mapi/v1/school  POST  Content:  [{\n         name :  intituto albert smith state ,\n         certificate : true,\n         title :  systems engineer ,\n         startYear :  2012-01-31T08:59:19 +06:00 ,\n         endYear :  2015-01-31T08:59:19 +06:00 ,\n         truncated career : false\n    },\n    {\n         name :  universidad panamericana ,\n         certificate : false,\n         title :  none ,\n         startYear :  2016-01-31T08:59:19 +06:00 ,\n         endYear :  2016-01-31T08:59:19 +06:00 ,\n         truncated career : true\n    }\n]", 
             "title": "Request"
         }, 
         {
@@ -262,12 +282,12 @@
         }, 
         {
             "location": "/profile/school/#profile-found", 
-            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[\n    {\n        id : 123124 ,\n        idBrain : 832952 ,\n        skills :[\n            {\n                 0 :  intituto albert smith state ,\n                 1 :true,\n                 2 : systems engineer ,\n                 3 :  2012-01-31T08:59:19 +06:00 ,\n                 4 :  2015-01-31T08:59:19 +06:00 ,\n                 truncatedCareer :false\n            },\n            {\n                 name :  universidad panamericana ,\n                 certificate :false,\n                 title : none ,\n                 startYear :  2016-01-31T08:59:19 +06:00 ,\n                 endYear :  2016-01-31T08:59:19 +06:00 ,\n                 truncatedCareer :true\n            }\n        ],\n    }\n    ],\n}", 
+            "text": "HTTP Code:  200  {\n     message :  success ,\n     context : [{\n         id :  123124 ,\n         idBrain :  832952 ,\n         skills : [{\n                 0 :  intituto albert smith state ,\n                 1 : true,\n                 2 :  systems engineer ,\n                 3 :  2012-01-31T08:59:19 +06:00 ,\n                 4 :  2015-01-31T08:59:19 +06:00 ,\n                 truncatedCareer : false\n            },\n            {\n                 name :  universidad panamericana ,\n                 certificate : false,\n                 title :  none ,\n                 startYear :  2016-01-31T08:59:19 +06:00 ,\n                 endYear :  2016-01-31T08:59:19 +06:00 ,\n                 truncatedCareer : true\n            }\n        ]\n    }]\n}", 
             "title": "Profile found"
         }, 
         {
             "location": "/profile/school/#updated-profile", 
-            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[],\n}", 
+            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[]\n}", 
             "title": "Updated profile"
         }, 
         {
@@ -277,12 +297,12 @@
         }, 
         {
             "location": "/profile/school/#profile-not-found", 
-            "text": "HTTP Code:  404  {\n     message : Profile not found ,\n     context :[],\n}", 
+            "text": "HTTP Code:  400  {\n     message : Profile not found ,\n     context :[]\n}", 
             "title": "Profile not found"
         }, 
         {
             "location": "/profile/school/#token-expired", 
-            "text": "HTTP Code:  402  {\n     message : token expired ,\n     context :[],\n}", 
+            "text": "HTTP Code:  400  {\n     message : token expired ,\n     context :[]\n}", 
             "title": "Token expired"
         }, 
         {
@@ -292,7 +312,7 @@
         }, 
         {
             "location": "/profile/skills/", 
-            "text": "Information General Creative / Business\n\n\nRequest\n\n\nHeaders:\n\n\n    Authorization: Bearer \ntoken\n\n    Location: mx\n\n\n\n\nGET\n Url:\n\n\nhttps://www.cerebritos.mx/p/skills/\nidCreative\n\n\n\n\n\nPOST\n Content:\n\n\n{\n   \ntypesOffers\n:3,\n   \ntypesAreas\n:[\n            {\n            \n0\n:\nserivice network\n,\n            \n1\n:\ndevelop\n,\n            \n2\n:\nsupport\n,\n            \n3\n:\nanalitics\n,\n            \n4\n:\ncommunity manager\n\n            }\n        ],\n   \nskills\n:[\n        {\n            \n0\n:\nPHP\n,\n            \n1\n:\nSCRUM\n,\n            \n2\n:\nSLACK\n,\n            \n3\n:\nWATCH TV\n,\n            \n4\n:\nPIZZA\n,\n            \n5\n:\nWORD\n\n        }\n    ],\n    \nexperienceLevel\n:3\n}\n\n\n\n\nResponse Success\n\n\nProfile found\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[\n            {\n           \ntypesOffers\n:3,\n           \ntypesAreas\n:[\n                    {\n                    \n0\n:\nserivice network\n,\n                    \n1\n:\ndevelop\n,\n                    \n2\n:\nsupport\n,\n                    \n3\n:\nanalitics\n,\n                    \n4\n:\ncommunity manager\n\n                    }\n                ],\n           \nskills\n:[\n                {\n                    \n0\n:\nPHP\n,\n                    \n1\n:\nSCRUM\n,\n                    \n2\n:\nSLACK\n,\n                    \n3\n:\nWATCH TV\n,\n                    \n4\n:\nPIZZA\n,\n                    \n5\n:\nWORD\n\n                }\n            ],\n            \nexperienceLevel\n:3\n        }\n    ]\n}\n\n\n\n\nUpdated profile\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[],\n}\n\n\n\n\nResponse Errors\n\n\nProfile not found\n\n\nHTTP Code: \n404\n\n\n{\n    \nmessage\n:\nProfile not found\n,\n    \ncontext\n:[],\n}\n\n\n\n\nToken expired\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\ntoken expired\n,\n    \ncontext\n:[],\n}\n\n\n\n\nIncorrect information / Missing fields\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nmissing fields\n,\n    \ncontext\n:[\n    {\n    \ntypesOffers\n:3,\n    \nexperienceLevel\n:3\n    }\n    ]\n}", 
+            "text": "Information General Creative / Business\n\n\nRequest\n\n\nHeaders:\n\n\n    X-Auth-Country: mx\n    X-Auth: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9...\n    Content-Type: application/json\n    Accept: application/json\n\n\n\n\nPOST\n Url:\n\n\nhttps://www.cerebritos.mx/mapi/v1/skills\n\n\n\n\nPOST\n Content:\n\n\n{\n    \ntypesOffers\n: 3,\n    \ntypesAreas\n: [{\n        \n0\n: \nserivice network\n,\n        \n1\n: \ndevelop\n,\n        \n2\n: \nsupport\n,\n        \n3\n: \nanalitics\n,\n        \n4\n: \ncommunity manager\n\n    }],\n    \nskills\n: [{\n        \n0\n: \nPHP\n,\n        \n1\n: \nSCRUM\n,\n        \n2\n: \nSLACK\n,\n        \n3\n: \nWATCH TV\n,\n        \n4\n: \nPIZZA\n,\n        \n5\n: \nWORD\n\n    }],\n    \nexperienceLevel\n: 3\n}\n\n\n\n\nResponse Success\n\n\nProfile found\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n: \nsuccess\n,\n    \ncontext\n: [{\n        \ntypesOffers\n: 3,\n        \ntypesAreas\n: [{\n            \n0\n: \nserivice network\n,\n            \n1\n: \ndevelop\n,\n            \n2\n: \nsupport\n,\n            \n3\n: \nanalitics\n,\n            \n4\n: \ncommunity manager\n\n        }],\n        \nskills\n: [{\n            \n0\n: \nPHP\n,\n            \n1\n: \nSCRUM\n,\n            \n2\n: \nSLACK\n,\n            \n3\n: \nWATCH TV\n,\n            \n4\n: \nPIZZA\n,\n            \n5\n: \nWORD\n\n        }],\n        \nexperienceLevel\n: 3\n    }]\n}\n\n\n\n\nUpdated profile\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[]\n}\n\n\n\n\nResponse Errors\n\n\nProfile not found\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nProfile not found\n,\n    \ncontext\n:[]\n}\n\n\n\n\nToken expired\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\ntoken expired\n,\n    \ncontext\n:[]\n}\n\n\n\n\nIncorrect information / Missing fields\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nmissing fields\n,\n    \ncontext\n:[\n    {\n    \ntypesOffers\n:3,\n    \nexperienceLevel\n:3\n    }\n    ]\n}", 
             "title": "Skills information"
         }, 
         {
@@ -302,7 +322,7 @@
         }, 
         {
             "location": "/profile/skills/#request", 
-            "text": "Headers:      Authorization: Bearer  token \n    Location: mx  GET  Url:  https://www.cerebritos.mx/p/skills/ idCreative   POST  Content:  {\n    typesOffers :3,\n    typesAreas :[\n            {\n             0 : serivice network ,\n             1 : develop ,\n             2 : support ,\n             3 : analitics ,\n             4 : community manager \n            }\n        ],\n    skills :[\n        {\n             0 : PHP ,\n             1 : SCRUM ,\n             2 : SLACK ,\n             3 : WATCH TV ,\n             4 : PIZZA ,\n             5 : WORD \n        }\n    ],\n     experienceLevel :3\n}", 
+            "text": "Headers:      X-Auth-Country: mx\n    X-Auth: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9...\n    Content-Type: application/json\n    Accept: application/json  POST  Url:  https://www.cerebritos.mx/mapi/v1/skills  POST  Content:  {\n     typesOffers : 3,\n     typesAreas : [{\n         0 :  serivice network ,\n         1 :  develop ,\n         2 :  support ,\n         3 :  analitics ,\n         4 :  community manager \n    }],\n     skills : [{\n         0 :  PHP ,\n         1 :  SCRUM ,\n         2 :  SLACK ,\n         3 :  WATCH TV ,\n         4 :  PIZZA ,\n         5 :  WORD \n    }],\n     experienceLevel : 3\n}", 
             "title": "Request"
         }, 
         {
@@ -312,12 +332,12 @@
         }, 
         {
             "location": "/profile/skills/#profile-found", 
-            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[\n            {\n            typesOffers :3,\n            typesAreas :[\n                    {\n                     0 : serivice network ,\n                     1 : develop ,\n                     2 : support ,\n                     3 : analitics ,\n                     4 : community manager \n                    }\n                ],\n            skills :[\n                {\n                     0 : PHP ,\n                     1 : SCRUM ,\n                     2 : SLACK ,\n                     3 : WATCH TV ,\n                     4 : PIZZA ,\n                     5 : WORD \n                }\n            ],\n             experienceLevel :3\n        }\n    ]\n}", 
+            "text": "HTTP Code:  200  {\n     message :  success ,\n     context : [{\n         typesOffers : 3,\n         typesAreas : [{\n             0 :  serivice network ,\n             1 :  develop ,\n             2 :  support ,\n             3 :  analitics ,\n             4 :  community manager \n        }],\n         skills : [{\n             0 :  PHP ,\n             1 :  SCRUM ,\n             2 :  SLACK ,\n             3 :  WATCH TV ,\n             4 :  PIZZA ,\n             5 :  WORD \n        }],\n         experienceLevel : 3\n    }]\n}", 
             "title": "Profile found"
         }, 
         {
             "location": "/profile/skills/#updated-profile", 
-            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[],\n}", 
+            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[]\n}", 
             "title": "Updated profile"
         }, 
         {
@@ -327,12 +347,12 @@
         }, 
         {
             "location": "/profile/skills/#profile-not-found", 
-            "text": "HTTP Code:  404  {\n     message : Profile not found ,\n     context :[],\n}", 
+            "text": "HTTP Code:  400  {\n     message : Profile not found ,\n     context :[]\n}", 
             "title": "Profile not found"
         }, 
         {
             "location": "/profile/skills/#token-expired", 
-            "text": "HTTP Code:  402  {\n     message : token expired ,\n     context :[],\n}", 
+            "text": "HTTP Code:  400  {\n     message : token expired ,\n     context :[]\n}", 
             "title": "Token expired"
         }, 
         {
@@ -342,7 +362,7 @@
         }, 
         {
             "location": "/profile/membership/", 
-            "text": "Information Membership Creative / Business\n\n\nRequest\n\n\nHeaders:\n\n\n    Authorization: Bearer \ntoken\n\n    Location: mx\n\n\n\n\nGET\n Url:\n\n\nhttps://www.cerebritos.mx/p/membership/\nidCreative\n\n\n\n\n\nResponse Success\n\n\nProfile found\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[\n    {\n       \nid\n:\n123124\n,\n       \nidBrain\n:\n832952\n,\n       \ntypeUser\n:1,\n       \nidTypeMembership\n:3,\n       \nstartDate\n:\n2017-01-31T08:59:19 +06:00\n,\n       \nendDate\n:\n2018-01-31T08:59:19 +06:00\n,\n    }\n    ],\n}\n\n\n\n\nResponse Errors\n\n\nProfile not found\n\n\nHTTP Code: \n404\n\n\n{\n    \nmessage\n:\nProfile not found\n,\n    \ncontext\n:[],\n}\n\n\n\n\nToken expired\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\ntoken expired\n,\n    \ncontext\n:[],\n}", 
+            "text": "Information Membership Creative / Business\n\n\nRequest\n\n\nHeaders:\n\n\n    X-Auth-Country: mx\n    X-Auth: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9...\n    Content-Type: application/json\n    Accept: application/json\n\n\n\n\nPOST\n Url:\n\n\nhttps://www.cerebritos.mx/mapi/v1/membership\n\n\n\n\nResponse Success\n\n\nProfile found\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n: \nsuccess\n,\n    \ncontext\n: [{\n        \nid\n: \n123124\n,\n        \nidBrain\n: \n832952\n,\n        \ntypeUser\n: 1,\n        \nidTypeMembership\n: 3,\n        \nstartDate\n: \n2017-01-31T08:59:19 +06:00\n,\n        \nendDate\n: \n2018-01-31T08:59:19 +06:00\n\n    }]\n}\n\n\n\n\nResponse Errors\n\n\nProfile not found\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nProfile not found\n,\n    \ncontext\n:[]\n}\n\n\n\n\nToken expired\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\ntoken expired\n,\n    \ncontext\n:[]\n}", 
             "title": "Membership information"
         }, 
         {
@@ -352,7 +372,7 @@
         }, 
         {
             "location": "/profile/membership/#request", 
-            "text": "Headers:      Authorization: Bearer  token \n    Location: mx  GET  Url:  https://www.cerebritos.mx/p/membership/ idCreative", 
+            "text": "Headers:      X-Auth-Country: mx\n    X-Auth: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9...\n    Content-Type: application/json\n    Accept: application/json  POST  Url:  https://www.cerebritos.mx/mapi/v1/membership", 
             "title": "Request"
         }, 
         {
@@ -362,7 +382,7 @@
         }, 
         {
             "location": "/profile/membership/#profile-found", 
-            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[\n    {\n        id : 123124 ,\n        idBrain : 832952 ,\n        typeUser :1,\n        idTypeMembership :3,\n        startDate : 2017-01-31T08:59:19 +06:00 ,\n        endDate : 2018-01-31T08:59:19 +06:00 ,\n    }\n    ],\n}", 
+            "text": "HTTP Code:  200  {\n     message :  success ,\n     context : [{\n         id :  123124 ,\n         idBrain :  832952 ,\n         typeUser : 1,\n         idTypeMembership : 3,\n         startDate :  2017-01-31T08:59:19 +06:00 ,\n         endDate :  2018-01-31T08:59:19 +06:00 \n    }]\n}", 
             "title": "Profile found"
         }, 
         {
@@ -372,17 +392,17 @@
         }, 
         {
             "location": "/profile/membership/#profile-not-found", 
-            "text": "HTTP Code:  404  {\n     message : Profile not found ,\n     context :[],\n}", 
+            "text": "HTTP Code:  400  {\n     message : Profile not found ,\n     context :[]\n}", 
             "title": "Profile not found"
         }, 
         {
             "location": "/profile/membership/#token-expired", 
-            "text": "HTTP Code:  402  {\n     message : token expired ,\n     context :[],\n}", 
+            "text": "HTTP Code:  400  {\n     message : token expired ,\n     context :[]\n}", 
             "title": "Token expired"
         }, 
         {
             "location": "/profile/payment/", 
-            "text": "Information Payment Creative / Business\n\n\nRequest\n\n\nHeaders:\n\n\n    Authorization: Bearer \ntoken\n\n    Location: mx\n\n\n\n\nGET\n Url:\n\n\nhttps://www.cerebritos.mx/p/payment/\nidCreative\n\n\n\n\n\nPOST\n Content:\n\n\n{\n    \nccn\n:\n42908304012957057\n,\n    \ncardType\n:1,\n    \nexpirationDate\n:\n0220\n,\n    \ncsc\n:1312,\n    \ndefaultAddess\n:false,\n    \naddresses\n:[\n        {\n        \nstreet\n: \nlorem impsu\n,\n        \nexternalNumber\n: \n12\n,\n        \ninternalNumber\n: \n1b\n,\n        \ncity\n: \nMexico\n,\n        \ncountry\n: \nMexico\n,\n        \nmunicipality\n: \nEcatepec\n,\n        \nneighborhood\n: \nMagdalena\n,\n        \nregion\n: \n32342\n,\n        \ndefaultAddress\n: true\n        }\n    ],\n}\n\n\n\n\nResponse Success\n\n\nProfile found\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[\n        {\n        \nccn\n:\n42908304012957057\n,\n        \ncardType\n:1,\n        \nexpirationDate\n:\n0220\n,\n        \ncsc\n:1312,\n        \ndefaultAddess\n:false,\n        \naddresses\n:[\n            {\n            \nstreet\n: \nlorem impsu\n,\n            \nexternalNumber\n: \n12\n,\n            \ninternalNumber\n: \n1b\n,\n            \ncity\n: \nMexico\n,\n            \ncountry\n: \nMexico\n,\n            \nmunicipality\n: \nEcatepec\n,\n            \nneighborhood\n: \nMagdalena\n,\n            \nregion\n: \n32342\n,\n            \ndefaultAddress\n: true\n            }\n        ]\n        }\n    ]\n}\n\n\n\n\nUpdated profile\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[],\n}\n\n\n\n\nResponse Errors\n\n\nProfile not found\n\n\nHTTP Code: \n404\n\n\n{\n    \nmessage\n:\nprofile not found\n,\n    \ncontext\n:[],\n}\n\n\n\n\nCard validation failed\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\ncard validation failed\n,\n    \ncontext\n:[\n    {\n    \nerror\n:\nbanned credit card number\n\n    }\n    ],\n}\n\n\n\n\nToken expired\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\ntoken expired\n,\n    \ncontext\n:[],\n}\n\n\n\n\nIncorrect information / Missing fields\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nmissing fields\n,\n    \ncontext\n:[\n    {\n    \nccn\n:\ninvalid number\n\n    }\n    ]\n}", 
+            "text": "Information Payment Creative / Business\n\n\nRequest\n\n\nHeaders:\n\n\n    X-Auth-Country: mx\n    X-Auth: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9...\n    Content-Type: application/json\n    Accept: application/json\n\n\n\n\nPOST\n Url:\n\n\nhttps://www.cerebritos.mx/mapi/v1/payment\n\n\n\n\nPOST\n Content:\n\n\n{\n    \nccn\n: \n42908304012957057\n,\n    \ncardType\n: 1,\n    \nexpirationDate\n: \n0220\n,\n    \ncsc\n: 1312,\n    \ndefaultAddess\n: false,\n    \naddresses\n: [{\n        \nstreet\n: \nlorem impsu\n,\n        \nexternalNumber\n: \n12\n,\n        \ninternalNumber\n: \n1b\n,\n        \ncity\n: \nMexico\n,\n        \ncountry\n: \nMexico\n,\n        \nmunicipality\n: \nEcatepec\n,\n        \nneighborhood\n: \nMagdalena\n,\n        \nregion\n: \n32342\n,\n        \ndefaultAddress\n: true\n    }]\n}\n\n\n\n\nResponse Success\n\n\nProfile found\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[\n        {\n        \nccn\n:\n42908304012957057\n,\n        \ncardType\n:1,\n        \nexpirationDate\n:\n0220\n,\n        \ncsc\n:1312,\n        \ndefaultAddess\n:false,\n        \naddresses\n:[\n            {\n            \nstreet\n: \nlorem impsu\n,\n            \nexternalNumber\n: \n12\n,\n            \ninternalNumber\n: \n1b\n,\n            \ncity\n: \nMexico\n,\n            \ncountry\n: \nMexico\n,\n            \nmunicipality\n: \nEcatepec\n,\n            \nneighborhood\n: \nMagdalena\n,\n            \nregion\n: \n32342\n,\n            \ndefaultAddress\n: true\n            }\n        ]\n        }\n    ]\n}\n\n\n\n\nUpdated profile\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[]\n}\n\n\n\n\nResponse Errors\n\n\nProfile not found\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nprofile not found\n,\n    \ncontext\n:[]\n}\n\n\n\n\nCard validation failed\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\ncard validation failed\n,\n    \ncontext\n:[\n    {\n    \nerror\n:\nbanned credit card number\n\n    }\n    ]\n}\n\n\n\n\nToken expired\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\ntoken expired\n,\n    \ncontext\n:[]\n}\n\n\n\n\nIncorrect information / Missing fields\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nmissing fields\n,\n    \ncontext\n:[\n    {\n    \nccn\n:\ninvalid number\n\n    }\n    ]\n}", 
             "title": "Payment information"
         }, 
         {
@@ -392,7 +412,7 @@
         }, 
         {
             "location": "/profile/payment/#request", 
-            "text": "Headers:      Authorization: Bearer  token \n    Location: mx  GET  Url:  https://www.cerebritos.mx/p/payment/ idCreative   POST  Content:  {\n     ccn : 42908304012957057 ,\n     cardType :1,\n     expirationDate : 0220 ,\n     csc :1312,\n     defaultAddess :false,\n     addresses :[\n        {\n         street :  lorem impsu ,\n         externalNumber :  12 ,\n         internalNumber :  1b ,\n         city :  Mexico ,\n         country :  Mexico ,\n         municipality :  Ecatepec ,\n         neighborhood :  Magdalena ,\n         region :  32342 ,\n         defaultAddress : true\n        }\n    ],\n}", 
+            "text": "Headers:      X-Auth-Country: mx\n    X-Auth: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9...\n    Content-Type: application/json\n    Accept: application/json  POST  Url:  https://www.cerebritos.mx/mapi/v1/payment  POST  Content:  {\n     ccn :  42908304012957057 ,\n     cardType : 1,\n     expirationDate :  0220 ,\n     csc : 1312,\n     defaultAddess : false,\n     addresses : [{\n         street :  lorem impsu ,\n         externalNumber :  12 ,\n         internalNumber :  1b ,\n         city :  Mexico ,\n         country :  Mexico ,\n         municipality :  Ecatepec ,\n         neighborhood :  Magdalena ,\n         region :  32342 ,\n         defaultAddress : true\n    }]\n}", 
             "title": "Request"
         }, 
         {
@@ -407,7 +427,7 @@
         }, 
         {
             "location": "/profile/payment/#updated-profile", 
-            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[],\n}", 
+            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[]\n}", 
             "title": "Updated profile"
         }, 
         {
@@ -417,17 +437,17 @@
         }, 
         {
             "location": "/profile/payment/#profile-not-found", 
-            "text": "HTTP Code:  404  {\n     message : profile not found ,\n     context :[],\n}", 
+            "text": "HTTP Code:  400  {\n     message : profile not found ,\n     context :[]\n}", 
             "title": "Profile not found"
         }, 
         {
             "location": "/profile/payment/#card-validation-failed", 
-            "text": "HTTP Code:  400  {\n     message : card validation failed ,\n     context :[\n    {\n     error : banned credit card number \n    }\n    ],\n}", 
+            "text": "HTTP Code:  400  {\n     message : card validation failed ,\n     context :[\n    {\n     error : banned credit card number \n    }\n    ]\n}", 
             "title": "Card validation failed"
         }, 
         {
             "location": "/profile/payment/#token-expired", 
-            "text": "HTTP Code:  402  {\n     message : token expired ,\n     context :[],\n}", 
+            "text": "HTTP Code:  400  {\n     message : token expired ,\n     context :[]\n}", 
             "title": "Token expired"
         }, 
         {
@@ -437,7 +457,7 @@
         }, 
         {
             "location": "/profile/project-bag/", 
-            "text": "Information Project Bag Creative / Business\n\n\nRequest\n\n\nHeaders:\n\n\n    Authorization: Bearer \ntoken\n\n    Location: mx\n\n\n\n\nGET\n Url:\n\n\nhttps://www.cerebritos.mx/p/project_bag/\nidCreative\n\n\n\n\n\nResponse Success\n\n\nProfile found\n\n\nHTTP Code: \n200\n\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[\n        {\n            \nid\n:\n1313\n,\n            \nprojects\n:[\n                \nfinalized\n:[\n                    {\n                        \nstatus\n:paid,\n                        \ntittle\n:\nNulla sodales, tortor ut efficitur mollis.\n,\n                        \nshortDescription\n:\nPraesent ut arcu imperdiet, ultricies sem eu, ultrices neque. Morbi ut tempor dolor. Suspendisse rutrum, est sed egestas condimentum, risus diam tempus lectus, at bibendum libero felis vel nisl.\n,\n                        \nreview\n:\nPraesent ut arcu imperdiet, ultricies sem eu.\n,\n                        \ncomment\n:\nIn mollis, tortor a aliquet vulputate, orci ex viverra eros, nec euismod ipsum ex non felis.\n\n                    },\n                    {\n                        \nstatus\n:paid,\n                        \ntittle\n:\nNulla sodales, tortor ut efficitur mollis.\n,\n                        \nshortDescription\n:\nPraesent ut arcu imperdiet, ultricies sem eu, ultrices neque. Morbi ut tempor dolor. Suspendisse rutrum, est sed egestas condimentum, risus diam tempus lectus, at bibendum libero felis vel nisl.\n,\n                        \nreview\n:\nPraesent ut arcu imperdiet, ultricies sem eu.\n,\n                        \ncomment\n:\nIn mollis, tortor a aliquet vulputate, orci ex viverra eros, nec euismod ipsum ex non felis.\n\n                    }\n                ],\n                \npitch\n:[\n                    {\n                        \nstatus\n:bid,\n                        \nlinkBrief\n:\nhttp://www.cerebritos.mx/b/312313\n,\n                        \ntittle\n:\nNulla sodales, tortor ut efficitur mollis.\n,\n                        \nhook\n:\nPraesent ut arcu imperdiet, ultricies sem eu, ultrices neque. Morbi ut tempor dolor. Suspendisse rutrum, est sed egestas condimentum, risus diam tempus lectus, at bibendum libero felis vel nisl.\n\n                    }\n                ]\n            ]\n        }\n    ]\n}\n\n\n\n\nResponse Errors\n\n\nProfile not found\n\n\nHTTP Code: \n404\n\n\n{\n    \nmessage\n:\nprofile not found\n,\n    \ncontext\n:[],\n}\n\n\n\n\nToken expired\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\ntoken expired\n,\n    \ncontext\n:[],\n}", 
+            "text": "Information Project Bag Creative / Business\n\n\nRequest\n\n\nHeaders:\n\n\n    X-Auth-Country: mx\n    X-Auth: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9...\n    Content-Type: application/json\n    Accept: application/json\n\n\n\n\nPOST\n Url:\n\n\nhttps://www.cerebritos.mx/mapi/v1/project_bag\n\n\n\n\nResponse Success\n\n\nProfile found\n\n\nHTTP Code: \n200\n\n\n\n{\n    \nmessage\n: \nsuccess\n,\n    \ncontext\n: [{\n        \nid\n: \n1313\n,\n        \nprojects\n: {\n            \nfinalized\n: [{\n                    \nstatus\n: \npaid\n,\n                    \ntittle\n: \nNulla sodales, tortor ut efficitur mollis.\n,\n                    \nshortDescription\n: \nPraesent ut arcu imperdiet, ultricies sem eu, ultrices neque. Morbi ut tempor dolor. Suspendisse rutrum, est sed egestas condimentum, risus diam tempus lectus, at bibendum libero felis vel nisl.\n,\n                    \nreview\n: \nPraesent ut arcu imperdiet, ultricies sem eu.\n,\n                    \ncomment\n: \nIn mollis, tortor a aliquet vulputate, orci ex viverra eros, nec euismod ipsum ex non felis.\n\n                },\n                {\n                    \nstatus\n: \npaid\n,\n                    \ntittle\n: \nNulla sodales, tortor ut efficitur mollis.\n,\n                    \nshortDescription\n: \nPraesent ut arcu imperdiet, ultricies sem eu, ultrices neque. Morbi ut tempor dolor. Suspendisse rutrum, est sed egestas condimentum, risus diam tempus lectus, at bibendum libero felis vel nisl.\n,\n                    \nreview\n: \nPraesent ut arcu imperdiet, ultricies sem eu.\n,\n                    \ncomment\n: \nIn mollis, tortor a aliquet vulputate, orci ex viverra eros, nec euismod ipsum ex non felis.\n\n                }\n            ],\n            \npitch\n: {\n                \nstatus\n: \nbid\n,\n                \nlinkBrief\n: \nhttp://www.cerebritos.mx/b/312313\n,\n                \ntittle\n: \nNulla sodales, tortor ut efficitur mollis.\n,\n                \nhook\n: \nPraesent ut arcu imperdiet, ultricies sem eu, ultrices neque. Morbi ut tempor dolor. Suspendisse rutrum, est sed egestas condimentum, risus diam tempus lectus, at bibendum libero felis vel nisl.\n\n            }\n        }\n    }]\n}\n\n\n\n\nResponse Errors\n\n\nProfile not found\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nprofile not found\n,\n    \ncontext\n:[]\n}\n\n\n\n\nToken expired\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\ntoken expired\n,\n    \ncontext\n:[]\n}", 
             "title": "Project Bag"
         }, 
         {
@@ -447,7 +467,7 @@
         }, 
         {
             "location": "/profile/project-bag/#request", 
-            "text": "Headers:      Authorization: Bearer  token \n    Location: mx  GET  Url:  https://www.cerebritos.mx/p/project_bag/ idCreative", 
+            "text": "Headers:      X-Auth-Country: mx\n    X-Auth: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9...\n    Content-Type: application/json\n    Accept: application/json  POST  Url:  https://www.cerebritos.mx/mapi/v1/project_bag", 
             "title": "Request"
         }, 
         {
@@ -457,7 +477,7 @@
         }, 
         {
             "location": "/profile/project-bag/#profile-found", 
-            "text": "HTTP Code:  200  \n{\n     message : success ,\n     context :[\n        {\n             id : 1313 ,\n             projects :[\n                 finalized :[\n                    {\n                         status :paid,\n                         tittle : Nulla sodales, tortor ut efficitur mollis. ,\n                         shortDescription : Praesent ut arcu imperdiet, ultricies sem eu, ultrices neque. Morbi ut tempor dolor. Suspendisse rutrum, est sed egestas condimentum, risus diam tempus lectus, at bibendum libero felis vel nisl. ,\n                         review : Praesent ut arcu imperdiet, ultricies sem eu. ,\n                         comment : In mollis, tortor a aliquet vulputate, orci ex viverra eros, nec euismod ipsum ex non felis. \n                    },\n                    {\n                         status :paid,\n                         tittle : Nulla sodales, tortor ut efficitur mollis. ,\n                         shortDescription : Praesent ut arcu imperdiet, ultricies sem eu, ultrices neque. Morbi ut tempor dolor. Suspendisse rutrum, est sed egestas condimentum, risus diam tempus lectus, at bibendum libero felis vel nisl. ,\n                         review : Praesent ut arcu imperdiet, ultricies sem eu. ,\n                         comment : In mollis, tortor a aliquet vulputate, orci ex viverra eros, nec euismod ipsum ex non felis. \n                    }\n                ],\n                 pitch :[\n                    {\n                         status :bid,\n                         linkBrief : http://www.cerebritos.mx/b/312313 ,\n                         tittle : Nulla sodales, tortor ut efficitur mollis. ,\n                         hook : Praesent ut arcu imperdiet, ultricies sem eu, ultrices neque. Morbi ut tempor dolor. Suspendisse rutrum, est sed egestas condimentum, risus diam tempus lectus, at bibendum libero felis vel nisl. \n                    }\n                ]\n            ]\n        }\n    ]\n}", 
+            "text": "HTTP Code:  200  \n{\n     message :  success ,\n     context : [{\n         id :  1313 ,\n         projects : {\n             finalized : [{\n                     status :  paid ,\n                     tittle :  Nulla sodales, tortor ut efficitur mollis. ,\n                     shortDescription :  Praesent ut arcu imperdiet, ultricies sem eu, ultrices neque. Morbi ut tempor dolor. Suspendisse rutrum, est sed egestas condimentum, risus diam tempus lectus, at bibendum libero felis vel nisl. ,\n                     review :  Praesent ut arcu imperdiet, ultricies sem eu. ,\n                     comment :  In mollis, tortor a aliquet vulputate, orci ex viverra eros, nec euismod ipsum ex non felis. \n                },\n                {\n                     status :  paid ,\n                     tittle :  Nulla sodales, tortor ut efficitur mollis. ,\n                     shortDescription :  Praesent ut arcu imperdiet, ultricies sem eu, ultrices neque. Morbi ut tempor dolor. Suspendisse rutrum, est sed egestas condimentum, risus diam tempus lectus, at bibendum libero felis vel nisl. ,\n                     review :  Praesent ut arcu imperdiet, ultricies sem eu. ,\n                     comment :  In mollis, tortor a aliquet vulputate, orci ex viverra eros, nec euismod ipsum ex non felis. \n                }\n            ],\n             pitch : {\n                 status :  bid ,\n                 linkBrief :  http://www.cerebritos.mx/b/312313 ,\n                 tittle :  Nulla sodales, tortor ut efficitur mollis. ,\n                 hook :  Praesent ut arcu imperdiet, ultricies sem eu, ultrices neque. Morbi ut tempor dolor. Suspendisse rutrum, est sed egestas condimentum, risus diam tempus lectus, at bibendum libero felis vel nisl. \n            }\n        }\n    }]\n}", 
             "title": "Profile found"
         }, 
         {
@@ -467,17 +487,17 @@
         }, 
         {
             "location": "/profile/project-bag/#profile-not-found", 
-            "text": "HTTP Code:  404  {\n     message : profile not found ,\n     context :[],\n}", 
+            "text": "HTTP Code:  400  {\n     message : profile not found ,\n     context :[]\n}", 
             "title": "Profile not found"
         }, 
         {
             "location": "/profile/project-bag/#token-expired", 
-            "text": "HTTP Code:  402  {\n     message : token expired ,\n     context :[],\n}", 
+            "text": "HTTP Code:  400  {\n     message : token expired ,\n     context :[]\n}", 
             "title": "Token expired"
         }, 
         {
             "location": "/project/brief/", 
-            "text": "Brief\n\n\nRequest\n\n\nHeaders:\n\n\n    Authorization: Bearer \ntoken\n\n    Location: mx\n\n\n\n\nGET\n Url:\n\n\nhttps://www.cerebritos.mx/b/\nidBrief\n\n\n\n\n\nPOST\n Content:\n\n\n{\n    \nbusinessId\n:\n1313\n,\n    \ntitle\n:\nNescafe para todos\n,\n    \ncategory\n:[\n        {\n        \n0\n:\ncreative\n,\n        \n1\n:\ncoffee\n,\n        \n2\n:\nvideo\n,\n        \n3\n:\nmusic\n,\n        \n4\n:\norchesta\n,\n        }\n    ],\n    \nobjectGoal\n:\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et convallis erat, sit amet sodales metus. Nullam molestie gravida nisl, ac maximus augue eleifend ac.\n,\n    \nmessageTone\n:\nPraesent maximus ex ante. Sed fermentum sagittis est, eu sollicitudin ligula faucibus non. Mauris mollis placerat bibendum.\n,\n    \nuniqueSellingPoint\n:\nMorbi finibus augue sit amet sollicitudin dignissim. Pellentesque vulputate augue ornare, imperdiet mi eget, consectetur enim.\n,\n    \nbudget\n:\n100000000\n,\n    \ndeadLine\n:\n1989-01-31T08:59:19 +06:00\n,\n    \ntypeFile\n:1,\n    \ntechnicalSpecification\n:\nSed sit amet ipsum ac ante ultrices fringilla. Quisque metus sapien, ornare a mollis quis, sagittis aliquam urna. Donec ipsum sem, auctor non tortor at, ullamcorper ornare metus. Integer eu erat elit.\n,\n    \nwellBeing\n:\nPhasellus ac efficitur erat. Donec consequat nec ligula sed finibus. Vestibulum odio lacus, commodo non turpis scelerisque, ultricies elementum est.\n,\n    \ncompetition\n:\nPraesent ut arcu imperdiet, ultricies sem eu, ultrices neque.\n,\n    \ncustomerInsight\n:\nIn mollis, tortor a aliquet vulputate, orci ex viverra eros, nec euismod ipsum ex non felis. Phasellus vel commodo lectus. Sed purus nisl, porttitor et facilisis a, venenatis non sapien.\n,\n    \nexpectations\n:\nAliquam quis suscipit libero, ut malesuada diam. Nulla commodo congue velit vel sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis semper egestas lectus eu elementum. Phasellus sed lacinia justo, eu tincidunt risus.\n,\n}\n\n\n\n\nResponse Success\n\n\nBrief published\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[],\n}\n\n\n\n\nBrief save\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[],\n}\n\n\n\n\nBrief updated\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[],\n}\n\n\n\n\nBrief found\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[\n        {\n            \nId\n:\n1313\n,\n            \nbrainId\n:\n1313\n,\n            \nbusinessId\n:\n1313\n,\n            \ntitle\n:\nNescafe para todos\n,\n            \ncategory\n:[\n                {\n                \n0\n:\ncreative\n,\n                \n1\n:\ncoffee\n,\n                \n2\n:\nvideo\n,\n                \n3\n:\nmusic\n,\n                \n4\n:\norchesta\n,\n                }\n            ],\n            \nobjectGoal\n:\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et convallis erat, sit amet sodales metus. Nullam molestie gravida nisl, ac maximus augue eleifend ac.\n,\n            \nmessageTone\n:\nPraesent maximus ex ante. Sed fermentum sagittis est, eu sollicitudin ligula faucibus non. Mauris mollis placerat bibendum.\n,\n            \nuniqueSellingPoint\n:\nMorbi finibus augue sit amet sollicitudin dignissim. Pellentesque vulputate augue ornare, imperdiet mi eget, consectetur enim.\n,\n            \nbudget\n:\n100000000\n,\n            \ndeadLine\n:\n1989-01-31T08:59:19 +06:00\n,\n            \ntypeFile\n:1,\n            \ntechnicalSpecification\n:\nSed sit amet ipsum ac ante ultrices fringilla. Quisque metus sapien, ornare a mollis quis, sagittis aliquam urna. Donec ipsum sem, auctor non tortor at, ullamcorper ornare metus. Integer eu erat elit.\n,\n            \nwellBeing\n:\nPhasellus ac efficitur erat. Donec consequat nec ligula sed finibus. Vestibulum odio lacus, commodo non turpis scelerisque, ultricies elementum est.\n,\n            \ncompetition\n:\nPraesent ut arcu imperdiet, ultricies sem eu, ultrices neque.\n,\n            \ncustomerInsight\n:\nIn mollis, tortor a aliquet vulputate, orci ex viverra eros, nec euismod ipsum ex non felis. Phasellus vel commodo lectus. Sed purus nisl, porttitor et facilisis a, venenatis non sapien.\n,\n            \nexpectations\n:\nAliquam quis suscipit libero, ut malesuada diam. Nulla commodo congue velit vel sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis semper egestas lectus eu elementum. Phasellus sed lacinia justo, eu tincidunt risus.\n,\n        }\n    ],\n}\n\n\n\n\nResponse Errors\n\n\nBrief expired\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\nbrief expired\n,\n    \ncontext\n:[],\n}\n\n\n\n\nBrief Already registered\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\nbrief Already registered\n,\n    \ncontext\n:[],\n}\n\n\n\n\nIncorrect information / Missing fields\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nmissing fields\n,\n    \ncontext\n:[\n    {\n    \ntitle\n:\nmissing\n,\n    \nbudget\n:\nis't number\n\n    }\n    ]\n}\n\n\n\n\nBrief not found\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nbrief not found\n,\n    \ncontext\n:[],\n}", 
+            "text": "Brief\n\n\nRequest\n\n\nHeaders:\n\n\n    Authorization: Bearer \ntoken\n\n    Location: mx\n\n\n\n\nGET\n Url:\n\n\nhttps://www.cerebritos.mx/mapi/v1/brief\n\n\n\n\nPOST\n Content:\n\n\n{\n    \nbusinessId\n: \n1313\n,\n    \ntitle\n: \nNescafe para todos\n,\n    \ncategory\n: [{\n        \n0\n: \ncreative\n,\n        \n1\n: \ncoffee\n,\n        \n2\n: \nvideo\n,\n        \n3\n: \nmusic\n,\n        \n4\n: \norchesta\n\n    }],\n    \nobjectGoal\n: \nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et convallis erat, sit amet sodales metus. Nullam molestie gravida nisl, ac maximus augue eleifend ac.\n,\n    \nmessageTone\n: \nPraesent maximus ex ante. Sed fermentum sagittis est, eu sollicitudin ligula faucibus non. Mauris mollis placerat bibendum.\n,\n    \nuniqueSellingPoint\n: \nMorbi finibus augue sit amet sollicitudin dignissim. Pellentesque vulputate augue ornare, imperdiet mi eget, consectetur enim.\n,\n    \nbudget\n: \n100000000\n,\n    \ndeadLine\n: \n1989-01-31T08:59:19 +06:00\n,\n    \ntypeFile\n: 1,\n    \ntechnicalSpecification\n: \nSed sit amet ipsum ac ante ultrices fringilla. Quisque metus sapien, ornare a mollis quis, sagittis aliquam urna. Donec ipsum sem, auctor non tortor at, ullamcorper ornare metus. Integer eu erat elit.\n,\n    \nwellBeing\n: \nPhasellus ac efficitur erat. Donec consequat nec ligula sed finibus. Vestibulum odio lacus, commodo non turpis scelerisque, ultricies elementum est.\n,\n    \ncompetition\n: \nPraesent ut arcu imperdiet, ultricies sem eu, ultrices neque.\n,\n    \ncustomerInsight\n: \nIn mollis, tortor a aliquet vulputate, orci ex viverra eros, nec euismod ipsum ex non felis. Phasellus vel commodo lectus. Sed purus nisl, porttitor et facilisis a, venenatis non sapien.\n,\n    \nexpectations\n: \nAliquam quis suscipit libero, ut malesuada diam. Nulla commodo congue velit vel sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis semper egestas lectus eu elementum. Phasellus sed lacinia justo, eu tincidunt risus.\n\n}\n\n\n\n\nResponse Success\n\n\nBrief published\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[],\n}\n\n\n\n\nBrief save\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[],\n}\n\n\n\n\nBrief updated\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[],\n}\n\n\n\n\nBrief found\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[\n        {\n            \nId\n:\n1313\n,\n            \nbrainId\n:\n1313\n,\n            \nbusinessId\n:\n1313\n,\n            \ntitle\n:\nNescafe para todos\n,\n            \ncategory\n:[\n                {\n                \n0\n:\ncreative\n,\n                \n1\n:\ncoffee\n,\n                \n2\n:\nvideo\n,\n                \n3\n:\nmusic\n,\n                \n4\n:\norchesta\n,\n                }\n            ],\n            \nobjectGoal\n:\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et convallis erat, sit amet sodales metus. Nullam molestie gravida nisl, ac maximus augue eleifend ac.\n,\n            \nmessageTone\n:\nPraesent maximus ex ante. Sed fermentum sagittis est, eu sollicitudin ligula faucibus non. Mauris mollis placerat bibendum.\n,\n            \nuniqueSellingPoint\n:\nMorbi finibus augue sit amet sollicitudin dignissim. Pellentesque vulputate augue ornare, imperdiet mi eget, consectetur enim.\n,\n            \nbudget\n:\n100000000\n,\n            \ndeadLine\n:\n1989-01-31T08:59:19 +06:00\n,\n            \ntypeFile\n:1,\n            \ntechnicalSpecification\n:\nSed sit amet ipsum ac ante ultrices fringilla. Quisque metus sapien, ornare a mollis quis, sagittis aliquam urna. Donec ipsum sem, auctor non tortor at, ullamcorper ornare metus. Integer eu erat elit.\n,\n            \nwellBeing\n:\nPhasellus ac efficitur erat. Donec consequat nec ligula sed finibus. Vestibulum odio lacus, commodo non turpis scelerisque, ultricies elementum est.\n,\n            \ncompetition\n:\nPraesent ut arcu imperdiet, ultricies sem eu, ultrices neque.\n,\n            \ncustomerInsight\n:\nIn mollis, tortor a aliquet vulputate, orci ex viverra eros, nec euismod ipsum ex non felis. Phasellus vel commodo lectus. Sed purus nisl, porttitor et facilisis a, venenatis non sapien.\n,\n            \nexpectations\n:\nAliquam quis suscipit libero, ut malesuada diam. Nulla commodo congue velit vel sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis semper egestas lectus eu elementum. Phasellus sed lacinia justo, eu tincidunt risus.\n,\n        }\n    ],\n}\n\n\n\n\nResponse Errors\n\n\nBrief expired\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nbrief expired\n,\n    \ncontext\n:[],\n}\n\n\n\n\nBrief Already registered\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nbrief Already registered\n,\n    \ncontext\n:[],\n}\n\n\n\n\nIncorrect information / Missing fields\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nmissing fields\n,\n    \ncontext\n:[\n    {\n    \ntitle\n:\nmissing\n,\n    \nbudget\n:\nis't number\n\n    }\n    ]\n}\n\n\n\n\nBrief not found\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nbrief not found\n,\n    \ncontext\n:[],\n}", 
             "title": "Brief"
         }, 
         {
@@ -487,7 +507,7 @@
         }, 
         {
             "location": "/project/brief/#request", 
-            "text": "Headers:      Authorization: Bearer  token \n    Location: mx  GET  Url:  https://www.cerebritos.mx/b/ idBrief   POST  Content:  {\n     businessId : 1313 ,\n     title : Nescafe para todos ,\n     category :[\n        {\n         0 : creative ,\n         1 : coffee ,\n         2 : video ,\n         3 : music ,\n         4 : orchesta ,\n        }\n    ],\n     objectGoal : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et convallis erat, sit amet sodales metus. Nullam molestie gravida nisl, ac maximus augue eleifend ac. ,\n     messageTone : Praesent maximus ex ante. Sed fermentum sagittis est, eu sollicitudin ligula faucibus non. Mauris mollis placerat bibendum. ,\n     uniqueSellingPoint : Morbi finibus augue sit amet sollicitudin dignissim. Pellentesque vulputate augue ornare, imperdiet mi eget, consectetur enim. ,\n     budget : 100000000 ,\n     deadLine : 1989-01-31T08:59:19 +06:00 ,\n     typeFile :1,\n     technicalSpecification : Sed sit amet ipsum ac ante ultrices fringilla. Quisque metus sapien, ornare a mollis quis, sagittis aliquam urna. Donec ipsum sem, auctor non tortor at, ullamcorper ornare metus. Integer eu erat elit. ,\n     wellBeing : Phasellus ac efficitur erat. Donec consequat nec ligula sed finibus. Vestibulum odio lacus, commodo non turpis scelerisque, ultricies elementum est. ,\n     competition : Praesent ut arcu imperdiet, ultricies sem eu, ultrices neque. ,\n     customerInsight : In mollis, tortor a aliquet vulputate, orci ex viverra eros, nec euismod ipsum ex non felis. Phasellus vel commodo lectus. Sed purus nisl, porttitor et facilisis a, venenatis non sapien. ,\n     expectations : Aliquam quis suscipit libero, ut malesuada diam. Nulla commodo congue velit vel sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis semper egestas lectus eu elementum. Phasellus sed lacinia justo, eu tincidunt risus. ,\n}", 
+            "text": "Headers:      Authorization: Bearer  token \n    Location: mx  GET  Url:  https://www.cerebritos.mx/mapi/v1/brief  POST  Content:  {\n     businessId :  1313 ,\n     title :  Nescafe para todos ,\n     category : [{\n         0 :  creative ,\n         1 :  coffee ,\n         2 :  video ,\n         3 :  music ,\n         4 :  orchesta \n    }],\n     objectGoal :  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et convallis erat, sit amet sodales metus. Nullam molestie gravida nisl, ac maximus augue eleifend ac. ,\n     messageTone :  Praesent maximus ex ante. Sed fermentum sagittis est, eu sollicitudin ligula faucibus non. Mauris mollis placerat bibendum. ,\n     uniqueSellingPoint :  Morbi finibus augue sit amet sollicitudin dignissim. Pellentesque vulputate augue ornare, imperdiet mi eget, consectetur enim. ,\n     budget :  100000000 ,\n     deadLine :  1989-01-31T08:59:19 +06:00 ,\n     typeFile : 1,\n     technicalSpecification :  Sed sit amet ipsum ac ante ultrices fringilla. Quisque metus sapien, ornare a mollis quis, sagittis aliquam urna. Donec ipsum sem, auctor non tortor at, ullamcorper ornare metus. Integer eu erat elit. ,\n     wellBeing :  Phasellus ac efficitur erat. Donec consequat nec ligula sed finibus. Vestibulum odio lacus, commodo non turpis scelerisque, ultricies elementum est. ,\n     competition :  Praesent ut arcu imperdiet, ultricies sem eu, ultrices neque. ,\n     customerInsight :  In mollis, tortor a aliquet vulputate, orci ex viverra eros, nec euismod ipsum ex non felis. Phasellus vel commodo lectus. Sed purus nisl, porttitor et facilisis a, venenatis non sapien. ,\n     expectations :  Aliquam quis suscipit libero, ut malesuada diam. Nulla commodo congue velit vel sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis semper egestas lectus eu elementum. Phasellus sed lacinia justo, eu tincidunt risus. \n}", 
             "title": "Request"
         }, 
         {
@@ -522,12 +542,12 @@
         }, 
         {
             "location": "/project/brief/#brief-expired", 
-            "text": "HTTP Code:  402  {\n     message : brief expired ,\n     context :[],\n}", 
+            "text": "HTTP Code:  400  {\n     message : brief expired ,\n     context :[],\n}", 
             "title": "Brief expired"
         }, 
         {
             "location": "/project/brief/#brief-already-registered", 
-            "text": "HTTP Code:  402  {\n     message : brief Already registered ,\n     context :[],\n}", 
+            "text": "HTTP Code:  400  {\n     message : brief Already registered ,\n     context :[],\n}", 
             "title": "Brief Already registered"
         }, 
         {
@@ -542,7 +562,7 @@
         }, 
         {
             "location": "/project/pitch/", 
-            "text": "Pitch\n\n\nRequest\n\n\nHeaders:\n\n\n    Authorization: Bearer \ntoken\n\n    Location: mx\n\n\n\n\nGET\n Url:\n\n\nhttps://www.cerebritos.mx/p/\nidPitch\n\n\n\n\n\nPOST\n Content:\n\n\n{\n    \nuserId\n:\n1313\n,\n    \ntitle\n:\nNescafe para todos\n,\n    \nhook\n:\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et convallis erat, sit amet sodales metus. Nullam molestie gravida nisl, ac maximus augue eleifend ac.\n,\n    \ntypeFile\n:1,\n    \nuniqSellingPoint\n:\nPraesent maximus ex ante. Sed fermentum sagittis est, eu sollicitudin ligula faucibus non. Mauris mollis placerat bibendum.\n,\n    \ncompensation\n:\nMorbi finibus augue sit amet sollicitudin dignissim. Pellentesque vulputate augue ornare, imperdiet mi eget, consectetur enim.\n,\n    \ncategory\n:[\n        {\n        \n0\n:\ncreative\n,\n        \n1\n:\ncoffee\n,\n        \n2\n:\nvideo\n,\n        \n3\n:\nmusic\n,\n        \n4\n:\norchesta\n,\n        }\n    ],\n    \nexpectations\n:\n100000000\n,\n    \ndeadLine\n:\n1989-01-31T08:59:19 +06:00\n\n}\n\n\n\n\nResponse Success\n\n\nPitch published\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[],\n}\n\n\n\n\nPitch save\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[],\n}\n\n\n\n\nPitch updated\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[],\n}\n\n\n\n\nPitch found\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[\n        {\n            \nId\n:\n1313\n,\n            \nbrainId\n:\n1313\n,\n            \nuserId\n:\n1313\n,\n            \ntitle\n:\nNescafe para todos\n,\n            \nhook\n:\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et convallis erat, sit amet sodales metus. Nullam molestie gravida nisl, ac maximus augue eleifend ac.\n,\n            \ntypeFile\n:1,\n            \nuniqSellingPoint\n:\nPraesent maximus ex ante. Sed fermentum sagittis est, eu sollicitudin ligula faucibus non. Mauris mollis placerat bibendum.\n,\n            \ncompensation\n:\nMorbi finibus augue sit amet sollicitudin dignissim. Pellentesque vulputate augue ornare, imperdiet mi eget, consectetur enim.\n,\n            \ncategory\n:[\n                {\n                \n0\n:\ncreative\n,\n                \n1\n:\ncoffee\n,\n                \n2\n:\nvideo\n,\n                \n3\n:\nmusic\n,\n                \n4\n:\norchesta\n,\n                }\n            ],\n            \nexpectations\n:\n100000000\n,\n            \ndeadLine\n:\n1989-01-31T08:59:19 +06:00\n\n        }\n    ]\n}\n\n\n\n\nResponse Errors\n\n\nPitch expired (1)\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\npitch expired\n,\n    \ncontext\n:[],\n}\n\n\n\n\nPitch Already registered\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\npitch Already registered\n,\n    \ncontext\n:[],\n}\n\n\n\n\nBrief not available (2)\n\n\nHTTP Code: \n402\n\n\n{\n    \nmessage\n:\nbrief not available\n,\n    \ncontext\n:[],\n}\n\n\n\n\nIncorrect information / Missing fields\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nmissing fields\n,\n    \ncontext\n:[\n    {\n    \ntitle\n:\nmissing\n,\n    \nhook\n:\nvery long\n\n    }\n    ]\n}\n\n\n\n\nPitch not found\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\npitch not found\n,\n    \ncontext\n:[],\n}\n\n\n\n\n\n\n(1) In Review.\n\n\n(2) Time expired for the brief.", 
+            "text": "Pitch\n\n\nRequest\n\n\nHeaders:\n\n\n    Authorization: Bearer \ntoken\n\n    Location: mx\n\n\n\n\nGET\n Url:\n\n\nhttps://www.cerebritos.mx/p/\nidPitch\n\n\n\n\n\nPOST\n Content:\n\n\n{\n    \nuserId\n: \n1313\n,\n    \ntitle\n: \nNescafe para todos\n,\n    \nhook\n: \nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et convallis erat, sit amet sodales metus. Nullam molestie gravida nisl, ac maximus augue eleifend ac.\n,\n    \ntypeFile\n: 1,\n    \nuniqSellingPoint\n: \nPraesent maximus ex ante. Sed fermentum sagittis est, eu sollicitudin ligula faucibus non. Mauris mollis placerat bibendum.\n,\n    \ncompensation\n: \nMorbi finibus augue sit amet sollicitudin dignissim. Pellentesque vulputate augue ornare, imperdiet mi eget, consectetur enim.\n,\n    \ncategory\n: [{\n        \n0\n: \ncreative\n,\n        \n1\n: \ncoffee\n,\n        \n2\n: \nvideo\n,\n        \n3\n: \nmusic\n,\n        \n4\n: \norchesta\n\n    }],\n    \nexpectations\n: \n100000000\n,\n    \ndeadLine\n: \n1989-01-31T08:59:19 +06:00\n\n}\n\n\n\n\nResponse Success\n\n\nPitch published\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[],\n}\n\n\n\n\nPitch save\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[],\n}\n\n\n\n\nPitch updated\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[],\n}\n\n\n\n\nPitch found\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[\n        {\n            \nId\n:\n1313\n,\n            \nbrainId\n:\n1313\n,\n            \nuserId\n:\n1313\n,\n            \ntitle\n:\nNescafe para todos\n,\n            \nhook\n:\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et convallis erat, sit amet sodales metus. Nullam molestie gravida nisl, ac maximus augue eleifend ac.\n,\n            \ntypeFile\n:1,\n            \nuniqSellingPoint\n:\nPraesent maximus ex ante. Sed fermentum sagittis est, eu sollicitudin ligula faucibus non. Mauris mollis placerat bibendum.\n,\n            \ncompensation\n:\nMorbi finibus augue sit amet sollicitudin dignissim. Pellentesque vulputate augue ornare, imperdiet mi eget, consectetur enim.\n,\n            \ncategory\n:[\n                {\n                \n0\n:\ncreative\n,\n                \n1\n:\ncoffee\n,\n                \n2\n:\nvideo\n,\n                \n3\n:\nmusic\n,\n                \n4\n:\norchesta\n,\n                }\n            ],\n            \nexpectations\n:\n100000000\n,\n            \ndeadLine\n:\n1989-01-31T08:59:19 +06:00\n\n        }\n    ]\n}\n\n\n\n\nResponse Errors\n\n\nPitch expired (1)\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\npitch expired\n,\n    \ncontext\n:[],\n}\n\n\n\n\nPitch Already registered\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\npitch Already registered\n,\n    \ncontext\n:[],\n}\n\n\n\n\nBrief not available (2)\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nbrief not available\n,\n    \ncontext\n:[],\n}\n\n\n\n\nIncorrect information / Missing fields\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nmissing fields\n,\n    \ncontext\n:[\n    {\n    \ntitle\n:\nmissing\n,\n    \nhook\n:\nvery long\n\n    }\n    ]\n}\n\n\n\n\nPitch not found\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\npitch not found\n,\n    \ncontext\n:[],\n}\n\n\n\n\n\n\n(1) In Review.\n\n\n(2) Time expired for the brief.", 
             "title": "Pitch"
         }, 
         {
@@ -552,7 +572,7 @@
         }, 
         {
             "location": "/project/pitch/#request", 
-            "text": "Headers:      Authorization: Bearer  token \n    Location: mx  GET  Url:  https://www.cerebritos.mx/p/ idPitch   POST  Content:  {\n     userId : 1313 ,\n     title : Nescafe para todos ,\n     hook : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et convallis erat, sit amet sodales metus. Nullam molestie gravida nisl, ac maximus augue eleifend ac. ,\n     typeFile :1,\n     uniqSellingPoint : Praesent maximus ex ante. Sed fermentum sagittis est, eu sollicitudin ligula faucibus non. Mauris mollis placerat bibendum. ,\n     compensation : Morbi finibus augue sit amet sollicitudin dignissim. Pellentesque vulputate augue ornare, imperdiet mi eget, consectetur enim. ,\n     category :[\n        {\n         0 : creative ,\n         1 : coffee ,\n         2 : video ,\n         3 : music ,\n         4 : orchesta ,\n        }\n    ],\n     expectations : 100000000 ,\n     deadLine : 1989-01-31T08:59:19 +06:00 \n}", 
+            "text": "Headers:      Authorization: Bearer  token \n    Location: mx  GET  Url:  https://www.cerebritos.mx/p/ idPitch   POST  Content:  {\n     userId :  1313 ,\n     title :  Nescafe para todos ,\n     hook :  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et convallis erat, sit amet sodales metus. Nullam molestie gravida nisl, ac maximus augue eleifend ac. ,\n     typeFile : 1,\n     uniqSellingPoint :  Praesent maximus ex ante. Sed fermentum sagittis est, eu sollicitudin ligula faucibus non. Mauris mollis placerat bibendum. ,\n     compensation :  Morbi finibus augue sit amet sollicitudin dignissim. Pellentesque vulputate augue ornare, imperdiet mi eget, consectetur enim. ,\n     category : [{\n         0 :  creative ,\n         1 :  coffee ,\n         2 :  video ,\n         3 :  music ,\n         4 :  orchesta \n    }],\n     expectations :  100000000 ,\n     deadLine :  1989-01-31T08:59:19 +06:00 \n}", 
             "title": "Request"
         }, 
         {
@@ -587,17 +607,17 @@
         }, 
         {
             "location": "/project/pitch/#pitch-expired-1", 
-            "text": "HTTP Code:  402  {\n     message : pitch expired ,\n     context :[],\n}", 
+            "text": "HTTP Code:  400  {\n     message : pitch expired ,\n     context :[],\n}", 
             "title": "Pitch expired (1)"
         }, 
         {
             "location": "/project/pitch/#pitch-already-registered", 
-            "text": "HTTP Code:  402  {\n     message : pitch Already registered ,\n     context :[],\n}", 
+            "text": "HTTP Code:  400  {\n     message : pitch Already registered ,\n     context :[],\n}", 
             "title": "Pitch Already registered"
         }, 
         {
             "location": "/project/pitch/#brief-not-available-2", 
-            "text": "HTTP Code:  402  {\n     message : brief not available ,\n     context :[],\n}", 
+            "text": "HTTP Code:  400  {\n     message : brief not available ,\n     context :[],\n}", 
             "title": "Brief not available (2)"
         }, 
         {

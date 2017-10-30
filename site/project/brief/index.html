@@ -158,33 +158,31 @@
 </code></pre>
 
 <p><code>GET</code> Url:</p>
-<pre><code class="url">https://www.cerebritos.mx/b/&lt;idBrief&gt;
+<pre><code class="url">https://www.cerebritos.mx/mapi/v1/brief
 </code></pre>
 
 <p><code>POST</code> Content:</p>
 <pre><code class="json">{
-    &quot;businessId&quot;:&quot;1313&quot;,
-    &quot;title&quot;:&quot;Nescafe para todos&quot;,
-    &quot;category&quot;:[
-        {
-        &quot;0&quot;:&quot;creative&quot;,
-        &quot;1&quot;:&quot;coffee&quot;,
-        &quot;2&quot;:&quot;video&quot;,
-        &quot;3&quot;:&quot;music&quot;,
-        &quot;4&quot;:&quot;orchesta&quot;,
-        }
-    ],
-    &quot;objectGoal&quot;:&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et convallis erat, sit amet sodales metus. Nullam molestie gravida nisl, ac maximus augue eleifend ac.&quot;,
-    &quot;messageTone&quot;:&quot;Praesent maximus ex ante. Sed fermentum sagittis est, eu sollicitudin ligula faucibus non. Mauris mollis placerat bibendum.&quot;,
-    &quot;uniqueSellingPoint&quot;:&quot;Morbi finibus augue sit amet sollicitudin dignissim. Pellentesque vulputate augue ornare, imperdiet mi eget, consectetur enim.&quot;,
-    &quot;budget&quot;:&quot;100000000&quot;,
-    &quot;deadLine&quot;:&quot;1989-01-31T08:59:19 +06:00&quot;,
-    &quot;typeFile&quot;:1,
-    &quot;technicalSpecification&quot;:&quot;Sed sit amet ipsum ac ante ultrices fringilla. Quisque metus sapien, ornare a mollis quis, sagittis aliquam urna. Donec ipsum sem, auctor non tortor at, ullamcorper ornare metus. Integer eu erat elit.&quot;,
-    &quot;wellBeing&quot;:&quot;Phasellus ac efficitur erat. Donec consequat nec ligula sed finibus. Vestibulum odio lacus, commodo non turpis scelerisque, ultricies elementum est.&quot;,
-    &quot;competition&quot;:&quot;Praesent ut arcu imperdiet, ultricies sem eu, ultrices neque.&quot;,
-    &quot;customerInsight&quot;:&quot;In mollis, tortor a aliquet vulputate, orci ex viverra eros, nec euismod ipsum ex non felis. Phasellus vel commodo lectus. Sed purus nisl, porttitor et facilisis a, venenatis non sapien.&quot;,
-    &quot;expectations&quot;:&quot;Aliquam quis suscipit libero, ut malesuada diam. Nulla commodo congue velit vel sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis semper egestas lectus eu elementum. Phasellus sed lacinia justo, eu tincidunt risus.&quot;,
+    &quot;businessId&quot;: &quot;1313&quot;,
+    &quot;title&quot;: &quot;Nescafe para todos&quot;,
+    &quot;category&quot;: [{
+        &quot;0&quot;: &quot;creative&quot;,
+        &quot;1&quot;: &quot;coffee&quot;,
+        &quot;2&quot;: &quot;video&quot;,
+        &quot;3&quot;: &quot;music&quot;,
+        &quot;4&quot;: &quot;orchesta&quot;
+    }],
+    &quot;objectGoal&quot;: &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et convallis erat, sit amet sodales metus. Nullam molestie gravida nisl, ac maximus augue eleifend ac.&quot;,
+    &quot;messageTone&quot;: &quot;Praesent maximus ex ante. Sed fermentum sagittis est, eu sollicitudin ligula faucibus non. Mauris mollis placerat bibendum.&quot;,
+    &quot;uniqueSellingPoint&quot;: &quot;Morbi finibus augue sit amet sollicitudin dignissim. Pellentesque vulputate augue ornare, imperdiet mi eget, consectetur enim.&quot;,
+    &quot;budget&quot;: &quot;100000000&quot;,
+    &quot;deadLine&quot;: &quot;1989-01-31T08:59:19 +06:00&quot;,
+    &quot;typeFile&quot;: 1,
+    &quot;technicalSpecification&quot;: &quot;Sed sit amet ipsum ac ante ultrices fringilla. Quisque metus sapien, ornare a mollis quis, sagittis aliquam urna. Donec ipsum sem, auctor non tortor at, ullamcorper ornare metus. Integer eu erat elit.&quot;,
+    &quot;wellBeing&quot;: &quot;Phasellus ac efficitur erat. Donec consequat nec ligula sed finibus. Vestibulum odio lacus, commodo non turpis scelerisque, ultricies elementum est.&quot;,
+    &quot;competition&quot;: &quot;Praesent ut arcu imperdiet, ultricies sem eu, ultrices neque.&quot;,
+    &quot;customerInsight&quot;: &quot;In mollis, tortor a aliquet vulputate, orci ex viverra eros, nec euismod ipsum ex non felis. Phasellus vel commodo lectus. Sed purus nisl, porttitor et facilisis a, venenatis non sapien.&quot;,
+    &quot;expectations&quot;: &quot;Aliquam quis suscipit libero, ut malesuada diam. Nulla commodo congue velit vel sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis semper egestas lectus eu elementum. Phasellus sed lacinia justo, eu tincidunt risus.&quot;
 }
 </code></pre>
 
@@ -250,7 +248,7 @@
 
 <h2 id="response-errors">Response Errors</h2>
 <h3 id="brief-expired">Brief expired</h3>
-<p>HTTP Code: <code>402</code></p>
+<p>HTTP Code: <code>400</code></p>
 <pre><code class="json">{
     &quot;message&quot;:&quot;brief expired&quot;,
     &quot;context&quot;:[],
@@ -258,7 +256,7 @@
 </code></pre>
 
 <h3 id="brief-already-registered">Brief Already registered</h3>
-<p>HTTP Code: <code>402</code></p>
+<p>HTTP Code: <code>400</code></p>
 <pre><code class="json">{
     &quot;message&quot;:&quot;brief Already registered&quot;,
     &quot;context&quot;:[],

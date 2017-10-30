@@ -153,12 +153,14 @@
 <h1 id="information-project-bag-creative-business">Information Project Bag Creative / Business</h1>
 <h2 id="request">Request</h2>
 <p>Headers:</p>
-<pre><code>    Authorization: Bearer &lt;token&gt;
-    Location: mx
+<pre><code>    X-Auth-Country: mx
+    X-Auth: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9...
+    Content-Type: application/json
+    Accept: application/json
 </code></pre>
 
-<p><code>GET</code> Url:</p>
-<pre><code class="url">https://www.cerebritos.mx/p/project_bag/&lt;idCreative&gt;
+<p><code>POST</code> Url:</p>
+<pre><code class="url">https://www.cerebritos.mx/mapi/v1/project_bag
 </code></pre>
 
 <h2 id="response-success">Response Success</h2>
@@ -166,55 +168,50 @@
 <p>HTTP Code: <code>200</code></p>
 <pre><code class="json">
 {
-    &quot;message&quot;:&quot;success&quot;,
-    &quot;context&quot;:[
-        {
-            &quot;id&quot;:&quot;1313&quot;,
-            &quot;projects&quot;:[
-                &quot;finalized&quot;:[
-                    {
-                        &quot;status&quot;:paid,
-                        &quot;tittle&quot;:&quot;Nulla sodales, tortor ut efficitur mollis.&quot;,
-                        &quot;shortDescription&quot;:&quot;Praesent ut arcu imperdiet, ultricies sem eu, ultrices neque. Morbi ut tempor dolor. Suspendisse rutrum, est sed egestas condimentum, risus diam tempus lectus, at bibendum libero felis vel nisl.&quot;,
-                        &quot;review&quot;:&quot;Praesent ut arcu imperdiet, ultricies sem eu.&quot;,
-                        &quot;comment&quot;:&quot;In mollis, tortor a aliquet vulputate, orci ex viverra eros, nec euismod ipsum ex non felis.&quot;
-                    },
-                    {
-                        &quot;status&quot;:paid,
-                        &quot;tittle&quot;:&quot;Nulla sodales, tortor ut efficitur mollis.&quot;,
-                        &quot;shortDescription&quot;:&quot;Praesent ut arcu imperdiet, ultricies sem eu, ultrices neque. Morbi ut tempor dolor. Suspendisse rutrum, est sed egestas condimentum, risus diam tempus lectus, at bibendum libero felis vel nisl.&quot;,
-                        &quot;review&quot;:&quot;Praesent ut arcu imperdiet, ultricies sem eu.&quot;,
-                        &quot;comment&quot;:&quot;In mollis, tortor a aliquet vulputate, orci ex viverra eros, nec euismod ipsum ex non felis.&quot;
-                    }
-                ],
-                &quot;pitch&quot;:[
-                    {
-                        &quot;status&quot;:bid,
-                        &quot;linkBrief&quot;:&quot;http://www.cerebritos.mx/b/312313&quot;,
-                        &quot;tittle&quot;:&quot;Nulla sodales, tortor ut efficitur mollis.&quot;,
-                        &quot;hook&quot;:&quot;Praesent ut arcu imperdiet, ultricies sem eu, ultrices neque. Morbi ut tempor dolor. Suspendisse rutrum, est sed egestas condimentum, risus diam tempus lectus, at bibendum libero felis vel nisl.&quot;
-                    }
-                ]
-            ]
+    &quot;message&quot;: &quot;success&quot;,
+    &quot;context&quot;: [{
+        &quot;id&quot;: &quot;1313&quot;,
+        &quot;projects&quot;: {
+            &quot;finalized&quot;: [{
+                    &quot;status&quot;: &quot;paid&quot;,
+                    &quot;tittle&quot;: &quot;Nulla sodales, tortor ut efficitur mollis.&quot;,
+                    &quot;shortDescription&quot;: &quot;Praesent ut arcu imperdiet, ultricies sem eu, ultrices neque. Morbi ut tempor dolor. Suspendisse rutrum, est sed egestas condimentum, risus diam tempus lectus, at bibendum libero felis vel nisl.&quot;,
+                    &quot;review&quot;: &quot;Praesent ut arcu imperdiet, ultricies sem eu.&quot;,
+                    &quot;comment&quot;: &quot;In mollis, tortor a aliquet vulputate, orci ex viverra eros, nec euismod ipsum ex non felis.&quot;
+                },
+                {
+                    &quot;status&quot;: &quot;paid&quot;,
+                    &quot;tittle&quot;: &quot;Nulla sodales, tortor ut efficitur mollis.&quot;,
+                    &quot;shortDescription&quot;: &quot;Praesent ut arcu imperdiet, ultricies sem eu, ultrices neque. Morbi ut tempor dolor. Suspendisse rutrum, est sed egestas condimentum, risus diam tempus lectus, at bibendum libero felis vel nisl.&quot;,
+                    &quot;review&quot;: &quot;Praesent ut arcu imperdiet, ultricies sem eu.&quot;,
+                    &quot;comment&quot;: &quot;In mollis, tortor a aliquet vulputate, orci ex viverra eros, nec euismod ipsum ex non felis.&quot;
+                }
+            ],
+            &quot;pitch&quot;: {
+                &quot;status&quot;: &quot;bid&quot;,
+                &quot;linkBrief&quot;: &quot;http://www.cerebritos.mx/b/312313&quot;,
+                &quot;tittle&quot;: &quot;Nulla sodales, tortor ut efficitur mollis.&quot;,
+                &quot;hook&quot;: &quot;Praesent ut arcu imperdiet, ultricies sem eu, ultrices neque. Morbi ut tempor dolor. Suspendisse rutrum, est sed egestas condimentum, risus diam tempus lectus, at bibendum libero felis vel nisl.&quot;
+            }
         }
-    ]
+    }]
 }
 </code></pre>
 
 <h2 id="response-errors">Response Errors</h2>
 <h3 id="profile-not-found">Profile not found</h3>
-<p>HTTP Code: <code>404</code></p>
+<p>HTTP Code: <code>400</code></p>
 <pre><code class="json">{
     &quot;message&quot;:&quot;profile not found&quot;,
-    &quot;context&quot;:[],
+    &quot;context&quot;:[]
 }
 </code></pre>
 
 <h3 id="token-expired">Token expired</h3>
-<p>HTTP Code: <code>402</code></p>
+<p>HTTP Code: <code>400</code></p>
 <pre><code class="json">{
     &quot;message&quot;:&quot;token expired&quot;,
-    &quot;context&quot;:[],
+    &quot;context&quot;:[]
 }
 </code></pre></div>
         </div>

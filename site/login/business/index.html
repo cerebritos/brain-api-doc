@@ -144,6 +144,7 @@
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#login-business">Login Business</a></li>
             <li><a href="#request">Request</a></li>
+            <li><a href="#login">Login</a></li>
             <li><a href="#response-success">Response Success</a></li>
             <li><a href="#response-errors">Response Errors</a></li>
     </ul>
@@ -153,15 +154,20 @@
 <h1 id="login-business">Login Business</h1>
 <h2 id="request">Request</h2>
 <p>Headers:</p>
-<pre><code>    Authorization: Bearer &lt;token&gt;
-    Location: mx
+<pre><code>    X-Auth-Country: mx
+    Content-Type: application/json
+    Accept: application/json
+</code></pre>
+
+<h2 id="login">Login</h2>
+<p><code>Post</code> Url:</p>
+<pre><code class="url">https://www.cerebritos.mx/mapi/v1/auth/login
 </code></pre>
 
 <p><code>POST</code> Content:</p>
 <pre><code class="json">{
-   &quot;email&quot;:&quot;demo@mail.com&quot;,
-   &quot;password&quot;:&quot;Password0fa4664e99c2&quot;,
-   &quot;passwordDoubleCheck&quot;:&quot;Password0fa4664e99c2&quot;,
+   &quot;username&quot;: &quot;functional.test8@cerebritos.com&quot;,
+   &quot;password&quot;: &quot;abcd1234&quot;
 }
 </code></pre>
 
@@ -169,33 +175,37 @@
 <h3 id="loggedin">LoggedIn</h3>
 <p>HTTP Code: <code>200</code></p>
 <pre><code class="json">{
-    &quot;message&quot;:&quot;success LoggedIn&quot;,
-    &quot;context&quot;:[],
+    &quot;token&quot;: &quot;eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9...&quot;,
+    &quot;id&quot;: &quot;3&quot;,
+    &quot;cerebritosId&quot;: &quot;38a300f32b75e9e56f9ae68c1c5e155d&quot;,
+    &quot;username&quot;: &quot;test@cerebritos.com&quot;,
+    &quot;firstName&quot;: &quot;Functional&quot;,
+    &quot;lastName&quot;: &quot;Test&quot;
 }
 </code></pre>
 
 <h2 id="response-errors">Response Errors</h2>
 <h3 id="bad-credentials">Bad credentials</h3>
-<p>HTTP Code: <code>402</code></p>
+<p>HTTP Code: <code>400</code></p>
 <pre><code class="json">{
     &quot;message&quot;:&quot;bad credentials&quot;,
-    &quot;context&quot;:[],
+    &quot;context&quot;:[]
 }
 </code></pre>
 
 <h3 id="banned-loggedin">Banned LoggedIn</h3>
-<p>HTTP Code: <code>402</code></p>
+<p>HTTP Code: <code>400</code></p>
 <pre><code class="json">{
     &quot;message&quot;:&quot;banned LoggedIn&quot;,
-    &quot;context&quot;:[],
+    &quot;context&quot;:[]
 }
 </code></pre>
 
 <h3 id="token-expired">Token expired</h3>
-<p>HTTP Code: <code>402</code></p>
+<p>HTTP Code: <code>400</code></p>
 <pre><code class="json">{
     &quot;message&quot;:&quot;token expired&quot;,
-    &quot;context&quot;:[],
+    &quot;context&quot;:[]
 }
 </code></pre></div>
         </div>

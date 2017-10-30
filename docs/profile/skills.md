@@ -4,39 +4,37 @@
 
 Headers:
 ```
-	Authorization: Bearer <token>
-	Location: mx
+	X-Auth-Country: mx
+	X-Auth: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9...
+	Content-Type: application/json
+	Accept: application/json
 ```
 
-`GET` Url:
+`POST` Url:
 ```url
-https://www.cerebritos.mx/p/skills/<idCreative>
+https://www.cerebritos.mx/mapi/v1/skills
 ```
 
 `POST` Content:
 ```json
 {
-   "typesOffers":3,
-   "typesAreas":[
-	   		{
-	   		"0":"serivice network",
-	   		"1":"develop",
-	   		"2":"support",
-	   		"3":"analitics",
-	   		"4":"community manager"
-	   		}
-   		],
-   "skills":[
-		{
-			"0":"PHP",
-			"1":"SCRUM",
-			"2":"SLACK",
-			"3":"WATCH TV",
-			"4":"PIZZA",
-			"5":"WORD"
-		}
-	],
-	"experienceLevel":3
+	"typesOffers": 3,
+	"typesAreas": [{
+		"0": "serivice network",
+		"1": "develop",
+		"2": "support",
+		"3": "analitics",
+		"4": "community manager"
+	}],
+	"skills": [{
+		"0": "PHP",
+		"1": "SCRUM",
+		"2": "SLACK",
+		"3": "WATCH TV",
+		"4": "PIZZA",
+		"5": "WORD"
+	}],
+	"experienceLevel": 3
 }
 ```
 ## Response Success
@@ -47,32 +45,26 @@ HTTP Code: `200`
 
 ```json
 {
-	"message":"success",
-	"context":[
-			{
-		   "typesOffers":3,
-		   "typesAreas":[
-			   		{
-			   		"0":"serivice network",
-			   		"1":"develop",
-			   		"2":"support",
-			   		"3":"analitics",
-			   		"4":"community manager"
-			   		}
-		   		],
-		   "skills":[
-				{
-					"0":"PHP",
-					"1":"SCRUM",
-					"2":"SLACK",
-					"3":"WATCH TV",
-					"4":"PIZZA",
-					"5":"WORD"
-				}
-			],
-			"experienceLevel":3
-		}
-	]
+	"message": "success",
+	"context": [{
+		"typesOffers": 3,
+		"typesAreas": [{
+			"0": "serivice network",
+			"1": "develop",
+			"2": "support",
+			"3": "analitics",
+			"4": "community manager"
+		}],
+		"skills": [{
+			"0": "PHP",
+			"1": "SCRUM",
+			"2": "SLACK",
+			"3": "WATCH TV",
+			"4": "PIZZA",
+			"5": "WORD"
+		}],
+		"experienceLevel": 3
+	}]
 }
 ```
 
@@ -83,7 +75,7 @@ HTTP Code: `200`
 ```json
 {
 	"message":"success",
-	"context":[],
+	"context":[]
 }
 ```
 
@@ -91,23 +83,23 @@ HTTP Code: `200`
 
 ### Profile not found
 
-HTTP Code: `404`
+HTTP Code: `400`
 
 ```json
 {
 	"message":"Profile not found",
-	"context":[],
+	"context":[]
 }
 ```
 
 ### Token expired
 
-HTTP Code: `402`
+HTTP Code: `400`
 
 ```json
 {
 	"message":"token expired",
-	"context":[],
+	"context":[]
 }
 ```
 
