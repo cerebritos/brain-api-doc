@@ -159,57 +159,101 @@
     Accept: application/json
 </code></pre>
 
-<p><code>POST</code> Url:</p>
-<pre><code class="url">https://www.cerebritos.mx/mapi/v1/school
+<p><code>POST</code> Url Create School:</p>
+<pre><code class="url">https://www.cerebritos.mx/mapi/v1/creative/school
 </code></pre>
 
-<p><code>POST</code> Content:</p>
-<pre><code class="json">[{
-        &quot;name&quot;: &quot;intituto albert smith state&quot;,
+<p><code>POST</code> Url Delete School:</p>
+<pre><code class="url">https://www.cerebritos.mx/mapi/v1/mapi/v1/creative/school/delete/7
+</code></pre>
+
+<p><code>POST</code> Url Get School:</p>
+<pre><code class="url">https://www.cerebritos.mx/mapi/v1/creative/school/8
+</code></pre>
+
+<p><code>POST</code> Url Get Schools:</p>
+<pre><code class="url">https://www.cerebritos.mx/mapi/v1/creative/schools
+</code></pre>
+
+<p><code>POST</code> Content Create:</p>
+<pre><code class="json">
+{
+    &quot;school_register&quot;:{
+        &quot;instituteName&quot;: &quot;intituto albert smith state&quot;,
         &quot;certificate&quot;: true,
         &quot;title&quot;: &quot;systems engineer&quot;,
-        &quot;startYear&quot;: &quot;2012-01-31T08:59:19 +06:00&quot;,
-        &quot;endYear&quot;: &quot;2015-01-31T08:59:19 +06:00&quot;,
-        &quot;truncated career&quot;: false
-    },
-    {
-        &quot;name&quot;: &quot;universidad panamericana&quot;,
-        &quot;certificate&quot;: false,
-        &quot;title&quot;: &quot;none&quot;,
-        &quot;startYear&quot;: &quot;2016-01-31T08:59:19 +06:00&quot;,
-        &quot;endYear&quot;: &quot;2016-01-31T08:59:19 +06:00&quot;,
-        &quot;truncated career&quot;: true
+        &quot;startYear&quot;:{
+            &quot;year&quot;:&quot;2012&quot;,
+            &quot;month&quot;:&quot;5&quot;,
+            &quot;day&quot;:&quot;2&quot;
+        },
+        &quot;endYear&quot;:{
+            &quot;year&quot;:&quot;1915&quot;,
+            &quot;month&quot;:&quot;5&quot;,
+            &quot;day&quot;:&quot;2&quot;
+        }
     }
-]
+}
 </code></pre>
 
 <h2 id="response-success">Response Success</h2>
 <h3 id="profile-found">Profile found</h3>
 <p>HTTP Code: <code>200</code></p>
 <pre><code class="json">{
-    &quot;message&quot;: &quot;success&quot;,
-    &quot;context&quot;: [{
-        &quot;id&quot;: &quot;123124&quot;,
-        &quot;idBrain&quot;: &quot;832952&quot;,
-        &quot;skills&quot;: [{
-                &quot;0&quot;: &quot;intituto albert smith state&quot;,
-                &quot;1&quot;: true,
-                &quot;2&quot;: &quot;systems engineer&quot;,
-                &quot;3&quot;: &quot;2012-01-31T08:59:19 +06:00&quot;,
-                &quot;4&quot;: &quot;2015-01-31T08:59:19 +06:00&quot;,
-                &quot;truncatedCareer&quot;: false
-            },
-            {
-                &quot;name&quot;: &quot;universidad panamericana&quot;,
-                &quot;certificate&quot;: false,
-                &quot;title&quot;: &quot;none&quot;,
-                &quot;startYear&quot;: &quot;2016-01-31T08:59:19 +06:00&quot;,
-                &quot;endYear&quot;: &quot;2016-01-31T08:59:19 +06:00&quot;,
-                &quot;truncatedCareer&quot;: true
-            }
-        ]
-    }]
+    &quot;instituteName&quot;: &quot;intituto albert smith state&quot;,
+    &quot;certificate&quot;: true,
+    &quot;title&quot;: &quot;systems engineer&quot;,
+    &quot;startYear&quot;: &quot;2012-05-02&quot;,
+    &quot;endYear&quot;: &quot;1915-05-02&quot;
 }
+</code></pre>
+
+<h3 id="profile-found-bulk">Profile found Bulk</h3>
+<p>HTTP Code: <code>200</code></p>
+<pre><code class="json">[
+    {
+        &quot;instituteName&quot;: &quot;intituto albert smith state&quot;,
+        &quot;certificate&quot;: true,
+        &quot;title&quot;: &quot;systems engineer&quot;,
+        &quot;startYear&quot;: &quot;2012-05-02&quot;,
+        &quot;endYear&quot;: &quot;1915-05-02&quot;
+    },
+    {
+        &quot;instituteName&quot;: &quot;intituto albert smith state&quot;,
+        &quot;certificate&quot;: true,
+        &quot;title&quot;: &quot;systems engineer&quot;,
+        &quot;startYear&quot;: &quot;2012-05-02&quot;,
+        &quot;endYear&quot;: &quot;1915-05-02&quot;
+    },
+    {
+        &quot;instituteName&quot;: &quot;intituto albert smith state&quot;,
+        &quot;certificate&quot;: true,
+        &quot;title&quot;: &quot;systems engineer&quot;,
+        &quot;startYear&quot;: &quot;2012-05-02&quot;,
+        &quot;endYear&quot;: &quot;1915-05-02&quot;
+    },
+    {
+        &quot;instituteName&quot;: &quot;intituto albert smith state&quot;,
+        &quot;certificate&quot;: true,
+        &quot;title&quot;: &quot;systems engineer&quot;,
+        &quot;startYear&quot;: &quot;2012-05-02&quot;,
+        &quot;endYear&quot;: &quot;1915-05-02&quot;
+    },
+    {
+        &quot;instituteName&quot;: &quot;intituto albert smith state&quot;,
+        &quot;certificate&quot;: true,
+        &quot;title&quot;: &quot;systems engineer&quot;,
+        &quot;startYear&quot;: &quot;2012-05-02&quot;,
+        &quot;endYear&quot;: &quot;1915-05-02&quot;
+    },
+    {
+        &quot;instituteName&quot;: &quot;intituto albert smith state&quot;,
+        &quot;certificate&quot;: true,
+        &quot;title&quot;: &quot;systems engineer&quot;,
+        &quot;startYear&quot;: &quot;2012-05-02&quot;,
+        &quot;endYear&quot;: &quot;1915-05-02&quot;
+    }
+]
 </code></pre>
 
 <h3 id="updated-profile">Updated profile</h3>

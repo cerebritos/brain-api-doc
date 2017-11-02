@@ -10,30 +10,47 @@ Headers:
 	Accept: application/json
 ```
 
-`POST` Url:
+`POST` Url Create School:
 ```url
-https://www.cerebritos.mx/mapi/v1/school
+https://www.cerebritos.mx/mapi/v1/creative/school
 ```
 
-`POST` Content:
+`POST` Url Delete School:
+```url
+https://www.cerebritos.mx/mapi/v1/mapi/v1/creative/school/delete/7
+```
+
+`POST` Url Get School:
+```url
+https://www.cerebritos.mx/mapi/v1/creative/school/8
+```
+
+`POST` Url Get Schools:
+```url
+https://www.cerebritos.mx/mapi/v1/creative/schools
+```
+
+
+`POST` Content Create:
 ```json
-[{
-		"name": "intituto albert smith state",
+
+{
+	"school_register":{
+		"instituteName": "intituto albert smith state",
 		"certificate": true,
 		"title": "systems engineer",
-		"startYear": "2012-01-31T08:59:19 +06:00",
-		"endYear": "2015-01-31T08:59:19 +06:00",
-		"truncated career": false
-	},
-	{
-		"name": "universidad panamericana",
-		"certificate": false,
-		"title": "none",
-		"startYear": "2016-01-31T08:59:19 +06:00",
-		"endYear": "2016-01-31T08:59:19 +06:00",
-		"truncated career": true
+		"startYear":{
+        	"year":"2012",
+        	"month":"5",
+        	"day":"2"
+        },
+		"endYear":{
+        	"year":"1915",
+        	"month":"5",
+        	"day":"2"
+        }
 	}
-]
+}
 ```
 ## Response Success
 
@@ -43,29 +60,63 @@ HTTP Code: `200`
 
 ```json
 {
-	"message": "success",
-	"context": [{
-		"id": "123124",
-		"idBrain": "832952",
-		"skills": [{
-				"0": "intituto albert smith state",
-				"1": true,
-				"2": "systems engineer",
-				"3": "2012-01-31T08:59:19 +06:00",
-				"4": "2015-01-31T08:59:19 +06:00",
-				"truncatedCareer": false
-			},
-			{
-				"name": "universidad panamericana",
-				"certificate": false,
-				"title": "none",
-				"startYear": "2016-01-31T08:59:19 +06:00",
-				"endYear": "2016-01-31T08:59:19 +06:00",
-				"truncatedCareer": true
-			}
-		]
-	}]
+    "instituteName": "intituto albert smith state",
+    "certificate": true,
+    "title": "systems engineer",
+    "startYear": "2012-05-02",
+    "endYear": "1915-05-02"
 }
+```
+
+### Profile found Bulk
+
+HTTP Code: `200`
+
+```json
+[
+    {
+        "instituteName": "intituto albert smith state",
+        "certificate": true,
+        "title": "systems engineer",
+        "startYear": "2012-05-02",
+        "endYear": "1915-05-02"
+    },
+    {
+        "instituteName": "intituto albert smith state",
+        "certificate": true,
+        "title": "systems engineer",
+        "startYear": "2012-05-02",
+        "endYear": "1915-05-02"
+    },
+    {
+        "instituteName": "intituto albert smith state",
+        "certificate": true,
+        "title": "systems engineer",
+        "startYear": "2012-05-02",
+        "endYear": "1915-05-02"
+    },
+    {
+        "instituteName": "intituto albert smith state",
+        "certificate": true,
+        "title": "systems engineer",
+        "startYear": "2012-05-02",
+        "endYear": "1915-05-02"
+    },
+    {
+        "instituteName": "intituto albert smith state",
+        "certificate": true,
+        "title": "systems engineer",
+        "startYear": "2012-05-02",
+        "endYear": "1915-05-02"
+    },
+    {
+        "instituteName": "intituto albert smith state",
+        "certificate": true,
+        "title": "systems engineer",
+        "startYear": "2012-05-02",
+        "endYear": "1915-05-02"
+    }
+]
 ```
 
 ### Updated profile
