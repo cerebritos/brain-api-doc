@@ -10,30 +10,31 @@ Headers:
 	Accept: application/json
 ```
 
-`POST` Url:
+`POST` Url Create CreditCard:
 ```url
-https://www.cerebritos.mx/mapi/v1/payment
+https://www.cerebritos.mx/mapi/v1/creative/creditcard
+```
+
+`POST` Url Delete CreditCard:
+```url
+https://www.cerebritos.mx/mapi/v1/mapi/v1/creative/creditcard/delete/7
+```
+
+`POST` Url Get CreditCard:
+```url
+https://www.cerebritos.mx/mapi/v1/creative/creditcards
 ```
 
 `POST` Content:
 ```json
 {
-	"ccn": "42908304012957057",
-	"cardType": 1,
-	"expirationDate": "0220",
-	"csc": 1312,
-	"defaultAddess": false,
-	"addresses": [{
-		"street": "lorem impsu",
-		"externalNumber": "12",
-		"internalNumber": "1b",
-		"city": "Mexico",
-		"country": "Mexico",
-		"municipality": "Ecatepec",
-		"neighborhood": "Magdalena",
-		"region": "32342",
-		"defaultAddress": true
-	}]
+	"creditcard_register":{
+		"brand": "bancomer",
+		"cardholderFirstName": "Jesus",
+		"cardholderLastName": "Lopez Lopez",
+		"cardNumber": "1232123334541234",
+		"expirationDate": "2020-03"
+	}
 }
 ```
 ## Response Success
@@ -43,41 +44,36 @@ https://www.cerebritos.mx/mapi/v1/payment
 HTTP Code: `200`
 
 ```json
-{
-	"message":"success",
-	"context":[
-		{
-		"ccn":"42908304012957057",
-		"cardType":1,
-		"expirationDate":"0220",
-		"csc":1312,
-		"defaultAddess":false,
-		"addresses":[
-			{
-			"street": "lorem impsu",
-			"externalNumber": "12",
-			"internalNumber": "1b",
-			"city": "Mexico",
-			"country": "Mexico",
-			"municipality": "Ecatepec",
-			"neighborhood": "Magdalena",
-			"region": "32342",
-			"defaultAddress": true
-			}
-		]
-		}
-	]
-}
+[
+    {
+        "id": "1",
+        "brand": "bancomer",
+        "cardholderName": "Jesus Lopez Lopez",
+        "cardholderFirstName": "Jesus",
+        "cardholderLastName": "Lopez Lopez",
+        "cardNumber": "970e70061f4498b048a6a1aeb111cb36",
+        "expirationDate": "2020-03-01"
+    },
+    {
+        "id": "2",
+        "brand": "bancomer",
+        "cardholderName": "Jesus Lopez Lopez",
+        "cardholderFirstName": "Jesus",
+        "cardholderLastName": "Lopez Lopez",
+        "cardNumber": "970e70061f4498b048a6a1aeb111cb36",
+        "expirationDate": "2020-03-01"
+    }
+]
 ```
 
-### Updated profile
+### Delete profile
 
 HTTP Code: `200`
 
 ```json
 {
-	"message":"success",
-	"context":[]
+    "message": "success",
+    "context": "creditcard save"
 }
 ```
 

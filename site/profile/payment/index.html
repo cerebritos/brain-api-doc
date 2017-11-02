@@ -159,66 +159,60 @@
     Accept: application/json
 </code></pre>
 
-<p><code>POST</code> Url:</p>
-<pre><code class="url">https://www.cerebritos.mx/mapi/v1/payment
+<p><code>POST</code> Url Create CreditCard:</p>
+<pre><code class="url">https://www.cerebritos.mx/mapi/v1/creative/creditcard
+</code></pre>
+
+<p><code>POST</code> Url Delete CreditCard:</p>
+<pre><code class="url">https://www.cerebritos.mx/mapi/v1/mapi/v1/creative/creditcard/delete/7
+</code></pre>
+
+<p><code>POST</code> Url Get CreditCard:</p>
+<pre><code class="url">https://www.cerebritos.mx/mapi/v1/creative/creditcards
 </code></pre>
 
 <p><code>POST</code> Content:</p>
 <pre><code class="json">{
-    &quot;ccn&quot;: &quot;42908304012957057&quot;,
-    &quot;cardType&quot;: 1,
-    &quot;expirationDate&quot;: &quot;0220&quot;,
-    &quot;csc&quot;: 1312,
-    &quot;defaultAddess&quot;: false,
-    &quot;addresses&quot;: [{
-        &quot;street&quot;: &quot;lorem impsu&quot;,
-        &quot;externalNumber&quot;: &quot;12&quot;,
-        &quot;internalNumber&quot;: &quot;1b&quot;,
-        &quot;city&quot;: &quot;Mexico&quot;,
-        &quot;country&quot;: &quot;Mexico&quot;,
-        &quot;municipality&quot;: &quot;Ecatepec&quot;,
-        &quot;neighborhood&quot;: &quot;Magdalena&quot;,
-        &quot;region&quot;: &quot;32342&quot;,
-        &quot;defaultAddress&quot;: true
-    }]
+    &quot;creditcard_register&quot;:{
+        &quot;brand&quot;: &quot;bancomer&quot;,
+        &quot;cardholderFirstName&quot;: &quot;Jesus&quot;,
+        &quot;cardholderLastName&quot;: &quot;Lopez Lopez&quot;,
+        &quot;cardNumber&quot;: &quot;1232123334541234&quot;,
+        &quot;expirationDate&quot;: &quot;2020-03&quot;
+    }
 }
 </code></pre>
 
 <h2 id="response-success">Response Success</h2>
 <h3 id="profile-found">Profile found</h3>
 <p>HTTP Code: <code>200</code></p>
-<pre><code class="json">{
-    &quot;message&quot;:&quot;success&quot;,
-    &quot;context&quot;:[
-        {
-        &quot;ccn&quot;:&quot;42908304012957057&quot;,
-        &quot;cardType&quot;:1,
-        &quot;expirationDate&quot;:&quot;0220&quot;,
-        &quot;csc&quot;:1312,
-        &quot;defaultAddess&quot;:false,
-        &quot;addresses&quot;:[
-            {
-            &quot;street&quot;: &quot;lorem impsu&quot;,
-            &quot;externalNumber&quot;: &quot;12&quot;,
-            &quot;internalNumber&quot;: &quot;1b&quot;,
-            &quot;city&quot;: &quot;Mexico&quot;,
-            &quot;country&quot;: &quot;Mexico&quot;,
-            &quot;municipality&quot;: &quot;Ecatepec&quot;,
-            &quot;neighborhood&quot;: &quot;Magdalena&quot;,
-            &quot;region&quot;: &quot;32342&quot;,
-            &quot;defaultAddress&quot;: true
-            }
-        ]
-        }
-    ]
-}
+<pre><code class="json">[
+    {
+        &quot;id&quot;: &quot;1&quot;,
+        &quot;brand&quot;: &quot;bancomer&quot;,
+        &quot;cardholderName&quot;: &quot;Jesus Lopez Lopez&quot;,
+        &quot;cardholderFirstName&quot;: &quot;Jesus&quot;,
+        &quot;cardholderLastName&quot;: &quot;Lopez Lopez&quot;,
+        &quot;cardNumber&quot;: &quot;970e70061f4498b048a6a1aeb111cb36&quot;,
+        &quot;expirationDate&quot;: &quot;2020-03-01&quot;
+    },
+    {
+        &quot;id&quot;: &quot;2&quot;,
+        &quot;brand&quot;: &quot;bancomer&quot;,
+        &quot;cardholderName&quot;: &quot;Jesus Lopez Lopez&quot;,
+        &quot;cardholderFirstName&quot;: &quot;Jesus&quot;,
+        &quot;cardholderLastName&quot;: &quot;Lopez Lopez&quot;,
+        &quot;cardNumber&quot;: &quot;970e70061f4498b048a6a1aeb111cb36&quot;,
+        &quot;expirationDate&quot;: &quot;2020-03-01&quot;
+    }
+]
 </code></pre>
 
-<h3 id="updated-profile">Updated profile</h3>
+<h3 id="delete-profile">Delete profile</h3>
 <p>HTTP Code: <code>200</code></p>
 <pre><code class="json">{
-    &quot;message&quot;:&quot;success&quot;,
-    &quot;context&quot;:[]
+    &quot;message&quot;: &quot;success&quot;,
+    &quot;context&quot;: &quot;creditcard save&quot;
 }
 </code></pre>
 
