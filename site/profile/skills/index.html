@@ -159,29 +159,37 @@
     Accept: application/json
 </code></pre>
 
-<p><code>POST</code> Url:</p>
-<pre><code class="url">https://www.cerebritos.mx/mapi/v1/skills
+<p><code>POST</code> Url Create / Update:</p>
+<pre><code class="url">https://www.cerebritos.mx/mapi/v1/creative/skills
+</code></pre>
+
+<p><code>POST</code> Url Get:</p>
+<pre><code class="url">https://www.cerebritos.mx/mapi/v1/creative/getSkills
 </code></pre>
 
 <p><code>POST</code> Content:</p>
 <pre><code class="json">{
-    &quot;typesOffers&quot;: 3,
-    &quot;typesAreas&quot;: [{
-        &quot;0&quot;: &quot;serivice network&quot;,
-        &quot;1&quot;: &quot;develop&quot;,
-        &quot;2&quot;: &quot;support&quot;,
-        &quot;3&quot;: &quot;analitics&quot;,
-        &quot;4&quot;: &quot;community manager&quot;
-    }],
-    &quot;skills&quot;: [{
-        &quot;0&quot;: &quot;PHP&quot;,
-        &quot;1&quot;: &quot;SCRUM&quot;,
-        &quot;2&quot;: &quot;SLACK&quot;,
-        &quot;3&quot;: &quot;WATCH TV&quot;,
-        &quot;4&quot;: &quot;PIZZA&quot;,
-        &quot;5&quot;: &quot;WORD&quot;
-    }],
-    &quot;experienceLevel&quot;: 3
+    &quot;skills&quot;: {
+        &quot;typesOffers&quot;: &quot;IT - Networking&quot;,
+        &quot;experienceLevel&quot;: &quot;Noob&quot;,
+        &quot;typesAreas&quot;: {
+            &quot;0&quot;: &quot;serivice network&quot;,
+            &quot;1&quot;: &quot;develop&quot;,
+            &quot;2&quot;: &quot;support&quot;,
+            &quot;3&quot;: &quot;analitics&quot;,
+            &quot;4&quot;: &quot;community manager&quot;,
+            &quot;5&quot;: &quot;downLoad&quot;,
+            &quot;6&quot;: &quot;slide&quot;
+        },
+        &quot;skills&quot;: {
+            &quot;0&quot;: &quot;PHP&quot;,
+            &quot;1&quot;: &quot;SCRUM&quot;,
+            &quot;2&quot;: &quot;SLACK&quot;,
+            &quot;3&quot;: &quot;WATCH TV&quot;,
+            &quot;4&quot;: &quot;PIZZA&quot;,
+            &quot;5&quot;: &quot;WORD&quot;
+        }
+    }
 }
 </code></pre>
 
@@ -189,34 +197,32 @@
 <h3 id="profile-found">Profile found</h3>
 <p>HTTP Code: <code>200</code></p>
 <pre><code class="json">{
-    &quot;message&quot;: &quot;success&quot;,
-    &quot;context&quot;: [{
-        &quot;typesOffers&quot;: 3,
-        &quot;typesAreas&quot;: [{
-            &quot;0&quot;: &quot;serivice network&quot;,
-            &quot;1&quot;: &quot;develop&quot;,
-            &quot;2&quot;: &quot;support&quot;,
-            &quot;3&quot;: &quot;analitics&quot;,
-            &quot;4&quot;: &quot;community manager&quot;
-        }],
-        &quot;skills&quot;: [{
-            &quot;0&quot;: &quot;PHP&quot;,
-            &quot;1&quot;: &quot;SCRUM&quot;,
-            &quot;2&quot;: &quot;SLACK&quot;,
-            &quot;3&quot;: &quot;WATCH TV&quot;,
-            &quot;4&quot;: &quot;PIZZA&quot;,
-            &quot;5&quot;: &quot;WORD&quot;
-        }],
-        &quot;experienceLevel&quot;: 3
-    }]
+    &quot;typesOffers&quot;: &quot;IT - Networking&quot;,
+    &quot;experienceLevel&quot;: &quot;Noob&quot;,
+    &quot;typesAreas&quot;: [
+        &quot;serivice network&quot;,
+        &quot;develop&quot;,
+        &quot;support&quot;,
+        &quot;analitics&quot;,
+        &quot;community manager&quot;,
+        &quot;downLoad&quot;
+    ],
+    &quot;skills&quot;: [
+        &quot;PHP&quot;,
+        &quot;SCRUM&quot;,
+        &quot;SLACK&quot;,
+        &quot;WATCH TV&quot;,
+        &quot;PIZZA&quot;,
+        &quot;WORD&quot;
+    ]
 }
 </code></pre>
 
 <h3 id="updated-profile">Updated profile</h3>
 <p>HTTP Code: <code>200</code></p>
 <pre><code class="json">{
-    &quot;message&quot;:&quot;success&quot;,
-    &quot;context&quot;:[]
+    &quot;message&quot;: &quot;success&quot;,
+    &quot;context&quot;: &quot;Add o Update skills in profile&quot;
 }
 </code></pre>
 
@@ -237,16 +243,13 @@
 }
 </code></pre>
 
-<h3 id="incorrect-information-missing-fields">Incorrect information / Missing fields</h3>
+<h3 id="incorrect-information-same-data">Incorrect information / Same Data</h3>
 <p>HTTP Code: <code>400</code></p>
 <pre><code class="json">{
-    &quot;message&quot;:&quot;missing fields&quot;,
-    &quot;context&quot;:[
-    {
-    &quot;typesOffers&quot;:3,
-    &quot;experienceLevel&quot;:3
+    &quot;message&quot;: &quot;Error Grave&quot;,
+    &quot;context&quot;: {
+        &quot;warning&quot;: &quot;Same or Problems Data&quot;
     }
-    ]
 }
 </code></pre></div>
         </div>

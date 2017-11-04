@@ -10,31 +10,40 @@ Headers:
 	Accept: application/json
 ```
 
-`POST` Url:
+`POST` Url Create / Update:
 ```url
-https://www.cerebritos.mx/mapi/v1/skills
+https://www.cerebritos.mx/mapi/v1/creative/skills
+```
+
+`POST` Url Get:
+```url
+https://www.cerebritos.mx/mapi/v1/creative/getSkills
 ```
 
 `POST` Content:
 ```json
 {
-	"typesOffers": 3,
-	"typesAreas": [{
-		"0": "serivice network",
-		"1": "develop",
-		"2": "support",
-		"3": "analitics",
-		"4": "community manager"
-	}],
-	"skills": [{
-		"0": "PHP",
-		"1": "SCRUM",
-		"2": "SLACK",
-		"3": "WATCH TV",
-		"4": "PIZZA",
-		"5": "WORD"
-	}],
-	"experienceLevel": 3
+	"skills": {
+	    "typesOffers": "IT - Networking",
+	    "experienceLevel": "Noob",
+	    "typesAreas": {
+	        "0": "serivice network",
+	        "1": "develop",
+	        "2": "support",
+	        "3": "analitics",
+	        "4": "community manager",
+	        "5": "downLoad",
+	        "6": "slide"
+	    },
+	    "skills": {
+	        "0": "PHP",
+	        "1": "SCRUM",
+	        "2": "SLACK",
+	        "3": "WATCH TV",
+	        "4": "PIZZA",
+	        "5": "WORD"
+	    }
+	}
 }
 ```
 ## Response Success
@@ -45,26 +54,24 @@ HTTP Code: `200`
 
 ```json
 {
-	"message": "success",
-	"context": [{
-		"typesOffers": 3,
-		"typesAreas": [{
-			"0": "serivice network",
-			"1": "develop",
-			"2": "support",
-			"3": "analitics",
-			"4": "community manager"
-		}],
-		"skills": [{
-			"0": "PHP",
-			"1": "SCRUM",
-			"2": "SLACK",
-			"3": "WATCH TV",
-			"4": "PIZZA",
-			"5": "WORD"
-		}],
-		"experienceLevel": 3
-	}]
+    "typesOffers": "IT - Networking",
+    "experienceLevel": "Noob",
+    "typesAreas": [
+        "serivice network",
+        "develop",
+        "support",
+        "analitics",
+        "community manager",
+        "downLoad"
+    ],
+    "skills": [
+        "PHP",
+        "SCRUM",
+        "SLACK",
+        "WATCH TV",
+        "PIZZA",
+        "WORD"
+    ]
 }
 ```
 
@@ -74,8 +81,8 @@ HTTP Code: `200`
 
 ```json
 {
-	"message":"success",
-	"context":[]
+    "message": "success",
+    "context": "Add o Update skills in profile"
 }
 ```
 
@@ -103,18 +110,15 @@ HTTP Code: `400`
 }
 ```
 
-### Incorrect information / Missing fields
+### Incorrect information / Same Data
 
 HTTP Code: `400`
 
 ```json
 {
-	"message":"missing fields",
-	"context":[
-	{
-	"typesOffers":3,
-	"experienceLevel":3
-	}
-	]
+    "message": "Error Grave",
+    "context": {
+        "warning": "Same or Problems Data"
+    }
 }
 ```

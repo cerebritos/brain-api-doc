@@ -317,7 +317,7 @@
         }, 
         {
             "location": "/profile/skills/", 
-            "text": "Information General Creative / Business\n\n\nRequest\n\n\nHeaders:\n\n\n    X-Auth-Country: mx\n    X-Auth: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9...\n    Content-Type: application/json\n    Accept: application/json\n\n\n\n\nPOST\n Url:\n\n\nhttps://www.cerebritos.mx/mapi/v1/skills\n\n\n\n\nPOST\n Content:\n\n\n{\n    \ntypesOffers\n: 3,\n    \ntypesAreas\n: [{\n        \n0\n: \nserivice network\n,\n        \n1\n: \ndevelop\n,\n        \n2\n: \nsupport\n,\n        \n3\n: \nanalitics\n,\n        \n4\n: \ncommunity manager\n\n    }],\n    \nskills\n: [{\n        \n0\n: \nPHP\n,\n        \n1\n: \nSCRUM\n,\n        \n2\n: \nSLACK\n,\n        \n3\n: \nWATCH TV\n,\n        \n4\n: \nPIZZA\n,\n        \n5\n: \nWORD\n\n    }],\n    \nexperienceLevel\n: 3\n}\n\n\n\n\nResponse Success\n\n\nProfile found\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n: \nsuccess\n,\n    \ncontext\n: [{\n        \ntypesOffers\n: 3,\n        \ntypesAreas\n: [{\n            \n0\n: \nserivice network\n,\n            \n1\n: \ndevelop\n,\n            \n2\n: \nsupport\n,\n            \n3\n: \nanalitics\n,\n            \n4\n: \ncommunity manager\n\n        }],\n        \nskills\n: [{\n            \n0\n: \nPHP\n,\n            \n1\n: \nSCRUM\n,\n            \n2\n: \nSLACK\n,\n            \n3\n: \nWATCH TV\n,\n            \n4\n: \nPIZZA\n,\n            \n5\n: \nWORD\n\n        }],\n        \nexperienceLevel\n: 3\n    }]\n}\n\n\n\n\nUpdated profile\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n:\nsuccess\n,\n    \ncontext\n:[]\n}\n\n\n\n\nResponse Errors\n\n\nProfile not found\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nProfile not found\n,\n    \ncontext\n:[]\n}\n\n\n\n\nToken expired\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\ntoken expired\n,\n    \ncontext\n:[]\n}\n\n\n\n\nIncorrect information / Missing fields\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nmissing fields\n,\n    \ncontext\n:[\n    {\n    \ntypesOffers\n:3,\n    \nexperienceLevel\n:3\n    }\n    ]\n}", 
+            "text": "Information General Creative / Business\n\n\nRequest\n\n\nHeaders:\n\n\n    X-Auth-Country: mx\n    X-Auth: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9...\n    Content-Type: application/json\n    Accept: application/json\n\n\n\n\nPOST\n Url Create / Update:\n\n\nhttps://www.cerebritos.mx/mapi/v1/creative/skills\n\n\n\n\nPOST\n Url Get:\n\n\nhttps://www.cerebritos.mx/mapi/v1/creative/getSkills\n\n\n\n\nPOST\n Content:\n\n\n{\n    \nskills\n: {\n        \ntypesOffers\n: \nIT - Networking\n,\n        \nexperienceLevel\n: \nNoob\n,\n        \ntypesAreas\n: {\n            \n0\n: \nserivice network\n,\n            \n1\n: \ndevelop\n,\n            \n2\n: \nsupport\n,\n            \n3\n: \nanalitics\n,\n            \n4\n: \ncommunity manager\n,\n            \n5\n: \ndownLoad\n,\n            \n6\n: \nslide\n\n        },\n        \nskills\n: {\n            \n0\n: \nPHP\n,\n            \n1\n: \nSCRUM\n,\n            \n2\n: \nSLACK\n,\n            \n3\n: \nWATCH TV\n,\n            \n4\n: \nPIZZA\n,\n            \n5\n: \nWORD\n\n        }\n    }\n}\n\n\n\n\nResponse Success\n\n\nProfile found\n\n\nHTTP Code: \n200\n\n\n{\n    \ntypesOffers\n: \nIT - Networking\n,\n    \nexperienceLevel\n: \nNoob\n,\n    \ntypesAreas\n: [\n        \nserivice network\n,\n        \ndevelop\n,\n        \nsupport\n,\n        \nanalitics\n,\n        \ncommunity manager\n,\n        \ndownLoad\n\n    ],\n    \nskills\n: [\n        \nPHP\n,\n        \nSCRUM\n,\n        \nSLACK\n,\n        \nWATCH TV\n,\n        \nPIZZA\n,\n        \nWORD\n\n    ]\n}\n\n\n\n\nUpdated profile\n\n\nHTTP Code: \n200\n\n\n{\n    \nmessage\n: \nsuccess\n,\n    \ncontext\n: \nAdd o Update skills in profile\n\n}\n\n\n\n\nResponse Errors\n\n\nProfile not found\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\nProfile not found\n,\n    \ncontext\n:[]\n}\n\n\n\n\nToken expired\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n:\ntoken expired\n,\n    \ncontext\n:[]\n}\n\n\n\n\nIncorrect information / Same Data\n\n\nHTTP Code: \n400\n\n\n{\n    \nmessage\n: \nError Grave\n,\n    \ncontext\n: {\n        \nwarning\n: \nSame or Problems Data\n\n    }\n}", 
             "title": "Skills information"
         }, 
         {
@@ -327,7 +327,7 @@
         }, 
         {
             "location": "/profile/skills/#request", 
-            "text": "Headers:      X-Auth-Country: mx\n    X-Auth: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9...\n    Content-Type: application/json\n    Accept: application/json  POST  Url:  https://www.cerebritos.mx/mapi/v1/skills  POST  Content:  {\n     typesOffers : 3,\n     typesAreas : [{\n         0 :  serivice network ,\n         1 :  develop ,\n         2 :  support ,\n         3 :  analitics ,\n         4 :  community manager \n    }],\n     skills : [{\n         0 :  PHP ,\n         1 :  SCRUM ,\n         2 :  SLACK ,\n         3 :  WATCH TV ,\n         4 :  PIZZA ,\n         5 :  WORD \n    }],\n     experienceLevel : 3\n}", 
+            "text": "Headers:      X-Auth-Country: mx\n    X-Auth: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXUyJ9...\n    Content-Type: application/json\n    Accept: application/json  POST  Url Create / Update:  https://www.cerebritos.mx/mapi/v1/creative/skills  POST  Url Get:  https://www.cerebritos.mx/mapi/v1/creative/getSkills  POST  Content:  {\n     skills : {\n         typesOffers :  IT - Networking ,\n         experienceLevel :  Noob ,\n         typesAreas : {\n             0 :  serivice network ,\n             1 :  develop ,\n             2 :  support ,\n             3 :  analitics ,\n             4 :  community manager ,\n             5 :  downLoad ,\n             6 :  slide \n        },\n         skills : {\n             0 :  PHP ,\n             1 :  SCRUM ,\n             2 :  SLACK ,\n             3 :  WATCH TV ,\n             4 :  PIZZA ,\n             5 :  WORD \n        }\n    }\n}", 
             "title": "Request"
         }, 
         {
@@ -337,12 +337,12 @@
         }, 
         {
             "location": "/profile/skills/#profile-found", 
-            "text": "HTTP Code:  200  {\n     message :  success ,\n     context : [{\n         typesOffers : 3,\n         typesAreas : [{\n             0 :  serivice network ,\n             1 :  develop ,\n             2 :  support ,\n             3 :  analitics ,\n             4 :  community manager \n        }],\n         skills : [{\n             0 :  PHP ,\n             1 :  SCRUM ,\n             2 :  SLACK ,\n             3 :  WATCH TV ,\n             4 :  PIZZA ,\n             5 :  WORD \n        }],\n         experienceLevel : 3\n    }]\n}", 
+            "text": "HTTP Code:  200  {\n     typesOffers :  IT - Networking ,\n     experienceLevel :  Noob ,\n     typesAreas : [\n         serivice network ,\n         develop ,\n         support ,\n         analitics ,\n         community manager ,\n         downLoad \n    ],\n     skills : [\n         PHP ,\n         SCRUM ,\n         SLACK ,\n         WATCH TV ,\n         PIZZA ,\n         WORD \n    ]\n}", 
             "title": "Profile found"
         }, 
         {
             "location": "/profile/skills/#updated-profile", 
-            "text": "HTTP Code:  200  {\n     message : success ,\n     context :[]\n}", 
+            "text": "HTTP Code:  200  {\n     message :  success ,\n     context :  Add o Update skills in profile \n}", 
             "title": "Updated profile"
         }, 
         {
@@ -361,9 +361,9 @@
             "title": "Token expired"
         }, 
         {
-            "location": "/profile/skills/#incorrect-information-missing-fields", 
-            "text": "HTTP Code:  400  {\n     message : missing fields ,\n     context :[\n    {\n     typesOffers :3,\n     experienceLevel :3\n    }\n    ]\n}", 
-            "title": "Incorrect information / Missing fields"
+            "location": "/profile/skills/#incorrect-information-same-data", 
+            "text": "HTTP Code:  400  {\n     message :  Error Grave ,\n     context : {\n         warning :  Same or Problems Data \n    }\n}", 
+            "title": "Incorrect information / Same Data"
         }, 
         {
             "location": "/profile/membership/", 
